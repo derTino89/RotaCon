@@ -38,12 +38,7 @@ int ButtonMin = A1;
 int ButtonMax = A2;
 
 //in Matrix [Zeilen][Spalten]jeweils ORANGE,GELB,PINK,BLAU......Spule1=ORANGE+PINK, spule2=GELB+BLAU
-//int stepMatrix[4][4] = {
-//  {HIGH, HIGH, LOW, LOW},
-//  {LOW, HIGH, HIGH, LOW},
-//  {LOW, LOW, HIGH, HIGH},
-//  {HIGH, LOW, LOW, HIGH},
-//};
+
 int stepMatrix[4][4] = {
   {HIGH, LOW, LOW, LOW},
   {LOW, HIGH, LOW, LOW},
@@ -158,24 +153,9 @@ void moveOneStep(bool dir) {
     currentStep = 3;
   }
   EEPROM.put(1, currentStep);
-  //messure();
-//  Serial.print("Step:");
-//  Serial.print(currentStep);
-//  Serial.print("__");
 }
 
 
-//void messure() {
-//  ua = currentVoltage();
-//  Serial.println(ua);
-//  //delay(50);
-//  if (ua > 1.2) {
-//    impact = false;
-//  } else {
-//    Serial.println("ANSCHLAG");
-//    impact = true;
-//  }
-//}
 void check() {
   if (uaMin > 2.8) {
     impact = false;
@@ -216,8 +196,6 @@ void motorControl(unsigned long buttonID) {
         moveSteps(true, 1 * 64);
         Serial.println(uaMin);
         check();
-        //messure();
-        //moveOneStep(true);
         if (!impact) {
           volume++;
         } else {
@@ -239,8 +217,6 @@ void motorControl(unsigned long buttonID) {
         moveSteps(false, 1 * 64);
         Serial.println(uaMin);
         check();
-        //messure();
-        //moveOneStep(false);
         if (!impact) {
           volume--;
           lcd.clear();
