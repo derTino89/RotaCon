@@ -1,76 +1,158 @@
-\documentclass[a4paper, twoside, 10pt]{article}
-\usepackage[T1]{fontenc}
+\documentclass[11pt, titlepage, fleqn]{report}
 \usepackage[utf8]{inputenc}
-\usepackage{lmodern}
-\usepackage[ngerman]{babel}
-\usepackage{titling}
-\usepackage{mathtex}
-
-\pretitle{\begin{center}\linespread{1.5}\huge\sffamily}
-\posttitle{\par\end{center}\vspace{0.5em}}
-\title{
-	\Huge Dokumentation RotaCon v.01A
-	\\
-	\Large Projektarbeit 
-	\\
-	im Studiengang Medientechnik}
-\author{Tino Liebenow}
-\date{Wintersemester 19/20}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{siunitx}
+\usepackage[left=3cm, right=2cm, top=3cm, bottom=2cm]{geometry}
+\usepackage{hsellogo}
+\usepackage{hselfonts}
+\usepackage{hselcolor}
+\usepackage{hselmath}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{parskip}
+\usepackage{csquotes}
+\usepackage{acronym}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{hyphenat}
+\usepackage{microtype}
+\usepackage[ngerman, german]{babel}
+\usepackage[citestyle=numeric,bibstyle=numeric, sorting = none,
+hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{biblatex}
+\addbibresource{references.bib}
+\author{Liebenow, Wozasek}
+\date{\textit{<2020-01-26 Sun>}}
+\title{Dokumentation HoloOSCv2\\\medskip
+\large Dokumentation HoloOSCv2}
+\hbadness 1000
+\tolerance = 200
 
 \begin{document}
-	\maketitle
+\begin{titlepage}% Deckblattk
+	\hsellogo\hfill Projektarbeit % etwa Bachelorarbeit, Masterarbeit
+	\par
+	\vspace{4cm}
+	\noindent\parbox{0.8\textwidth}{\Huge RotaCon - Dokumentation}  
+	\vspace{2cm}
+
+	\Large \noindent vorgelegt von:
+	\begin{itemize}
+		\item Tino Liebenow - Matrikelnummer 7011830
+	\end{itemize}
+	\vspace{2cm}
+	betreut duch\newline
+	Dipl.-Ing. (FH) Jörg Strick\newline
+	Abgabedatum: 30.01.2020
+\end{titlepage}
 	\newpage
 	\tableofcontents
+	\listoffigures% Abbildungsverzeichnis
+    \newpage
+    \section*{\Huge Abkürzungsverzeichnis}% Abkürzungen
+    \label{sec:Abkürzungsverzeichnis}
+    \vspace{1cm}
+    \begin{acronym}
+        \acro{hsel}[HSEL]{Hochschule Emden Leer}
+    \end{acronym}
 	\newpage
-	\addcontentsline{toc}{section}{Abbildungsverzeichnis}
-	\section*{Abbildungsverzeichnis}
-	\newpage
-	\addcontentsline{toc}{section}{Tabellenverzeichnis}
-	\section*{Tabellenverzeichnis}
-	\newpage
+	\chapter{Prolog}
+		Hier wird Tino am Ende der Arbeit eine tolle Einleitung hinzaubern, die dei Ausgangslage zu derzeitigen Aktivlautsprechern
+		beschreibt, ähnlich der Idee. Außerdem schreibe ich in männlicher Form etc...\newline
+		Außerdem reden wir immer vom AKTIV-Lautsprecher...
 	\section{Überblick}
-		Überblick über den Aufbau der Dokumentation
+		Überblick über den Aufbau der Dokumentation.\newline
+		Diese Dokumentation ist in vier Hauptteile gegliedert. Im Prolog wird die Ausgangssituation geschildert, sowie die Kerngedanken zum RotaCon.
 	\section{Ziel}
-		was möchte Tino heute eigentlich machen? 
+		was möchte Tino heute eigentlich machen?\newline
+		Ziel ist es ein Gerät zur Fernbedienbarkeit von Potentiometern, speziell an Lautsprechern, zu entwickeln. Dabei sollen weder Veränderungen
+		am Lautsprechergehäuse, oder an der Technik vorgenommen werden.
+		Zusätzlich ist eine Diskretisierung der Pegelwerte und deren Visualisierung via LCD-Display angedacht, sodass der Benutzer sichtbare 
+		Werte zur Orientierung der aktuellen Einstellung bekommt. 
 	\section{Stand der Technik}	
-		gibts sowas schon?
-	\section{Theorie-Teil}
-		\subsection{Theorie Hardware}
-		\subsection{Tehorie Software}
-		\subsection{Tehorie Mechanik}
-	\section{Praxis-Teil}
-		\subsection{verwendetes Material?}
-			\subsubsection{der Arduino Nano}
-			\subsubsection{die Arduino IDE}
-			\subsubsection{FreeCad}
-			\subsubsection{Cura}
-			\subsubsection{Eagle}
-			\subsubsection{der Schrittmotor ?}
-		\subsection{Realisierung der Schaltung}
-			\subsubsection{Motorsteuerung}
-			\subsubsection{IR-Receiver}
-			\subsubsection{Display}
-			\subsubsection{Anschlagerkennung durch Strommessung}
-			\subsubsection{Anschlagerkennung durch Endschalter}
-			\subsubsection{Gesamtschaltung}
-		\subsection{Software}
-		\subsection{Das Gahäuse}
-			\subsubsection{Motorgehäuse}
-			\subsubsection{Displaygehäuse}
-			\subsubsection{Gehäuseständer}
-		\subsection{Inbetriebnahme}
-	\section{Anhänge}
-		\subsection{Tabelle Teileübersicht}
-		\subsection{Datenblätter}
+		gibts sowas schon?\newline
+		Fernsteuerungen für Pegeleinstellungen sind nicht neu auf dem Markt. Dabei sind zwei Varianten verbreitet, zum Einen besteht die Möglichkeit,
+		den Potentiometer auf der Platine des Lautsprechers auszutauschen, zum Anderen die Integrierung eines Controllers in den Signalweg.
+		Die erste Variante setzt somit die Öffnung des Lautsprechergehäuses sowie Manipulation der Elektronik vorraus. Dies ist nicht nur für den durchschnittlichen
+		Lautsprecherbesitzer ein schwieriger Eingriff, sondern hat ebenfalls Einfluss auf diverse Garantieansprüche.\newline
+		Die andere Variante beinhaltet keine Veränderungen am Lautsprecher selbst, regelt jedoch nur die Signalpegel zum Lautsprecher hin und nicht den 
+		integrierten Verstärker. Somit muss für diese Version der Verstärker stets auf Maximum geregelt sein, dies hat je nach Verstärker Einflüsse
+		auf Soundqualität und Stromverbrauch.
+	\chapter{Theorie-Teil}
+		Das folgende Kapitel beinhaltet die theoretischen Bestandteile zur Umsetzung der Idee. Diese bilden in ihrer Gesamtheit das Konzept,
+		nachdem der Prototyp entwickelt wird.
+		\section{Theorie Hardware}
+		\label{sec:Theorie Hardware}
+			\sloppy \nohyphens{
+			Lautstärkeregler sind in den meisten Fällen Potentiometer oder Inkrementalgeber% [https://de.wikipedia.org/wiki/Lautst%C3%A4rkeregler]
+			Diese besitzen in der Regel eine 6mm oder 6.35mm Achse, in D-Form oder geriffelt.
+			Um diese Achse rotieren zu können muss also ein Motor mit einer passenden Kupplung angebracht werden. Für präzise Kontrolle und ausreichendes Drehmoment 
+			ist ein Schrittmotor geeignet. Diese gibt es in verschiedenen Ausfertigungen: Unipolar und Bipolar. 
+			Unipolare Schrittmotoren haben vier Phasen und werden nur in einer Richtung von Strom durchflossen. Bipolare polen ihre Magnetfelder durch 
+			Umkehrung der Stromrichtung um, sie haben zwei Phasen, erreichen ein höheres Drehmoment und sind durch ihre Funktionsweise etwas aufwendiger anzusteuern. 
+			Für eine Schrittmotorsteuerung sind drei Funktionseinheiten notwendig. Diese bestehen aus Mikrocontroller, Steuerschaltung und Treiberstufen.
+			Für dieses Projekt ist ein unipolarer Schrittmotor ausreichend, da keine hohen Drehmomente erreicht werden müssen. Dies hat den Vorteil, dass 
+			die Steuerschaltung rein auf Softwarebasis gelegt werden kann. Als Treiber soll eine Darlington-Schaltung die Steuersignale für den Motor verstärken. 
+			Die softwaretechnische Besteuerung ist durch ein Arduino mit integriertem Mikrocontroller angestrebt, dessen Spannungsversorgung von 5V 
+			idealer Weise auch für die anderen Komponenten ausreichen soll, sodass ein Betrieb des Gerätes durch USB-Spannungsversorgung ermöglicht wird. 
+			Da analoge Drehregler durch eine Minimal- und Maximalstellung begrenzt sind, ist auch der Antrieb des Motors in diesen Bereichen zu stoppen. 
+			In erster Linie sollen Endschalter den Potentiometeranschlag erkennen und software-gesteuert die Rotation einstellen. Redundant dazu wird der Strohmverbrauch 
+			des Schrittmotors durch die Kombination eines nicht-invertierenden Verstäkers und dem Analog-Digital-Wandlers vom Mikrocontroller überwacht. 
+			Für die Bedienung des Gerätes soll ein Infrarotempfänger mit passender Fernbedienung im Frequenzbereich verwendet werden. Da sich Lautstärkeregler 
+			meist nicht sichtbar am Lautsprecher befinden, ein IR-Empfänger jedoch eine quasioptische verbindung vorraussetzt, bieten sich zwei getrennte 
+			Gehäuseteile an, die durch ein Kabel verbunden sind. In dem sichtbaren Gehäuse befindet sich ebenfalls das Display.}
+		\newpage
+		\section{Theorie Software}
+		\label{sec:Theorie Software}
+			Softwaretechnisch sind drei Bereiche abzudecken, genannt seien die Programmierung des Mikrocontrollers an sich, das Entwerfen eines Platinenlayouts 
+			sowie der Entwurf der Gehäuse für den 3D-Druck.
+			Bei der Programmierung des Mikrocontrollers soll beachtet werden, dass die aktuellen Werte der Motorstellung und der dazugehörigen Lautstärkeanzeige
+			gespeichert werden, damit bei jeder Inbetriebnahme die jeweils vorherigen Werte beibehalten bleiben. Die einzige Schnittstelle zum 
+			Benutzer ist das Display, daher müssen Fehler, Warnungen und wichtige Informationen auf dem Display abgebildet werden. Alle variablen Funktionen des Gerätes 
+			sollen über die Fernbedienung steuerbar sein, also die Steuerung der Lautstärke, aber auch das Aktivieren, bzw. Deaktivieren der Displaybeleuchtung.
+		\section{Theorie Mechanik}
+			Die Übertragung des Drehmoments vom Motor an den Drehregler des Lautsprechers kann nur stattfinden, wenn der Motor starr gelagert ist. Daher ist das Gehäuse 
+			mit Motor und Motorsteuerung zu fixieren. Weiterhin sind Lautstärkeregler an verschiedenen Lautsprechern auch an verschiedenen Positionen, sodass dieses Gehäuse 
+			zusätzlich in seiner Position variabel positionierbar sein muss. Einige Lautsprecher mit stärkeren Verstärkern haben zusätzlich Kühlkörper an der Lautsprecherrückseite, 
+			aus diesem Grund und der Tatsache, dass eventuell weitere Regler (Phase, TP, EQ) vorhanden sind, ist ein gewisser Abstand zwischen den Gehäusen notwendig.
+			Auch die Positionen der Endanschläge sind nicht überall gleich, das bedeutet, dass auch die Endschalter in ihrer Position variierbar sein müssen.
+		\label{sec:Theorie Mecanik}
+	\chapter{Praxis-Teil}
+		\section{verwendetes Material?}
+			\subsection{der Arduino Nano}
+			\subsection{die Arduino IDE}
+			\subsection{FreeCad}
+			\subsection{Cura}
+			\subsection{Eagle}
+			\subsection{der Schrittmotor ?}
+		\section{Realisierung der Schaltung}
+			\subsection{Motorsteuerung}
+			\subsection{IR-Receiver}
+			\subsection{Display}
+			\subsection{Anschlagerkennung durch Strommessung}
+			\subsection{Anschlagerkennung durch Endschalter}
+			\subsection{Gesamtschaltung}
+		\section{Software}
+		\section{Das Gahäuse}
+			\subsection{Motorgehäuse}
+			\subsection{Displaygehäuse}
+			\subsection{Gehäuseständer}
+		\section{Inbetriebnahme}
+	\chapter{Anhänge}
+		\section{Tabelle Teileübersicht}
+		\section{Datenblätter}
 			Eine Tabelle mit der Auflistung aller Einzelteile mit anschließenden wichtigen Bereichen der Datenblätter.
 			Die gesamten Datenblätter werden nicht eingefügt, jedoch ein Link der zu einem derzeitigen Datenblatt im Internet führt.
-		\subsection{Schaltplan}
+		\section{Schaltplan}
 			Die 2 Schaltpläne der eigenen Platinen.
-		\subsection{Layout}
+		\section{Layout}
 			Die 2 Platinenlayouts.
-		\subsection{Abmessungen}
+		\section{Abmessungen}
 			Technische Zeichnungen von FreeCAD mit den Abmessungen der Gehäuse.
-		\subsection{Quellcode}
+		\section{Quellcode}
 			Ausschnitte des Quellcodes.
 	
 \end{document}
