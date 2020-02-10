@@ -56,7 +56,14 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
     \label{sec:Abkürzungsverzeichnis}
     \vspace{1cm}
     \begin{acronym}
-        \acro{hsel}[HSEL]{Hochschule Emden Leer}
+		\acro{hsel}[HSEL]{Hochschule Emden Leer}
+		\acro{cad}[CAD]{computer-aided design}
+		\acro{eeprom}[EEPROM]{electrically erasable programmable read-only memory}
+		\acro{eq}[EQ]{Equalizer}
+		\acro{ide}[IDE]{Integrated Development Environment}
+		\acro{io}[I/O]{Input / Output}
+		\acro{tp}[TP]{Tiefpass}
+		\acro{usb}[USB]{Universal Serial Bus}
     \end{acronym}
 	\newpage
 	\chapter{Prolog}
@@ -87,23 +94,23 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 		\section{Theorie Hardware}
 		\label{sec:Theorie Hardware}
 			\sloppy \nohyphens{
-			Lautstärkeregler sind in den meisten Fällen Potentiometer oder Inkrementalgeber% [https://de.wikipedia.org/wiki/Lautst%C3%A4rkeregler]
+			Lautstärkeregler sind in den meisten Fällen Potentiometer oder Inkrementalgeber. % [https://de.wikipedia.org/wiki/Lautst%C3%A4rkeregler]
 			Diese besitzen in der Regel eine 6mm oder 6.35mm Achse, in D-Form oder geriffelt.
 			Um diese Achse rotieren zu können muss also ein Motor mit einer passenden Kupplung angebracht werden. Für präzise Kontrolle und ausreichendes Drehmoment 
-			ist ein Schrittmotor geeignet. Diese gibt es in verschiedenen Ausfertigungen: Unipolar und Bipolar. 
+			ist ein Schrittmotor geeignet. Diesen gibt es in verschiedenen Ausfertigungen: Unipolar und Bipolar. 
 			Unipolare Schrittmotoren haben vier Phasen und werden nur in einer Richtung von Strom durchflossen. Bipolare polen ihre Magnetfelder durch 
 			Umkehrung der Stromrichtung um, sie haben zwei Phasen, erreichen ein höheres Drehmoment und sind durch ihre Funktionsweise etwas aufwendiger anzusteuern. 
 			Für eine Schrittmotorsteuerung sind drei Funktionseinheiten notwendig. Diese bestehen aus Mikrocontroller, Steuerschaltung und Treiberstufen.
 			Für dieses Projekt ist ein unipolarer Schrittmotor ausreichend, da keine hohen Drehmomente erreicht werden müssen. Dies hat den Vorteil, dass 
-			die Steuerschaltung rein auf Softwarebasis gelegt werden kann. Als Treiber soll eine Darlington-Schaltung die Steuersignale für den Motor verstärken. 
+			die Steuerschaltung rein auf Softwarebasis gelegt werden kann. Als Treiber soll eine Darlington-Schaltung für den Motor dienen. 
 			Die softwaretechnische Besteuerung ist durch ein Arduino mit integriertem Mikrocontroller angestrebt, dessen Spannungsversorgung von 5V 
 			idealer Weise auch für die anderen Komponenten ausreichen soll, sodass ein Betrieb des Gerätes durch USB-Spannungsversorgung ermöglicht wird. 
 			Da analoge Drehregler durch eine Minimal- und Maximalstellung begrenzt sind, ist auch der Antrieb des Motors in diesen Bereichen zu stoppen. 
-			In erster Linie sollen Endschalter den Potentiometeranschlag erkennen und software-gesteuert die Rotation einstellen. Redundant dazu wird der Strohmverbrauch 
-			des Schrittmotors durch die Kombination eines nicht-invertierenden Verstäkers und dem Analog-Digital-Wandlers vom Mikrocontroller überwacht. 
+			In erster Linie sollen Endschalter den Potentiometeranschlag erkennen und software-gesteuert die Rotation einstellen. Redundant dazu wird der Stromverbrauch 
+			des Schrittmotors durch die Kombination eines nicht-invertierenden Verstäkers und dem Analog-Digital-Wandler vom Mikrocontroller überwacht. 
 			Für die Bedienung des Gerätes soll ein Infrarotempfänger mit passender Fernbedienung im Frequenzbereich verwendet werden. Da sich Lautstärkeregler 
 			meist nicht sichtbar am Lautsprecher befinden, ein IR-Empfänger jedoch eine quasioptische verbindung vorraussetzt, bieten sich zwei getrennte 
-			Gehäuseteile an, die durch ein Kabel verbunden sind. In dem sichtbaren Gehäuse befindet sich ebenfalls das Display.}
+			Gehäuseteile an, die durch ein Kabel verbunden sind. In dem sichtbaren Gehäuse befindet sich zusätzlich das Display.}
 		\newpage
 		\section{Theorie Software}
 		\label{sec:Theorie Software}
@@ -121,26 +128,99 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 			Auch die Positionen der Endanschläge sind nicht überall gleich, das bedeutet, dass auch die Endschalter in ihrer Position variierbar sein müssen.
 		\label{sec:Theorie Mecanik}
 	\chapter{Praxis-Teil}
+	\label{sec:Praxistil}
+		Folgendes Kapitel beinhaltet die Beschreibung aller im RotaCon verwendeten Bestandteile, sowie der Software, die zum Entwickeln benutzt wurden.
+		Es wird auf die Programmierung des Mikrokontrollers eingegangen, die elektronische Schaltung und der Entwurf der Gehäuse wird erläutert.
 		\section{verwendetes Material?}
 			\subsection{der Arduino Nano}
+			\label{sec:Nano}
+				%Arduino Praxiseinstieg 2.3 Seite 23?
+				%https://store.arduino.cc/arduino-nano
+				Arduino ist eine Open-Source Elektronik Plattform, die aus zwei Teilen besteht. Einem Hardware- und einem Softwareteil. 
+				Der Hardware-Teil ist eine Microcontroller-Schaltung mit serieller Schnittstelle. Diese ''Microcontroller-Boards'' gibt es in 
+				verschiedenen Ausführungen und unterscheiden sich in ihrer Größe, dem verwendeten Microcontroller und den somit einhergehenden 
+				Eigenschaften von Ein- und Ausgängen. Die Eingänge können Daten von Sensoren einlesen, die Ausgänge dienen zur Ansteuerung von Motoren, Dioden, 
+				Relais oder anderen elektronischen Komponenten. Die Spannungsversorgung kann über die USB-Schnittstelle oder externem Netzteil erfolgen.
+				Der im RotaCon verwendete Arduino Nano ist eine Leiterplattenversion von geringer Baugröße und nutzt als Basis den ATmega328.
+				Der Arduino Nano hat insgesamt 22 I/O-Pins, 8 davon können als analoge Eingänge benutzt werden. Die logische Spannung des Nanos beträgt 5V, die maximale Stromstärke pro Pin 40 mA.
+				Mit einer Taktrate von 16 MHz und einem integrierten Speicher (EEPROM) von 1KB ist der Arduino Nano in seinen Funktionen ideal für dieses Projekt.
 			\subsection{die Arduino IDE}
-			\subsection{FreeCad}
+			\label{sec:Arduino IDE}
+				%gleiche Quellen wie oben
+				Die Entwicklungsumgebung der Arduino-Plattform stellt den Softareteil dar und basiert auf Processing, einer stark typisierten Prgrammiersprache 
+				mit integrierter Entwicklungsumgebung. Die Prgrammiersprache ähnelt C++ und ist darauf ausgelegt ohne tiefgründige Programmierkenntnisse 
+				Programme schreiben zu können. Programme dieser IDE werden Sketch genannt. Dieser Sketch wird in der IDE compiliert und kann via USB direkt auf den Speicher 
+				des Arduino-Boards geladen werden. Ein in die IDE integrierter serieller Monitor kann die jeweiligen Zustände der Ein- und Ausgänge überwachen und 
+				ist ein Hilfsmittel zur Fehlersuche in der Entwicklungsphase.
+			\subsection{FreeCAD}
+			\label{sec:FreeCAD}
+				FreeCAD ist eine parametrische Modellierungsanwendung. 3D-Objekte können mit hoher Päzision modelliert und angeordnet 
+				werden. Vorteil gegenüber einer Modellierungsanwendung wie Cinema 4D besteht in der Möglichkeit der Herstellung von Unterlagen 
+				zum designten Modell. So können beispielsweise technische Zeichnungen und Montagepläne erstellt werden. 
+				Die Anwendung ist ein Open-Source Projekt, daher wird es gemeinschaftlich weiterentwickelt und wächst in seinem Funktionsumfang.
+				%https://www.freecadweb.org/wiki/Getting_started/de
+				%https://de.wikipedia.org/wiki/CAD#Herstellen_von_Fertigungs-/Herstellungsunterlagen
 			\subsection{Cura}
+			\label{sec:Cura}
+				%https://de.wikipedia.org/wiki/Slicer-Software
+				%https://ultimaker.com/download/170/Cura_User-Manual_v1.0.pdf
+				Cura ist eine Slicing Software von der Firma Ultimaker. Dieses Programm ist für die Umwandlung von 3D-Objektmodellen in spezifische 
+				Druckanweisungen verantwortlich. Dazu wird ein 3D-Modell zu einem Stapel von flachen Schichten umgerechnet beziehungsweise ''zerschnitten''.
+				Zusätzliche Einstellungen für den 3D-Drucker werden vorgegeben, sodass Druckablauf, Temperaturen von Druckbett und Extruder, Filament-Art, 
+				Vortriebsgeschwindigkeiten und gegebenenfalls Stützen für den Druck von Überhängen festgelegt sind.
 			\subsection{Eagle}
+			\label{sec:Eagle}
+				%http://dl36mmdz94630.cloudfront.net/uploads/eagle_resources/files/000/002/278/original/step-by-step_tutorial.pdf?1484967932
+				Die Software Eagle von Autodesk ist ein Platinen-CAD Programm zum entwerfen von Schaltplänen und Platinenlayouts. Dabei sind zwei Hauptschritte 
+				der Bearbeitung auszuführen. Zum Einen die Gestaltung des Schaltplans, dazu bietet Eagle durch Einbinden von Biblitheken annähernd alle erdenklichen 
+				Schaltsymbole und Bezeichnungen die für den Entwurf der Schaltung notwendig sind. Zusätzlich können manuell Symbole erstellt werden, falls spezielle 
+				unkonventionelle oder eigens entwickelte Elemente verwendet werden.
+				Im zweiten Schritt wird das Layout der Platine entworfen, um die Leiterbahnen und Bohrungen passend zu platzieren und dimensionieren.
 			\subsection{der Schrittmotor ?}
+			\label{sec:Motor}
+				%Fachkunde Elektrotechnik Seite 460
+				Der im RotaCon verwendete unipolare Schrittmotor \textit{28BYJ-48} hat vier Phasen. Das bedeutet vier Elektromagneten steuern die Bewegung 
+				des Dauermagnetrotors. Diese vier Elektromagneten werden durch zwei Spulen realisiert, deren Wicklungen je hälftig aufgeteilt und entgegengesetzt gewickelt sind. Sie sind statisch 
+				um den Rotor angeordnet. Die einzelnen Phasen werden nur in einer Richtung von Strom durchflossen und steuern so die Polung der Magneten beziehungsweise 
+				die Rotationsrichtung des Motors. Die Versorgungsspannung beträgt 5V und der Wiederstand einer Spule ist mit 50$\Omega$ +- 7\% angegeben. Je nach Einphasensteuerung oder 
+				Zweiphasensteuerung ergeben sich daher Ströme von etwa 100mA (zweiphasig), bzw 200mA (einphasig).
+				Bei Schrittmotoren werden im Datenblatt Schrittwinkel und Getriebeübersetzung angegeben. Der hier verwendete Motor hat einen Schrittwinkel von 5,625° bei 64 Schritten 
+				angegeben und ein Getriebeverhältnis von 1/64. Daraus ergibt sich, dass eine volle Umdrehung der Motorachse 4096 Schritte benötigt. Diese Winkelangabe bezieht sich auf 
+				einen Halbschrittbetrieb, daher ist im Vollschrittbetrieb der Schrittwinkel 11,25° beziehungsweise entspricht eine Achsenumdrehung 2048 Schritte.
+		\newpage
 		\section{Realisierung der Schaltung}
 			\subsection{Motorsteuerung}
+				%ULN, Darlington, Motormesswerte der Wiederstände, Berechnung der Ströme und Leistungen
+				Eine Darlington-Schaltung ist eine Schaltung aus mehreren Transistoren mit hoher Stromverstärkung und wird zur Schaltung beziehungsweise Steuerung großer 
+				Lasten eingesetzt. Dabei können die nötigen Steuerströme gering gehalten werden. Der hier verwendete ULN2003 beinhaltet mehrere Darlinton-Transistoren in einem 
+				Gehäuse und Vorraussetzung um die niedrigen Steuerströme des Arduinos zum Treiben des Motors zu verwenden. Gemäß Datenblatt ist die Kollektor-Emitter-Sättigungs-Spannung im leitenden 
+				Zustand zwischen 0,9 und 1,3 Volt bei oben angenommenen 100mA bis 200mA.
+				\begin{figure}[htbp]
+					\centering
+					\includegraphics[width=\linewidth]{./img/Motorsteuerung.png}
+					\caption{ Ansteuerung des Motors durch Arduino und  Darlington-Transistortreiber ULN2003.
+					\label{fig:imgMotorsteuerung}}
+				\end{figure}
 			\subsection{IR-Receiver}
+				%FilterKondensator, FrqBank, Pullup
 			\subsection{Display}
+				%LCD 16.2, Pinbelegung, Kontrastberechnung
 			\subsection{Anschlagerkennung durch Strommessung}
+				%OP-Verstärker, Berechnung, vergleich mit Messungen/Erwartungen (TABELLE?)
 			\subsection{Anschlagerkennung durch Endschalter}
+				%Redundanz, pullUp
 			\subsection{Gesamtschaltung}
+				%SChaltpläne eventuell als Beginn des Kapitels?
+				%Verbindung der Gehäuse mit DSUB9, Polbelegung DSUB
 		\section{Software}
-		\section{Das Gahäuse}
+			%Matrizen zur Motorsteuerung, case für IR-auslesen, Messung und Minimalwert
+		\section{Das Gehäuse}
 			\subsection{Motorgehäuse}
+				%Zeichnung, Modell, gesliced, fertigstück ?
+				%Besonderheiten/Probleme
 			\subsection{Displaygehäuse}
 			\subsection{Gehäuseständer}
-		\section{Inbetriebnahme}
+		\section{Inbetriebnahme / Probleme / Zusammenfassung / Ausblick}
 	\chapter{Anhänge}
 		\section{Tabelle Teileübersicht}
 		\section{Datenblätter}

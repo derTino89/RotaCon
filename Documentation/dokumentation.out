@@ -10,7 +10,7 @@
 \BOOKMARK [1][-]{section.3.1}{verwendetes Material?}{chapter.3}% 10
 \BOOKMARK [2][-]{subsection.3.1.1}{der Arduino Nano}{section.3.1}% 11
 \BOOKMARK [2][-]{subsection.3.1.2}{die Arduino IDE}{section.3.1}% 12
-\BOOKMARK [2][-]{subsection.3.1.3}{FreeCad}{section.3.1}% 13
+\BOOKMARK [2][-]{subsection.3.1.3}{FreeCAD}{section.3.1}% 13
 \BOOKMARK [2][-]{subsection.3.1.4}{Cura}{section.3.1}% 14
 \BOOKMARK [2][-]{subsection.3.1.5}{Eagle}{section.3.1}% 15
 \BOOKMARK [2][-]{subsection.3.1.6}{der Schrittmotor ?}{section.3.1}% 16
@@ -22,11 +22,11 @@
 \BOOKMARK [2][-]{subsection.3.2.5}{Anschlagerkennung durch Endschalter}{section.3.2}% 22
 \BOOKMARK [2][-]{subsection.3.2.6}{Gesamtschaltung}{section.3.2}% 23
 \BOOKMARK [1][-]{section.3.3}{Software}{chapter.3}% 24
-\BOOKMARK [1][-]{section.3.4}{Das Gah\344use}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.4}{Das Geh\344use}{chapter.3}% 25
 \BOOKMARK [2][-]{subsection.3.4.1}{Motorgeh\344use}{section.3.4}% 26
 \BOOKMARK [2][-]{subsection.3.4.2}{Displaygeh\344use}{section.3.4}% 27
 \BOOKMARK [2][-]{subsection.3.4.3}{Geh\344usest\344nder}{section.3.4}% 28
-\BOOKMARK [1][-]{section.3.5}{Inbetriebnahme}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.5}{Inbetriebnahme / Probleme / Zusammenfassung / Ausblick}{chapter.3}% 29
 \BOOKMARK [0][-]{chapter.4}{Anh\344nge}{}% 30
 \BOOKMARK [1][-]{section.4.1}{Tabelle Teile\374bersicht}{chapter.4}% 31
 \BOOKMARK [1][-]{section.4.2}{Datenbl\344tter}{chapter.4}% 32

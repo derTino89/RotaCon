@@ -9,30 +9,30 @@
 \contentsline {section}{\numberline {2.2}Theorie Software}{7}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Theorie Mechanik}{7}{section.2.3}%
 \contentsline {chapter}{\numberline {3}Praxis-Teil}{8}{chapter.3}%
-\contentsline {section}{\numberline {3.1}verwendetes Material?}{9}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}der Arduino Nano}{9}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}die Arduino IDE}{9}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}FreeCad}{9}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.1}verwendetes Material?}{8}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}der Arduino Nano}{8}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}die Arduino IDE}{8}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}FreeCAD}{8}{subsection.3.1.3}%
 \contentsline {subsection}{\numberline {3.1.4}Cura}{9}{subsection.3.1.4}%
 \contentsline {subsection}{\numberline {3.1.5}Eagle}{9}{subsection.3.1.5}%
 \contentsline {subsection}{\numberline {3.1.6}der Schrittmotor ?}{9}{subsection.3.1.6}%
-\contentsline {section}{\numberline {3.2}Realisierung der Schaltung}{9}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Motorsteuerung}{9}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}IR-Receiver}{9}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Display}{9}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Anschlagerkennung durch Strommessung}{9}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Anschlagerkennung durch Endschalter}{9}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}Gesamtschaltung}{9}{subsection.3.2.6}%
-\contentsline {section}{\numberline {3.3}Software}{9}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Das Gahäuse}{9}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Motorgehäuse}{9}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Displaygehäuse}{9}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Gehäuseständer}{9}{subsection.3.4.3}%
-\contentsline {section}{\numberline {3.5}Inbetriebnahme}{9}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Anhänge}{10}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Tabelle Teileübersicht}{10}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Datenblätter}{10}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Schaltplan}{10}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Layout}{10}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Abmessungen}{10}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Quellcode}{10}{section.4.6}%
+\contentsline {section}{\numberline {3.2}Realisierung der Schaltung}{10}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Motorsteuerung}{10}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}IR-Receiver}{10}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Display}{10}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Anschlagerkennung durch Strommessung}{10}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Anschlagerkennung durch Endschalter}{10}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Gesamtschaltung}{10}{subsection.3.2.6}%
+\contentsline {section}{\numberline {3.3}Software}{10}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Das Gehäuse}{10}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Motorgehäuse}{10}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Displaygehäuse}{10}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Gehäuseständer}{10}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Inbetriebnahme / Probleme / Zusammenfassung / Ausblick}{10}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Anhänge}{11}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Tabelle Teileübersicht}{11}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Datenblätter}{11}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Schaltplan}{11}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Layout}{11}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Abmessungen}{11}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Quellcode}{11}{section.4.6}%
