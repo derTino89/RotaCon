@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.16)  10 FEB 2020 17:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.16)  12 FEB 2020 22:37
 entering extended mode
 **"e:/OneDrive/Fachhochschule/Medienelektronik/Mein Projekt/RotaCon/Documentation/dokumentation.tex"
 ("e:/OneDrive/Fachhochschule/Medienelektronik/Mein Projekt/RotaCon/Documentation/dokumentation.tex"
@@ -958,7 +958,26 @@ LaTeX Info: Redefining \lslig on input line 914.
 Package microtype Info: Loading configuration file microtype.cfg.
  ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\microtype.cfg"
 File: microtype.cfg 2019/11/18 v2.7d microtype main configuration file (RS)
-)) ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.sty"
+)) ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/latex/booktabs\booktabs.sty"
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen187
+\lightrulewidth=\dimen188
+\cmidrulewidth=\dimen189
+\belowrulesep=\dimen190
+\belowbottomsep=\dimen191
+\aboverulesep=\dimen192
+\abovetopsep=\dimen193
+\cmidrulesep=\dimen194
+\cmidrulekern=\dimen195
+\defaultaddspace=\dimen196
+\@cmidla=\count316
+\@cmidlb=\count317
+\@aboverulesep=\dimen197
+\@belowrulesep=\dimen198
+\@thisruleclass=\count318
+\@lastruleclass=\count319
+\@thisrulewidth=\dimen199
+) ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.sty"
 Package: babel 2019/12/08 3.37 The Babel package
  ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\switch.def"
 File: switch.def 2019/12/08 3.37 Babel switching mechanism
@@ -974,10 +993,10 @@ Language: ngerman 2018/12/08 v2.11 German support for babel (post-1996 orthograp
 Language: ngermanb 2018/12/08 v2.11 German support for babel (post-1996 orthography)
  ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.def"
 File: babel.def 2019/12/08 3.37 Babel common definitions
-\babel@savecnt=\count316
-\U@D=\dimen187
+\babel@savecnt=\count320
+\U@D=\dimen256
  ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel.def")
-\bbl@dirlevel=\count317
+\bbl@dirlevel=\count321
 )
 Package babel Info: Making " an active character on input line 121.
 )) ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-german\german.ldf"
@@ -988,53 +1007,53 @@ Language: germanb 2018/12/08 v2.11 German support for babel (pre-1996 orthograph
 Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
  ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/latex/logreq\logreq.sty"
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count318
+\lrq@indent=\count322
  ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/latex/logreq\logreq.def"
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count319
-\c@listtotal=\count320
-\c@listcount=\count321
-\c@liststart=\count322
-\c@liststop=\count323
-\c@citecount=\count324
-\c@citetotal=\count325
-\c@multicitecount=\count326
-\c@multicitetotal=\count327
-\c@instcount=\count328
-\c@maxnames=\count329
-\c@minnames=\count330
-\c@maxitems=\count331
-\c@minitems=\count332
-\c@citecounter=\count333
-\c@maxcitecounter=\count334
-\c@savedcitecounter=\count335
-\c@uniquelist=\count336
-\c@uniquename=\count337
-\c@refsection=\count338
-\c@refsegment=\count339
-\c@maxextratitle=\count340
-\c@maxextratitleyear=\count341
-\c@maxextraname=\count342
-\c@maxextradate=\count343
-\c@maxextraalpha=\count344
-\c@abbrvpenalty=\count345
-\c@highnamepenalty=\count346
-\c@lownamepenalty=\count347
-\c@maxparens=\count348
-\c@parenlevel=\count349
-\blx@tempcnta=\count350
-\blx@tempcntb=\count351
-\blx@tempcntc=\count352
-\blx@maxsection=\count353
-\blx@maxsegment@0=\count354
-\blx@notetype=\count355
-\blx@parenlevel@text=\count356
-\blx@parenlevel@foot=\count357
-\blx@sectionciteorder@0=\count358
-\blx@entrysetcounter=\count359
+\c@tabx@nest=\count323
+\c@listtotal=\count324
+\c@listcount=\count325
+\c@liststart=\count326
+\c@liststop=\count327
+\c@citecount=\count328
+\c@citetotal=\count329
+\c@multicitecount=\count330
+\c@multicitetotal=\count331
+\c@instcount=\count332
+\c@maxnames=\count333
+\c@minnames=\count334
+\c@maxitems=\count335
+\c@minitems=\count336
+\c@citecounter=\count337
+\c@maxcitecounter=\count338
+\c@savedcitecounter=\count339
+\c@uniquelist=\count340
+\c@uniquename=\count341
+\c@refsection=\count342
+\c@refsegment=\count343
+\c@maxextratitle=\count344
+\c@maxextratitleyear=\count345
+\c@maxextraname=\count346
+\c@maxextradate=\count347
+\c@maxextraalpha=\count348
+\c@abbrvpenalty=\count349
+\c@highnamepenalty=\count350
+\c@lownamepenalty=\count351
+\c@maxparens=\count352
+\c@parenlevel=\count353
+\blx@tempcnta=\count354
+\blx@tempcntb=\count355
+\blx@tempcntc=\count356
+\blx@maxsection=\count357
+\blx@maxsegment@0=\count358
+\blx@notetype=\count359
+\blx@parenlevel@text=\count360
+\blx@parenlevel@foot=\count361
+\blx@sectionciteorder@0=\count362
+\blx@entrysetcounter=\count363
 \labelnumberwidth=\skip61
 \labelalphawidth=\skip62
 \biblabelsep=\skip63
@@ -1046,9 +1065,9 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \blx@bcfin=\read2
 \blx@bcfout=\write3
 \blx@langwohyphens=\language79
-\c@mincomprange=\count360
-\c@maxcomprange=\count361
-\c@mincompwidth=\count362
+\c@mincomprange=\count364
+\c@maxcomprange=\count365
+\c@mincompwidth=\count366
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\blx-dm.def"
@@ -1058,74 +1077,74 @@ Package biblatex Info: Trying to load biblatex citestyle data model...
 Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count363
-\c@savedafterword=\count364
-\c@annotator=\count365
-\c@savedannotator=\count366
-\c@author=\count367
-\c@savedauthor=\count368
-\c@bookauthor=\count369
-\c@savedbookauthor=\count370
-\c@commentator=\count371
-\c@savedcommentator=\count372
-\c@editor=\count373
-\c@savededitor=\count374
-\c@editora=\count375
-\c@savededitora=\count376
-\c@editorb=\count377
-\c@savededitorb=\count378
-\c@editorc=\count379
-\c@savededitorc=\count380
-\c@foreword=\count381
-\c@savedforeword=\count382
-\c@holder=\count383
-\c@savedholder=\count384
-\c@introduction=\count385
-\c@savedintroduction=\count386
-\c@namea=\count387
-\c@savednamea=\count388
-\c@nameb=\count389
-\c@savednameb=\count390
-\c@namec=\count391
-\c@savednamec=\count392
-\c@translator=\count393
-\c@savedtranslator=\count394
-\c@shortauthor=\count395
-\c@savedshortauthor=\count396
-\c@shorteditor=\count397
-\c@savedshorteditor=\count398
-\c@labelname=\count399
-\c@savedlabelname=\count400
-\c@institution=\count401
-\c@savedinstitution=\count402
-\c@lista=\count403
-\c@savedlista=\count404
-\c@listb=\count405
-\c@savedlistb=\count406
-\c@listc=\count407
-\c@savedlistc=\count408
-\c@listd=\count409
-\c@savedlistd=\count410
-\c@liste=\count411
-\c@savedliste=\count412
-\c@listf=\count413
-\c@savedlistf=\count414
-\c@location=\count415
-\c@savedlocation=\count416
-\c@organization=\count417
-\c@savedorganization=\count418
-\c@origlocation=\count419
-\c@savedoriglocation=\count420
-\c@origpublisher=\count421
-\c@savedorigpublisher=\count422
-\c@publisher=\count423
-\c@savedpublisher=\count424
-\c@language=\count425
-\c@savedlanguage=\count426
-\c@origlanguage=\count427
-\c@savedoriglanguage=\count428
-\c@pageref=\count429
-\c@savedpageref=\count430
+\c@afterword=\count367
+\c@savedafterword=\count368
+\c@annotator=\count369
+\c@savedannotator=\count370
+\c@author=\count371
+\c@savedauthor=\count372
+\c@bookauthor=\count373
+\c@savedbookauthor=\count374
+\c@commentator=\count375
+\c@savedcommentator=\count376
+\c@editor=\count377
+\c@savededitor=\count378
+\c@editora=\count379
+\c@savededitora=\count380
+\c@editorb=\count381
+\c@savededitorb=\count382
+\c@editorc=\count383
+\c@savededitorc=\count384
+\c@foreword=\count385
+\c@savedforeword=\count386
+\c@holder=\count387
+\c@savedholder=\count388
+\c@introduction=\count389
+\c@savedintroduction=\count390
+\c@namea=\count391
+\c@savednamea=\count392
+\c@nameb=\count393
+\c@savednameb=\count394
+\c@namec=\count395
+\c@savednamec=\count396
+\c@translator=\count397
+\c@savedtranslator=\count398
+\c@shortauthor=\count399
+\c@savedshortauthor=\count400
+\c@shorteditor=\count401
+\c@savedshorteditor=\count402
+\c@labelname=\count403
+\c@savedlabelname=\count404
+\c@institution=\count405
+\c@savedinstitution=\count406
+\c@lista=\count407
+\c@savedlista=\count408
+\c@listb=\count409
+\c@savedlistb=\count410
+\c@listc=\count411
+\c@savedlistc=\count412
+\c@listd=\count413
+\c@savedlistd=\count414
+\c@liste=\count415
+\c@savedliste=\count416
+\c@listf=\count417
+\c@savedlistf=\count418
+\c@location=\count419
+\c@savedlocation=\count420
+\c@organization=\count421
+\c@savedorganization=\count422
+\c@origlocation=\count423
+\c@savedoriglocation=\count424
+\c@origpublisher=\count425
+\c@savedorigpublisher=\count426
+\c@publisher=\count427
+\c@savedpublisher=\count428
+\c@language=\count429
+\c@savedlanguage=\count430
+\c@origlanguage=\count431
+\c@savedoriglanguage=\count432
+\c@pageref=\count433
+\c@savedpageref=\count434
 \shorthandwidth=\skip69
 \shortjournalwidth=\skip70
 \shortserieswidth=\skip71
@@ -1149,19 +1168,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblatex.def"
 File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
-\c@textcitecount=\count431
-\c@textcitetotal=\count432
-\c@textcitemaxnames=\count433
-\c@biburlbigbreakpenalty=\count434
-\c@biburlbreakpenalty=\count435
-\c@biburlnumpenalty=\count436
-\c@biburlucpenalty=\count437
-\c@biburllcpenalty=\count438
+\c@textcitecount=\count435
+\c@textcitetotal=\count436
+\c@textcitemaxnames=\count437
+\c@biburlbigbreakpenalty=\count438
+\c@biburlbreakpenalty=\count439
+\c@biburlnumpenalty=\count440
+\c@biburlucpenalty=\count441
+\c@biburllcpenalty=\count442
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count439
+\c@smartand=\count443
 )
 Package biblatex Info: Trying to load natbib compatibility...
 Package biblatex Info: ... file 'blx-natbib.def' found.
@@ -1177,8 +1196,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/bbx\standard.bbx"
 File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count440
-\c@bbx:relatedtotal=\count441
+\c@bbx:relatedcount=\count444
+\c@bbx:relatedtotal=\count445
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -1205,65 +1224,65 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'german'.
- ("e:/OneDrive/Fachhochschule/Medienelektronik/Mein Projekt/RotaCon/Documentation\dokumentation.aux")
+ ("e:/OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\dokumentation.aux")
 \openout1 = `dokumentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxsfmi/m/it on input line 34.
-LaTeX Font Info:    Trying to load font information for OML+ntxsfmi on input line 34.
+LaTeX Font Info:    Checking defaults for OML/ntxsfmi/m/it on input line 35.
+LaTeX Font Info:    Trying to load font information for OML+ntxsfmi on input line 35.
  ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/latex/newtxsf\omlntxsfmi.fd"
 File: omlntxsfmi.fd 2014/11/16 Fontinst v1.933 font definitions for OML/ntxsfmi.
 )
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 34.
-LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 34.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 35.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 35.
  ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/latex/newtx\untxexa.fd"
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 34.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 35.
  ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 34.
-LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 34.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 35.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 35.
  ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/latex/newtx\lmsntxsy.fd"
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Trying to load font information for T1+FiraSans-OsF on input line 34.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Trying to load font information for T1+FiraSans-OsF on input line 35.
  ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fira\t1firasans-osf.fd"
 File: T1FiraSans-OsF.fd 2019/10/10 (autoinst) Font definitions for T1/FiraSans-OsF.
 )
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/n' in size <10.95> not available
-(Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on input line 34.
+(Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/n' will be
-(Font)              scaled to size 9.30756pt on input line 34.
+(Font)              scaled to size 9.30756pt on input line 35.
  ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count442
-\scratchdimen=\dimen188
+\scratchcounter=\count446
+\scratchdimen=\dimen257
 \scratchbox=\box62
-\nofMPsegments=\count443
-\nofMParguments=\count444
+\nofMPsegments=\count447
+\nofMParguments=\count448
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count445
-\MPscratchDim=\dimen189
-\MPnumerator=\count446
-\makeMPintoPDFobject=\count447
+\MPscratchCnt=\count449
+\MPscratchDim=\dimen258
+\MPnumerator=\count450
+\makeMPintoPDFobject=\count451
 \everyMPtoPDFconversion=\toks34
 ) ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2019-12-09 v2.10 Base part for package epstopdf
@@ -1276,7 +1295,7 @@ Package grfext Info: Graphics extension search list:
 (grfext)             \AppendGraphicsExtensions on input line 504.
 )
 \AtBeginShipoutBox=\box63
-Package hyperref Info: Link coloring OFF on input line 34.
+Package hyperref Info: Link coloring OFF on input line 35.
  ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/latex/refcount\refcount.sty"
@@ -1284,16 +1303,16 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/generic/gettitlestring\gettitlestring.sty"
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count448
+\c@section@level=\count452
 )
-LaTeX Info: Redefining \ref on input line 34.
-LaTeX Info: Redefining \pageref on input line 34.
-LaTeX Info: Redefining \nameref on input line 34.
- ("e:/OneDrive/Fachhochschule/Medienelektronik/Mein Projekt/RotaCon/Documentation\dokumentation.out") ("e:/OneDrive/Fachhochschule/Medienelektronik/Mein Projekt/RotaCon/Documentation\dokumentation.out")
+LaTeX Info: Redefining \ref on input line 35.
+LaTeX Info: Redefining \pageref on input line 35.
+LaTeX Info: Redefining \nameref on input line 35.
+ ("e:/OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\dokumentation.out") ("e:/OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\dokumentation.out")
 \@outlinefile=\write4
 \openout4 = `dokumentation.out'.
 
-\c@lstlisting=\count449
+\c@lstlisting=\count453
  ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/latex/translator\translator-basic-dictionary-English.dict"
 Dictionary: translator-basic-dictionary, Language: English 
 ) ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/latex/siunitx\siunitx-abbreviations.cfg"
@@ -1333,19 +1352,19 @@ File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@mv@tabular=\count450
-\c@mv@boldtabular=\count451
+\c@mv@tabular=\count454
+\c@mv@boldtabular=\count455
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 34.
+LaTeX Info: Redefining \microtypecontext on input line 35.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 34.
+LaTeX Info: Redefining \showhyphens on input line 35.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1379,34 +1398,34 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'dokumentation.bbl' found.
- ("e:/OneDrive/Fachhochschule/Medienelektronik/Mein Projekt/RotaCon/Documentation\dokumentation.bbl")
-Package biblatex Info: Reference section=0 on input line 34.
-Package biblatex Info: Reference segment=0 on input line 34.
+ ("e:/OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\dokumentation.bbl")
+Package biblatex Info: Reference section=0 on input line 35.
+Package biblatex Info: Reference segment=0 on input line 35.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/n' in size <8> not available
-(Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on input line 34.
+(Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/n' will be
-(Font)              scaled to size 6.80005pt on input line 34.
+(Font)              scaled to size 6.80005pt on input line 35.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/n' in size <6.1> not available
-(Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on input line 34.
+(Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/n' will be
-(Font)              scaled to size 5.18503pt on input line 34.
-LaTeX Font Info:    Trying to load font information for U+ntxsfmia on input line 34.
+(Font)              scaled to size 5.18503pt on input line 35.
+LaTeX Font Info:    Trying to load font information for U+ntxsfmia on input line 35.
  ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/latex/newtxsf\untxsfmia.fd"
 File: untxsfmia.fd 2014/11/16 Fontinst v1.933 font definitions for U/ntxsfmia.
 )
-LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 34.
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 35.
  ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/latex/newtx\untxsym.fd"
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 34.
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 35.
  ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/latex/newtx\untxsyc.fd"
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
-LaTeX Font Info:    Trying to load font information for U+trsy on input line 34.
+LaTeX Font Info:    Trying to load font information for U+trsy on input line 35.
  ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/latex/trsym\utrsy.fd"
 File: utrsy.fd 2000/06/25v1.0transformation symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 34.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 35.
  ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -1417,24 +1436,24 @@ Package microtype Info: Loading generic protrusion settings for font family
 <Technik_Logo.png, id=147, 231.9867pt x 77.8107pt>
 File: Technik_Logo.png Graphic file (type png)
 <use Technik_Logo.png>
-Package pdftex.def Info: Technik_Logo.png  used on input line 36.
+Package pdftex.def Info: Technik_Logo.png  used on input line 37.
 (pdftex.def)             Requested size: 274.34367pt x 92.01123pt.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/n' in size <24.88> not available
-(Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on input line 39.
+(Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/n' will be
-(Font)              scaled to size 21.14815pt on input line 39.
+(Font)              scaled to size 21.14815pt on input line 40.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/n' in size <14.4> not available
-(Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on input line 42.
+(Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on input line 43.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/n' will be
-(Font)              scaled to size 12.24008pt on input line 42.
-LaTeX Font Info:    Trying to load font information for TS1+FiraSans-OsF on input line 44.
+(Font)              scaled to size 12.24008pt on input line 43.
+LaTeX Font Info:    Trying to load font information for TS1+FiraSans-OsF on input line 45.
  ("C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fira\ts1firasans-osf.fd"
 File: TS1FiraSans-OsF.fd 2019/10/10 (autoinst) Font definitions for TS1/FiraSans-OsF.
 )
 LaTeX Font Info:    Font shape `TS1/FiraSans-OsF/m/n' in size <14.4> not available
-(Font)              Font shape `TS1/FiraSans-OsF/regular/n' tried instead on input line 44.
+(Font)              Font shape `TS1/FiraSans-OsF/regular/n' tried instead on input line 45.
 LaTeX Font Info:    Font shape `TS1/FiraSans-OsF/regular/n' will be
-(Font)              scaled to size 12.24008pt on input line 44.
+(Font)              scaled to size 12.24008pt on input line 45.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `FiraSans-OsF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
@@ -1442,16 +1461,16 @@ Package microtype Info: Loading generic protrusion settings for font family
 <welle_hdk.pdf, id=149, 880.36447pt x 216.60803pt>
 File: welle_hdk.pdf Graphic file (type pdf)
 <use welle_hdk.pdf>
-Package pdftex.def Info: welle_hdk.pdf  used on input line 50.
+Package pdftex.def Info: welle_hdk.pdf  used on input line 51.
 (pdftex.def)             Requested size: 1195.1574pt x 294.0608pt.
  [1
 
 {C:/Users/tlieb/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/tlieb/AppData/Local/Programs/MiKTeX 2.9/tex/latex/local/Corporate_Design_HSEL-master/HSEL-images/welle_hdk.pdf> <C:/Users/tlieb/AppData/Local/Programs/MiKTeX 2.9/tex/latex/local/Corporate_Design_HSEL-master/HSEL-images/Technik_Logo.png>]
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <24.88> not available
-(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 52.
+(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 53.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 21.14815pt on input line 52.
- ("e:/OneDrive/Fachhochschule/Medienelektronik/Mein Projekt/RotaCon/Documentation\dokumentation.toc"
+(Font)              scaled to size 21.14815pt on input line 53.
+ ("e:/OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\dokumentation.toc"
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <10.95> not available
 (Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
@@ -1463,139 +1482,199 @@ LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.53 	\listoffigures
+l.54 	\listoffigures
                     % Abbildungsverzeichnis
 File: welle_hdk.pdf Graphic file (type pdf)
 <use welle_hdk.pdf>
-Package pdftex.def Info: welle_hdk.pdf  used on input line 53.
+Package pdftex.def Info: welle_hdk.pdf  used on input line 54.
 (pdftex.def)             Requested size: 1195.1574pt x 294.0608pt.
  [1
 
 ]
 File: welle_hdk.pdf Graphic file (type pdf)
 <use welle_hdk.pdf>
-Package pdftex.def Info: welle_hdk.pdf  used on input line 53.
+Package pdftex.def Info: welle_hdk.pdf  used on input line 54.
 (pdftex.def)             Requested size: 1195.1574pt x 294.0608pt.
- [2] ("e:/OneDrive/Fachhochschule/Medienelektronik/Mein Projekt/RotaCon/Documentation\dokumentation.lof")
+ [2] ("e:/OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\dokumentation.lof")
 \tf@lof=\write6
 \openout6 = `dokumentation.lof'.
 
 File: welle_hdk.pdf Graphic file (type pdf)
 <use welle_hdk.pdf>
-Package pdftex.def Info: welle_hdk.pdf  used on input line 54.
+Package pdftex.def Info: welle_hdk.pdf  used on input line 55.
 (pdftex.def)             Requested size: 1195.1574pt x 294.0608pt.
  [3
 
+] ("e:/OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\dokumentation.lot")
+\tf@lot=\write7
+\openout7 = `dokumentation.lot'.
+
+File: welle_hdk.pdf Graphic file (type pdf)
+<use welle_hdk.pdf>
+Package pdftex.def Info: welle_hdk.pdf  used on input line 56.
+(pdftex.def)             Requested size: 1195.1574pt x 294.0608pt.
+ [4
+
 ]
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <14.4> not available
-(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 55.
+(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 12.24008pt on input line 55.
+(Font)              scaled to size 12.24008pt on input line 57.
 File: welle_hdk.pdf Graphic file (type pdf)
 <use welle_hdk.pdf>
-Package pdftex.def Info: welle_hdk.pdf  used on input line 68.
+Package pdftex.def Info: welle_hdk.pdf  used on input line 70.
 (pdftex.def)             Requested size: 1195.1574pt x 294.0608pt.
- [4]
+ [5]
 Kapitel 1.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/n' in size <20.74> not available
-(Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on input line 69.
+(Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on input line 71.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/n' will be
-(Font)              scaled to size 17.62912pt on input line 69.
+(Font)              scaled to size 17.62912pt on input line 71.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <20.74> not available
-(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 69.
+(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 71.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 17.62912pt on input line 69.
+(Font)              scaled to size 17.62912pt on input line 71.
 File: welle_hdk.pdf Graphic file (type pdf)
 <use welle_hdk.pdf>
-Package pdftex.def Info: welle_hdk.pdf  used on input line 91.
+Package pdftex.def Info: welle_hdk.pdf  used on input line 86.
 (pdftex.def)             Requested size: 1195.1574pt x 294.0608pt.
-[5
+[6
 
 ]
 Kapitel 2.
 File: welle_hdk.pdf Graphic file (type pdf)
 <use welle_hdk.pdf>
-Package pdftex.def Info: welle_hdk.pdf  used on input line 114.
+Package pdftex.def Info: welle_hdk.pdf  used on input line 95.
 (pdftex.def)             Requested size: 1195.1574pt x 294.0608pt.
-[6
+[7
 
 ]
 File: welle_hdk.pdf Graphic file (type pdf)
 <use welle_hdk.pdf>
-Package pdftex.def Info: welle_hdk.pdf  used on input line 130.
+Package pdftex.def Info: welle_hdk.pdf  used on input line 102.
 (pdftex.def)             Requested size: 1195.1574pt x 294.0608pt.
- [7]
+ [8]
 Kapitel 3.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/n' in size <12> not available
-(Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on input line 135.
+(Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on input line 107.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/n' will be
-(Font)              scaled to size 10.20007pt on input line 135.
+(Font)              scaled to size 10.20007pt on input line 107.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <12> not available
-(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 135.
+(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 107.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 10.20007pt on input line 135.
+(Font)              scaled to size 10.20007pt on input line 107.
 File: welle_hdk.pdf Graphic file (type pdf)
 <use welle_hdk.pdf>
-Package pdftex.def Info: welle_hdk.pdf  used on input line 163.
+Package pdftex.def Info: welle_hdk.pdf  used on input line 121.
 (pdftex.def)             Requested size: 1195.1574pt x 294.0608pt.
-[8
+[9
 
 ]
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/it' in size <10.95> not available
-(Font)              Font shape `T1/FiraSans-OsF/regular/it' tried instead on input line 182.
+(Font)              Font shape `T1/FiraSans-OsF/regular/it' tried instead on input line 136.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/it' will be
-(Font)              scaled to size 9.30756pt on input line 182.
+(Font)              scaled to size 9.30756pt on input line 136.
 LaTeX Font Info:    Font shape `TS1/FiraSans-OsF/m/n' in size <10.95> not available
-(Font)              Font shape `TS1/FiraSans-OsF/regular/n' tried instead on input line 187.
+(Font)              Font shape `TS1/FiraSans-OsF/regular/n' tried instead on input line 136.
 LaTeX Font Info:    Font shape `TS1/FiraSans-OsF/regular/n' will be
-(Font)              scaled to size 9.30756pt on input line 187.
+(Font)              scaled to size 9.30756pt on input line 136.
 File: welle_hdk.pdf Graphic file (type pdf)
 <use welle_hdk.pdf>
-Package pdftex.def Info: welle_hdk.pdf  used on input line 190.
+Package pdftex.def Info: welle_hdk.pdf  used on input line 137.
 (pdftex.def)             Requested size: 1195.1574pt x 294.0608pt.
- [9]
-<./img/Motorsteuerung.png, id=248, 390.86024pt x 152.9715pt>
+ [10]
+<./img/Motorsteuerung.png, id=261, 390.86024pt x 152.9715pt>
 File: ./img/Motorsteuerung.png Graphic file (type png)
 <use ./img/Motorsteuerung.png>
-Package pdftex.def Info: ./img/Motorsteuerung.png  used on input line 200.
+Package pdftex.def Info: ./img/Motorsteuerung.png  used on input line 145.
 (pdftex.def)             Requested size: 472.03123pt x 184.74593pt.
 File: welle_hdk.pdf Graphic file (type pdf)
 <use welle_hdk.pdf>
-Package pdftex.def Info: welle_hdk.pdf  used on input line 224.
+Package pdftex.def Info: welle_hdk.pdf  used on input line 149.
 (pdftex.def)             Requested size: 1195.1574pt x 294.0608pt.
- [10 <./img/Motorsteuerung.png (PNG copy)>]
-Kapitel 4.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 238.
+ [11 <./img/Motorsteuerung.png (PNG copy)>]
+<./img/ir.png, id=266, 334.24875pt x 168.63pt>
+File: ./img/ir.png Graphic file (type png)
+<use ./img/ir.png>
+Package pdftex.def Info: ./img/ir.png  used on input line 155.
+(pdftex.def)             Requested size: 472.03123pt x 238.162pt.
 File: welle_hdk.pdf Graphic file (type pdf)
 <use welle_hdk.pdf>
-Package pdftex.def Info: welle_hdk.pdf  used on input line 238.
+Package pdftex.def Info: welle_hdk.pdf  used on input line 159.
 (pdftex.def)             Requested size: 1195.1574pt x 294.0608pt.
-[11
+ [12 <./img/ir.png (PNG copy)>]
+<./img/dsub2.png, id=272, 442.65375pt x 161.403pt>
+File: ./img/dsub2.png Graphic file (type png)
+<use ./img/dsub2.png>
+Package pdftex.def Info: ./img/dsub2.png  used on input line 164.
+(pdftex.def)             Requested size: 472.03123pt x 172.1232pt.
+<./img/display2.png, id=273, 438.13687pt x 173.74913pt>
+File: ./img/display2.png Graphic file (type png)
+<use ./img/display2.png>
+Package pdftex.def Info: ./img/display2.png  used on input line 168.
+(pdftex.def)             Requested size: 472.03123pt x 187.19289pt.
+
+Overfull \hbox (1.60345pt too wide) in paragraph at lines 175--203
+[][] 
+ []
+
+File: welle_hdk.pdf Graphic file (type pdf)
+<use welle_hdk.pdf>
+Package pdftex.def Info: welle_hdk.pdf  used on input line 204.
+(pdftex.def)             Requested size: 1195.1574pt x 294.0608pt.
+[13 <./img/dsub2.png (PNG copy)> <./img/display2.png (PNG copy)>]
+File: welle_hdk.pdf Graphic file (type pdf)
+<use welle_hdk.pdf>
+Package pdftex.def Info: welle_hdk.pdf  used on input line 204.
+(pdftex.def)             Requested size: 1195.1574pt x 294.0608pt.
+ [14]
+<./img/op2.png, id=283, 414.64912pt x 336.0555pt>
+File: ./img/op2.png Graphic file (type png)
+<use ./img/op2.png>
+Package pdftex.def Info: ./img/op2.png  used on input line 210.
+(pdftex.def)             Requested size: 472.03123pt x 382.57909pt.
+File: welle_hdk.pdf Graphic file (type pdf)
+<use welle_hdk.pdf>
+Package pdftex.def Info: welle_hdk.pdf  used on input line 214.
+(pdftex.def)             Requested size: 1195.1574pt x 294.0608pt.
+ [15 <./img/op2.png (PNG copy)>]
+File: welle_hdk.pdf Graphic file (type pdf)
+<use welle_hdk.pdf>
+Package pdftex.def Info: welle_hdk.pdf  used on input line 229.
+(pdftex.def)             Requested size: 1195.1574pt x 294.0608pt.
+ [16]
+Kapitel 4.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 243.
+File: welle_hdk.pdf Graphic file (type pdf)
+<use welle_hdk.pdf>
+Package pdftex.def Info: welle_hdk.pdf  used on input line 243.
+(pdftex.def)             Requested size: 1195.1574pt x 294.0608pt.
+[17
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 238.
- ("e:/OneDrive/Fachhochschule/Medienelektronik/Mein Projekt/RotaCon/Documentation\dokumentation.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 238.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 238.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 243.
+ ("e:/OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\dokumentation.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 243.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 243.
 Package rerunfilecheck Info: File `dokumentation.out' has not changed.
 (rerunfilecheck)             Checksum: 4AF96167A2F1BDAC6D47DBBD8E15CDB7;2298.
 Package logreq Info: Writing requests to 'dokumentation.run.xml'.
 \openout1 = `dokumentation.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 238.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 243.
  ) 
 Here is how much of TeX's memory you used:
- 35524 strings out of 492483
- 657333 string characters out of 3121589
- 1141928 words of memory out of 3000000
- 39244 multiletter control sequences out of 15000+200000
- 746781 words of font info for 144 fonts, out of 3000000 for 9000
+ 35632 strings out of 492483
+ 659081 string characters out of 3121589
+ 1145110 words of memory out of 3000000
+ 39326 multiletter control sequences out of 15000+200000
+ 747111 words of font info for 146 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
- 62i,13n,100p,1018b,2279s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,13n,100p,1663b,2279s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/tlieb/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/fira/fir_iln36p.enc}{C:/Users/tlieb/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/fira/fir_d67aat.enc}<C:/Users/tlieb/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/fira/FiraSans-Bold.pfb><C:/Users/tlieb/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/fira/FiraSans-Italic.pfb><C:/Users/tlieb/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/fira/FiraSans-Regular.pfb><C:/Users/tlieb/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtxsf/zsfmi-reg.pfb>
-Output written on "e:/OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\dokumentation.pdf" (12 pages, 342837 bytes).
+Output written on "e:/OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\dokumentation.pdf" (18 pages, 415042 bytes).
 PDF statistics:
- 289 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
- 13104 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 330 PDF objects out of 1000 (max. 8388607)
+ 72 named destinations out of 1000 (max. 500000)
+ 13124 words of extra memory for PDF output out of 14400 (max. 10000000)
 

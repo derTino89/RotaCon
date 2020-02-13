@@ -225,6 +225,8 @@ INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\micro
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\microtype.cfg
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\microtype.cfg
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\microtype.cfg
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.def
@@ -395,6 +397,11 @@ INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documenta
 OUTPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\dokumentation.lof
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\dokumentation.lot
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\dokumentation.lot
+OUTPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\dokumentation.lot
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Bold-osf-t1.tfm
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
@@ -432,6 +439,36 @@ INPUT .\img\Motorsteuerung.png
 INPUT .\img\Motorsteuerung.png
 INPUT .\img\Motorsteuerung.png
 INPUT .\img\Motorsteuerung.png
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT img\ir.png
+INPUT .\img\ir.png
+INPUT .\img\ir.png
+INPUT .\img\ir.png
+INPUT .\img\ir.png
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT img\dsub2.png
+INPUT .\img\dsub2.png
+INPUT .\img\dsub2.png
+INPUT .\img\dsub2.png
+INPUT .\img\dsub2.png
+INPUT img\display2.png
+INPUT .\img\display2.png
+INPUT .\img\display2.png
+INPUT .\img\display2.png
+INPUT .\img\display2.png
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT img\op2.png
+INPUT .\img\op2.png
+INPUT .\img\op2.png
+INPUT .\img\op2.png
+INPUT .\img\op2.png
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf

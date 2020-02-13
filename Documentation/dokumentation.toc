@@ -1,38 +1,38 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {german}{}
-\contentsline {chapter}{\numberline {1}Prolog}{5}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Überblick}{5}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Ziel}{5}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Stand der Technik}{5}{section.1.3}%
-\contentsline {chapter}{\numberline {2}Theorie-Teil}{6}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Theorie Hardware}{6}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Theorie Software}{7}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Theorie Mechanik}{7}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Praxis-Teil}{8}{chapter.3}%
-\contentsline {section}{\numberline {3.1}verwendetes Material?}{8}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}der Arduino Nano}{8}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}die Arduino IDE}{8}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}FreeCAD}{8}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}Cura}{9}{subsection.3.1.4}%
-\contentsline {subsection}{\numberline {3.1.5}Eagle}{9}{subsection.3.1.5}%
-\contentsline {subsection}{\numberline {3.1.6}der Schrittmotor ?}{9}{subsection.3.1.6}%
-\contentsline {section}{\numberline {3.2}Realisierung der Schaltung}{10}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Motorsteuerung}{10}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}IR-Receiver}{10}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Display}{10}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Anschlagerkennung durch Strommessung}{10}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Anschlagerkennung durch Endschalter}{10}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}Gesamtschaltung}{10}{subsection.3.2.6}%
-\contentsline {section}{\numberline {3.3}Software}{10}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Das Gehäuse}{10}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Motorgehäuse}{10}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Displaygehäuse}{10}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Gehäuseständer}{10}{subsection.3.4.3}%
-\contentsline {section}{\numberline {3.5}Inbetriebnahme / Probleme / Zusammenfassung / Ausblick}{10}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Anhänge}{11}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Tabelle Teileübersicht}{11}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Datenblätter}{11}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Schaltplan}{11}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Layout}{11}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Abmessungen}{11}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Quellcode}{11}{section.4.6}%
+\contentsline {chapter}{\numberline {1}Prolog}{6}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Überblick}{6}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Ziel}{6}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Stand der Technik}{6}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Theorie-Teil}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Theorie Hardware}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Theorie Software}{8}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Theorie Mechanik}{8}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Praxis-Teil}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}verwendetes Material?}{9}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}der Arduino Nano}{9}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}die Arduino IDE}{9}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}FreeCAD}{9}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Cura}{10}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Eagle}{10}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.6}der Schrittmotor ?}{10}{subsection.3.1.6}%
+\contentsline {section}{\numberline {3.2}Realisierung der Schaltung}{11}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Motorsteuerung}{11}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}IR-Receiver}{12}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Display}{13}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Anschlagerkennung durch Strommessung}{15}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Anschlagerkennung durch Endschalter}{16}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Gesamtschaltung}{16}{subsection.3.2.6}%
+\contentsline {section}{\numberline {3.3}Software}{16}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Das Gehäuse}{16}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Motorgehäuse}{16}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Displaygehäuse}{16}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Gehäuseständer}{16}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Inbetriebnahme / Probleme / Zusammenfassung / Ausblick}{16}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Anhänge}{17}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Tabelle Teileübersicht}{17}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Datenblätter}{17}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Schaltplan}{17}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Layout}{17}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Abmessungen}{17}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Quellcode}{17}{section.4.6}%
