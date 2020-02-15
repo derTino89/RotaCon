@@ -5205,6 +5205,42 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="luani_docuSymbol">
+<description>&lt;b&gt;LUANI Doku-Symbole&lt;/b&gt;&lt;p&gt;
+Schaltplansymbole zur Dokumentation&lt;br&gt;
+ohne Bauteilgehäuse/nicht layout-fähig&lt;p&gt;
+&lt;i&gt;CC-BY-SA 3.0&lt;br&gt;luani.de &lt;/i&gt;V0.1</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="METER">
+<text x="0" y="0" size="2.54" layer="97" align="center">&gt;TYP</text>
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+<pin name="P$1" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="P$2" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<text x="3.175" y="0" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MESSGERAET" prefix="M">
+<description>Messgerät
+Bezeichnung: Attribut "Typ"</description>
+<gates>
+<gate name="G$1" symbol="METER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="TYP" value="?" constant="no"/>
+<attribute name="_EXTERNAL_" value="0"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5234,6 +5270,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="(AMPEREMETER)" library="luani_docuSymbol" deviceset="MESSGERAET" device="">
+<attribute name="TYP" value="A"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -5315,6 +5354,10 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </instance>
 <instance part="P+6" gate="VCC" x="76.2" y="137.16" smashed="yes">
 <attribute name="VALUE" x="73.66" y="134.62" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="(AMPEREMETER)" gate="G$1" x="137.16" y="121.92" smashed="yes" rot="R90">
+<attribute name="TYP" x="137.16" y="121.92" size="2.54" layer="97" rot="R180" align="center"/>
+<attribute name="NAME" x="146.685" y="127" size="1.778" layer="95" rot="R180" align="center-left"/>
 </instance>
 </instances>
 <busses>
@@ -5439,16 +5482,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="86.36" y1="50.8" x2="86.36" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="40.64" x2="160.02" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="40.64" x2="160.02" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="121.92" x2="119.38" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="119.38" y1="121.92" x2="109.22" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="121.92" x2="101.6" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="116.84" x2="109.22" y2="121.92" width="0.1524" layer="91"/>
-<junction x="109.22" y="121.92"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="119.38" y1="116.84" x2="119.38" y2="121.92" width="0.1524" layer="91"/>
-<junction x="119.38" y="121.92"/>
+<wire x1="160.02" y1="121.92" x2="142.24" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="(AMPEREMETER)" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -5484,6 +5519,21 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <junction x="45.72" y="101.6"/>
 <pinref part="IC2" gate="A" pin="-IN"/>
 <wire x1="88.9" y1="116.84" x2="81.28" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="121.92" x2="101.6" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="116.84" x2="109.22" y2="121.92" width="0.1524" layer="91"/>
+<junction x="109.22" y="121.92"/>
+<wire x1="119.38" y1="121.92" x2="109.22" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="119.38" y1="116.84" x2="119.38" y2="121.92" width="0.1524" layer="91"/>
+<junction x="119.38" y="121.92"/>
+<wire x1="132.08" y1="121.92" x2="119.38" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="(AMPEREMETER)" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 </nets>

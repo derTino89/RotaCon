@@ -206,16 +206,12 @@ INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\bigfoot\suffix.
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xstring\xstring.sty
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xstring\xstring.sty
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xstring\xstring.tex
-INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.sty
-INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.sty
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcaption.sty
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcaption.sty
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.sty
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.sty
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.sty
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.sty
-INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty
-INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyphenat\hyphenat.sty
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyphenat\hyphenat.sty
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\microtype.sty
@@ -383,13 +379,13 @@ INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\Fir
 INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\dokumentation.toc
 INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\dokumentation.toc
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Bold-osf-t1.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\fira\FiraSans-Bold-osf-t1.vf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Bold-osf-t1--base.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\fira\FiraSans-Bold-osf-t1.vf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Bold-osf-t1--base.tfm
 OUTPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\dokumentation.toc
-INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
-INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
-INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\fira\FiraSans-Bold-osf-t1.vf
-INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Bold-osf-t1--base.tfm
-INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\fira\FiraSans-Bold-osf-t1.vf
-INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Bold-osf-t1--base.tfm
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\dokumentation.lof
@@ -419,12 +415,61 @@ INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Regular-osf-t1.tfm
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Bold-osf-t1.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Regular-osf-t1.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Regular-osf-t1.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Regular-osf-t1.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtxsf\ntxsfmi.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtxsf\ntxsfmi.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtxsf\ntxsfmi.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsy.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsy7.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsy5.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxexx.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxexx.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxexx.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ectt0900.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ectt0800.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ectt0800.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtxsf\ntxsfmia.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtxsf\ntxsfmia.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtxsf\ntxsfmia.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsym.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsym.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsym.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsyc.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsyc.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsyc.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxexa.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxexa.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxexa.tfm
+INPUT C:\Users\tlieb\AppData\Local\MiKTeX\2.9\fonts\tfm\public\trsym\trsy10.tfm
+INPUT C:\Users\tlieb\AppData\Local\MiKTeX\2.9\fonts\tfm\public\trsym\trsy10.tfm
+INPUT C:\Users\tlieb\AppData\Local\MiKTeX\2.9\fonts\tfm\public\trsym\trsy10.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cyrillic\wncyr10.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cyrillic\wncyr10.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cyrillic\wncyr10.tfm
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\fira\FiraSans-Bold-osf-t1.vf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Bold-osf-t1--base.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\fira\FiraSans-Regular-osf-t1.vf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Regular-osf-t1--base.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\fira\FiraSans-Regular-osf-t1.vf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Regular-osf-t1--base.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\fira\FiraSans-Regular-osf-t1.vf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Regular-osf-t1--base.tfm
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Italic-osf-t1.tfm
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Regular-osf-ts1.tfm
+INPUT img\motor_stepper_unipolar.png
+INPUT .\img\motor_stepper_unipolar.png
+INPUT .\img\motor_stepper_unipolar.png
+INPUT .\img\motor_stepper_unipolar.png
+INPUT .\img\motor_stepper_unipolar.png
+INPUT img\gear.png
+INPUT .\img\gear.png
+INPUT .\img\gear.png
+INPUT .\img\gear.png
+INPUT .\img\gear.png
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\fira\FiraSans-Italic-osf-t1.vf
@@ -434,6 +479,14 @@ INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtxsf\
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\txfonts\rtxmi.tfm
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\fira\FiraSans-Regular-osf-ts1.vf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Regular-osf-ts1--base.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtxsf\ntxsfmia.vf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtxsf\zsfmia-reg.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\txfonts\txsyc.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\txfonts\txmia.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\txfonts\txsyb.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Italic-osf-t1.tfm
 INPUT img\Motorsteuerung.png
 INPUT .\img\Motorsteuerung.png
 INPUT .\img\Motorsteuerung.png
@@ -441,6 +494,14 @@ INPUT .\img\Motorsteuerung.png
 INPUT .\img\Motorsteuerung.png
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtxsf\ntxsfmi.vf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtxsf\zsfmi-reg.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\txfonts\rtxmi.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\newtx\ntxsy.vf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txsys.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\txex-bar.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\fira\FiraSans-Italic-osf-t1.vf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Italic-osf-t1--base.tfm
 INPUT img\ir.png
 INPUT .\img\ir.png
 INPUT .\img\ir.png
@@ -460,13 +521,15 @@ INPUT .\img\display2.png
 INPUT .\img\display2.png
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
-INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
-INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT img\op2.png
 INPUT .\img\op2.png
 INPUT .\img\op2.png
 INPUT .\img\op2.png
 INPUT .\img\op2.png
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
@@ -486,5 +549,11 @@ INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\fira\F
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\fira\FiraSans-Italic.pfb
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\fira\FiraSans-Regular.pfb
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\fira\FiraSans-Regular.pfb
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\txfonts\rtxmi.pfb
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\txfonts\rtxmi.pfb
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\txsys.pfb
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtx\txsys.pfb
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtxsf\zsfmi-reg.pfb
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtxsf\zsfmi-reg.pfb
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtxsf\zsfmia-reg.pfb
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\newtxsf\zsfmia-reg.pfb
