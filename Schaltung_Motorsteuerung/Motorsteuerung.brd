@@ -65,7 +65,6 @@
 <wire x1="0" y1="15.24" x2="100" y2="15.24" width="0" layer="20"/>
 <wire x1="100" y1="15.24" x2="100" y2="80" width="0" layer="20"/>
 <wire x1="0" y1="80" x2="0" y2="15.24" width="0" layer="20"/>
-<dimension x1="0" y1="80.01" x2="100.33" y2="80.01" x3="50.165" y3="80.01" textsize="1.778" layer="16"/>
 <hole x="13.97" y="41.91" drill="3"/>
 <hole x="93.98" y="24.13" drill="3"/>
 <hole x="93.98" y="62.23" drill="3"/>
@@ -75,7 +74,7 @@
 <text x="31.75" y="47.625" size="1.27" layer="16" font="vector" ratio="10" rot="MR0">TP2</text>
 <text x="31.75" y="22.225" size="1.778" layer="16" font="vector" rot="MR0">+</text>
 <text x="22.86" y="22.225" size="1.778" layer="16" font="vector" rot="MR0">-</text>
-<dimension x1="-1.27" y1="80.01" x2="-1.27" y2="15.24" x3="-2.54" y3="47.625" textsize="1.778" layer="16"/>
+<wire x1="0" y1="80.01" x2="100" y2="80.01" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="con-subd" urn="urn:adsk.eagle:library:189">
@@ -1982,10 +1981,10 @@ design rules under a new name.</description>
 <contactref element="X4" pad="4"/>
 <contactref element="X5" pad="1"/>
 <polygon width="0.2" layer="16" isolate="0.35">
-<vertex x="0" y="80.01"/>
-<vertex x="100.33" y="80.01"/>
-<vertex x="100.33" y="15.24"/>
-<vertex x="0" y="15.24"/>
+<vertex x="0" y="82.55"/>
+<vertex x="100.33" y="82.55"/>
+<vertex x="100.33" y="12.7"/>
+<vertex x="0" y="12.7"/>
 </polygon>
 <contactref element="U$1" pad="GND1"/>
 <contactref element="TP3" pad="TP"/>
@@ -2063,7 +2062,8 @@ design rules under a new name.</description>
 <contactref element="R2" pad="2"/>
 <contactref element="R1" pad="2"/>
 <wire x1="25.4" y1="68.58" x2="25.4" y2="63.5" width="0.6096" layer="16"/>
-<wire x1="25.4" y1="71.12" x2="25.4" y2="68.58" width="0.6096" layer="16"/>
+<wire x1="25.4" y1="71.12" x2="24.13" y2="69.85" width="0.6096" layer="16"/>
+<wire x1="24.13" y1="69.85" x2="25.4" y2="68.58" width="0.6096" layer="16"/>
 <wire x1="48.26" y1="54.61" x2="45.72" y2="57.15" width="0.6096" layer="16"/>
 <wire x1="48.26" y1="54.61" x2="48.26" y2="50.8" width="0.6096" layer="16"/>
 <contactref element="TP1" pad="TP"/>

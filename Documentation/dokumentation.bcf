@@ -2182,6 +2182,12 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1">Lautstärkeregler</bcf:citekey>
+    <bcf:citekey order="2">Arduino_Plattform</bcf:citekey>
+    <bcf:citekey order="3">Nano</bcf:citekey>
+    <bcf:citekey order="4">Winkelberechnung</bcf:citekey>
+    <bcf:citekey order="5">Schrittmotor_Steuerung</bcf:citekey>
+    <bcf:citekey order="6">Darlington</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
@@ -2190,4 +2196,13 @@
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
 </bcf:controlfile>

@@ -3,10 +3,17 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Aufbau eines unipolaren Schrittmotors. \relax }}{10}{figure.caption.5}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Ansteuerung des Motors durch Arduino und Darlington-Transistortreiber ULN2003. \relax }}{12}{figure.caption.6}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Infrarot-Empfänger mit Pull-Up-Widerstand und Filterkondensator. \relax }}{13}{figure.caption.7}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces D-Sub-Pinbelegung für Display und IR-Receiver(gestrichelte Linie). \relax }}{14}{figure.caption.9}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Einsatz eines nicht-invertierenden Verstärkers zur Strommessung \relax }}{15}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Aufbau eines unipolaren Schrittmotors. \relax }}{9}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Ansteuerung des Motors durch Arduino und Darlington-Transistortreiber ULN2003. \relax }}{10}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Infrarot-Empfänger mit Pull-Up-Widerstand und Filterkondensator. \relax }}{11}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces D-Sub-Pinbelegung für Display und IR-Receiver(gestrichelte Linie). \relax }}{12}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Einsatz eines nicht-invertierenden Verstärkers zur Strommessung \relax }}{13}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Finale Schaltung der Display-Platine. \relax }}{16}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Finale Schaltung der Motor-Platine. \relax }}{17}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Skizze Des Motorgehäuses \relax }}{19}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Skizze Des Displaygehäuses \relax }}{20}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Gehäuseständer des Prototyps \relax }}{21}{figure.caption.25}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Display-Platine\relax }}{25}{figure.caption.26}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Motor-Platine\relax }}{26}{figure.caption.27}%

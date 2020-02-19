@@ -1,9 +1,20 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'dokumentation.blg'
-[105] biber-MSWIN64:322> INFO - === 
-[128] Biber.pm:415> INFO - Reading 'dokumentation.bcf'
-[288] Biber.pm:943> INFO - Found 0 citekeys in bib section 0
-[298] Utils.pm:304> WARN - The file 'dokumentation.bcf' does not contain any citations!
-[311] bbl.pm:652> INFO - Writing 'dokumentation.bbl' with encoding 'UTF-8'
-[312] bbl.pm:755> INFO - Output to dokumentation.bbl
-[313] Biber.pm:128> INFO - WARNINGS: 1
+[95] biber-MSWIN64:322> INFO - === 
+[119] Biber.pm:415> INFO - Reading 'dokumentation.bcf'
+[234] Biber.pm:943> INFO - Found 6 citekeys in bib section 0
+[262] Biber.pm:4256> INFO - Processing section 0
+[262] Utils.pm:75> INFO - Globbing data source 'references.bib'
+[273] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
+[293] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
+[298] bibtex.pm:1653> INFO - LaTeX decoding ...
+[327] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
+[401] Utils.pm:304> WARN - year field 'o.J.' in entry 'Nano' is not an integer - this will probably not sort properly.
+[408] Utils.pm:304> WARN - year field 'o.J.' in entry 'Schrittmotor_Steuerung' is not an integer - this will probably not sort properly.
+[436] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[436] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[436] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
+[437] Biber.pm:4090> INFO - No sort tailoring available for locale 'de-DE'
+[449] bbl.pm:652> INFO - Writing 'dokumentation.bbl' with encoding 'UTF-8'
+[452] bbl.pm:755> INFO - Output to dokumentation.bbl
+[453] Biber.pm:128> INFO - WARNINGS: 2

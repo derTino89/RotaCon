@@ -1,43 +1,35 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {german}{}
-\contentsline {chapter}{\numberline {1}Prolog}{6}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Überblick}{6}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Ziel}{6}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Stand der Technik}{6}{section.1.3}%
-\contentsline {chapter}{\numberline {2}Konzeptentwurf}{7}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Theorie Hardware}{7}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Theorie Software}{8}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Theorie Mechanik und Design}{8}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Prototyp-Entwicklung}{9}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Notwendige Software}{9}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Arduino IDE}{9}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}FreeCAD}{9}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Cura}{9}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}Eagle}{10}{subsection.3.1.4}%
-\contentsline {section}{\numberline {3.2}Verwendete Hardware}{10}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Schrittmotor (unipolar)}{10}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Arduino Nano}{11}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Realisierung der Schaltung}{12}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Motorsteuerung}{12}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}IR-Empfänger}{13}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Display}{14}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Anschlagerkennung durch Strommessung}{15}{subsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.3.5}Anschlagerkennung durch Endschalter}{17}{subsection.3.3.5}%
-\contentsline {subsection}{\numberline {3.3.6}Gesamtschaltung und Pinbelegungen}{17}{subsection.3.3.6}%
-\contentsline {section}{\numberline {3.4}Software}{17}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Das Gehäuse}{17}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Motorgehäuse}{17}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Displaygehäuse}{17}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Gehäuseständer}{17}{subsection.3.5.3}%
-\contentsline {chapter}{\numberline {4}Epilog}{18}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Inbetriebnahme}{18}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Problemstellungen}{18}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Zusammenfassung}{18}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Ausblick}{18}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Anhänge}{19}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Tabelle Teileübersicht}{19}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Datenblätter}{19}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Schaltplan}{19}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Layout}{19}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Abmessungen}{19}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Quellcode}{19}{section.5.6}%
+\contentsline {chapter}{\numberline {1}Prolog}{4}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Konzeptentwurf}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Theorie Hardware}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Theorie Software}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Theorie Mechanik und Design}{6}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Prototyp-Entwicklung}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Notwendige Software}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Verwendete Hardware}{8}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Realisierung der Schaltung}{10}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Motorsteuerung}{10}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}IR-Empfänger}{11}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Display}{12}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Anschlagerkennung durch Strommessung}{13}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Anschlagerkennung durch Endschalter}{15}{subsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.3.6}Pinbelegungen}{15}{subsection.3.3.6}%
+\contentsline {subsection}{\numberline {3.3.7}Gesamtschaltung der Display-Platine}{16}{subsection.3.3.7}%
+\contentsline {subsection}{\numberline {3.3.8}Gesamtschaltung der Motor-Platine}{17}{subsection.3.3.8}%
+\contentsline {section}{\numberline {3.4}Software}{18}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Das Gehäuse}{19}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Motorgehäuse}{19}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Displaygehäuse}{20}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Gehäuseständer}{21}{subsection.3.5.3}%
+\contentsline {chapter}{\numberline {4}Ergebnis}{22}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Inbetriebnahme}{22}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Problemdiskussion}{22}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Zusammenfassung}{23}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Ausblick}{23}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Anhänge}{24}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Tabelle Teileübersicht}{24}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Datenblätter}{24}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Layouts}{25}{section.5.3}%
+\contentsline {section}{5.4\hspace {1em}Gehäusemaße}{27}{figure.caption.27}%
+\contentsline {section}{\numberline {5.5}Quellcode}{31}{section.5.5}%

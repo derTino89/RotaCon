@@ -18,6 +18,8 @@
 \usepackage{hyphenat}
 \usepackage{microtype}
 \usepackage{booktabs}
+\usepackage{pdfpages}
+\usepackage{lscape} %Querformat
 \usepackage[ngerman, german]{babel}
 \usepackage[citestyle=numeric,bibstyle=numeric, sorting = none,
 hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{biblatex}
@@ -28,11 +30,9 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 \hbadness 1000
 \tolerance = 200
 
-%\usepackage{lmodern}
-
 \begin{document}
-\begin{titlepage}% Deckblattk
-	\hsellogo\hfill Projektarbeit % etwa Bachelorarbeit, Masterarbeit
+\begin{titlepage}
+	\hsellogo\hfill Projektarbeit
 	\par
 	\vspace{4cm}
 	\noindent\parbox{0.8\textwidth}{\Huge RotaCon - Dokumentation}  
@@ -50,20 +50,26 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 \end{titlepage}
 	\newpage
 	\tableofcontents
-	\listoffigures% Abbildungsverzeichnis
-	\listoftables
-    \newpage
+	\newpage
+	\begingroup
+		\renewcommand\clearpage{\relax}
+		\listoffigures
+		\listoftables
+	\endgroup
+	\newpage
     \section*{\Huge Abkürzungsverzeichnis}% Abkürzungen
     \label{sec:Abkürzungsverzeichnis}
     \vspace{1cm}
-    \begin{acronym}
-		\acro{hsel}[HSEL]{Hochschule Emden Leer}
+	\begin{acronym}
+		\acro{ad}[A/D]{Analog / Digital}
 		\acro{cad}[CAD]{computer-aided design}
 		\acro{dsub}[D-Sub]{D-Subminiatur, eine Bauform für ein Steckersystem}
 		\acro{eeprom}[EEPROM]{electrically erasable programmable read-only memory}
 		\acro{eq}[EQ]{Equalizer}
+		\acro{hsel}[HSEL]{Hochschule Emden Leer}
 		\acro{ide}[IDE]{Integrated Development Environment}
 		\acro{io}[I/O]{Input / Output}
+		\acro{ir}[IR]{Infrarot}
 		\acro{lcd}[LCD]{liquid crystal display}
 		\acro{tp}[TP]{Tiefpass}
 		\acro{usb}[USB]{Universal Serial Bus}
@@ -72,14 +78,14 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 	\chapter{Prolog}
 		Hier wird Tino am Ende der Arbeit eine tolle Einleitung hinzaubern, die dei Ausgangslage zu derzeitigen Aktivlautsprechern beschreibt, ähnlich der Idee. Außerdem schreibe ich in männlicher Form etc...\newline
 		Außerdem reden wir immer vom AKTIV-Lautsprecher...
-	\section{Überblick}
+	\section*{Überblick}
 		Überblick über den Aufbau der Dokumentation.\newline
 		Diese Dokumentation ist in vier Hauptteile gegliedert. Im Prolog wird die Ausgangssituation geschildert, sowie die Kerngedanken zum RotaCon.
-	\section{Ziel}
+	\section*{Ziel}
 		was möchte Tino heute eigentlich machen?\newline
 		Ziel ist es ein Gerät zur Fernbedienbarkeit von Potentiometern, speziell an Lautsprechern, zu entwickeln. Dabei sollen weder Veränderungen am Lautsprechergehäuse, oder an der Technik vorgenommen werden. Zusätzlich ist eine Diskretisierung der Pegelwerte und deren Visualisierung via LCD-Display angedacht, sodass der Benutzer sichtbare 
 		Werte zur Orientierung der aktuellen Einstellung bekommt. 
-	\section{Stand der Technik}	
+	\section*{Stand der Technik}	
 		gibts sowas schon?\newline
 		Fernsteuerungen für Pegeleinstellungen sind nicht neu auf dem Markt. Dabei sind zwei Varianten verbreitet, zum Einen besteht die Möglichkeit, den Potentiometer auf der Platine des Lautsprechers auszutauschen, zum Anderen die Integrierung eines Controllers in den Signalweg. Die erste Variante setzt somit die Öffnung des Lautsprechergehäuses sowie Manipulation der Elektronik voraus. Dies ist nicht nur für den durchschnittlichen
 		Lautsprecherbesitzer ein schwieriger Eingriff, sondern hat ebenfalls Einfluss auf diverse Garantieansprüche.\newline
@@ -90,13 +96,14 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 		\section{Theorie Hardware}
 		\label{sec:Theorie Hardware}
 			\sloppy \nohyphens{
-			Lautstärkeregler sind in den meisten Fällen Potentiometer oder Inkrementalgeber. % [https://de.wikipedia.org/wiki/Lautst%C3%A4rkeregler]
+			Lautstärkeregler sind in den meisten Fällen Potentiometer oder Inkrementalgeber. [Wikipedia\cite{Lautstärkeregler}] 
 			Diese besitzen in der Regel eine 6mm oder 6.35mm Achse, in D-Form oder geriffelt. Um diese Achse rotieren zu können muss also ein Motor mit einer passenden Kupplung angebracht werden. Für präzise Kontrolle und ausreichendes Drehmoment ist ein Schrittmotor geeignet. Diesen gibt es in verschiedenen Ausfertigungen: Unipolar und Bipolar. Unipolare Schrittmotoren haben vier Phasen und werden nur in einer Richtung von Strom durchflossen. Bipolare polen ihre Magnetfelder durch Umkehrung der Stromrichtung um, sie haben zwei Phasen, erreichen ein höheres Drehmoment und sind durch ihre Funktionsweise etwas aufwendiger anzusteuern. Für eine Schrittmotorsteuerung sind drei Funktionseinheiten notwendig. Diese bestehen aus Mikrocontroller, Steuerschaltung und Treiberstufen. Für dieses Projekt ist ein unipolarer Schrittmotor ausreichend, da keine hohen Drehmomente erreicht werden müssen. Dies hat den Vorteil, dass die Steuerschaltung rein auf Softwarebasis gelegt werden kann. Als Treiber soll eine Darlington-Schaltung für den Motor dienen. Die softwaretechnische Besteuerung ist durch ein Arduino mit integriertem Mikrocontroller angestrebt, dessen Spannungsversorgung von 5V idealer Weise auch für die anderen Komponenten ausreichen soll, sodass ein Betrieb des Gerätes durch USB-Spannungsversorgung ermöglicht wird. Da analoge Drehregler durch eine Minimal- und Maximalstellung begrenzt sind, ist auch der Antrieb des Motors in diesen Bereichen zu stoppen. In erster Linie sollen Endschalter den Potentiometeranschlag erkennen und software-gesteuert die Rotation einstellen. Redundant dazu wird der Stromverbrauch des Schrittmotors durch die Kombination eines nicht-invertierenden Verstäkers und dem Analog-Digital-Wandler vom Mikrocontroller überwacht. Für die Bedienung des Gerätes soll ein Infrarotempfänger mit passender Fernbedienung im Frequenzbereich verwendet werden. Da sich Lautstärkeregler meist nicht sichtbar am Lautsprecher befinden, ein IR-Empfänger jedoch eine quasioptische verbindung vorraussetzt, bieten sich zwei getrennte Gehäuseteile an, die durch ein Kabel verbunden sind. In dem sichtbaren Gehäuse befindet sich zusätzlich das Display.}
 		\newpage
 		\section{Theorie Software}
 		\label{sec:Theorie Software}
 			Softwaretechnisch sind drei Bereiche abzudecken, genannt seien die Programmierung des Mikrocontrollers an sich, das Entwerfen eines Platinenlayouts sowie der Entwurf der Gehäuse für den 3D-Druck. Bei der Programmierung des Mikrocontrollers soll beachtet werden, dass die aktuellen Werte der Motorstellung und der dazugehörigen Lautstärkeanzeige gespeichert werden, damit bei jeder Inbetriebnahme die jeweils vorherigen Werte beibehalten bleiben. Die einzige Schnittstelle zum Benutzer ist das Display, daher müssen Fehler, Warnungen und wichtige Informationen auf dem Display abgebildet werden. Alle variablen Funktionen des Gerätes sollen über die Fernbedienung steuerbar sein, also die Steuerung der Lautstärke, aber auch das Aktivieren, bzw. Deaktivieren der Displaybeleuchtung.
 		\section{Theorie Mechanik und Design}
+		\label{sec:Design}
 			Die Übertragung des Drehmoments vom Motor an den Drehregler des Lautsprechers kann nur stattfinden, wenn der Motor starr gelagert ist. Daher ist das Gehäuse mit Motor und Motorsteuerung zu fixieren. Weiterhin sind Lautstärkeregler an verschiedenen Lautsprechern auch an verschiedenen Positionen, sodass dieses Gehäuse zusätzlich in seiner Position variabel positionierbar sein muss. Einige Lautsprecher mit stärkeren Verstärkern haben zusätzlich Kühlkörper an der Lautsprecherrückseite, aus diesem Grund und der Tatsache, dass eventuell weitere Regler (Phase, TP, EQ) vorhanden sind, ist ein gewisser Abstand zwischen den Gehäusen notwendig. Auch die Positionen der Endanschläge sind nicht überall gleich, das bedeutet, dass auch die Endschalter in ihrer Position variierbar sein müssen.
 		\label{sec:Theorie Mechanik}
 	\chapter{Prototyp-Entwicklung}
@@ -104,34 +111,40 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 		Folgendes Kapitel beinhaltet die Beschreibung aller im RotaCon verwendeten Bestandteile, sowie der Software, die zum Entwickeln benutzt wurden.
 		Es wird auf die Programmierung des Mikrocontrollers eingegangen, die elektronische Schaltung und der Entwurf der Gehäuse wird erläutert.
 		\section{Notwendige Software}
-			\subsection{Arduino IDE}
+			\subsection*{Arduino IDE}
 			\label{sec:Arduino IDE}
 				%gleiche Quellen wie oben
 				Diese Entwicklungsumgebung (IDE\footnote{IDE steht für ''Integrated Development Environment'' und bedeutet Entwicklungsumgebung.}) stellt den Softareteil der Arduino-Plattform dar und basiert auf Processing, einer stark typisierten Programmiersprache mit integrierter Entwicklungsumgebung. Die Programmiersprache ähnelt C++ und ist darauf ausgelegt ohne tiefgründige Programmierkenntnisse Programme schreiben zu können. Programme dieser IDE werden ''Sketch'' genannt. Dieser Sketch wird in der IDE compiliert und kann via USB direkt auf den Speicher des Arduino-Boards geladen werden. Ein in die IDE integrierter serieller Monitor kann die jeweiligen Zustände der Ein- und Ausgänge überwachen und ist ein Hilfsmittel zur Fehlersuche in der Entwicklungsphase.
-			\subsection{FreeCAD}
+			\subsection*{FreeCAD}
 			\label{sec:FreeCAD}
-				FreeCAD ist eine parametrische Modellierungsanwendung. 3D-Objekte können mit hoher Päzision modelliert und angeordnet werden. Vorteil gegenüber einer Modellierungsanwendung wie Cinema 4D besteht in der Möglichkeit der Herstellung von Unterlagen zum designten Modell. So können beispielsweise technische Zeichnungen und Montagepläne erstellt werden. Die Anwendung ist ein Open-Source Projekt, daher wird es gemeinschaftlich weiterentwickelt und wächst in seinem Funktionsumfang.
+				FreeCAD ist eine parametrische Modellierungsanwendung. 3D-Objekte können mit hoher Päzision modelliert und angeordnet werden. Vorteil gegenüber einer Modellierungsanwendung wie Cinema 4D besteht in der Möglichkeit der Herstellung von Unterlagen zum designten Modell. So können beispielsweise technische Zeichnungen und Montagepläne erstellt werden. Die Anwendung ist ein Open-Source Projekt, daher wird es gemeinschaftlich weiterentwickelt und wächst in seinem Funktionsumfang. Verwendete Version: FreeCAD 0.18
 				%https://www.freecadweb.org/wiki/Getting_started/de
 				%https://de.wikipedia.org/wiki/CAD#Herstellen_von_Fertigungs-/Herstellungsunterlagen
-			\subsection{Cura}
+			\subsection*{Cura}
 			\label{sec:Cura}
 				%https://de.wikipedia.org/wiki/Slicer-Software
 				%https://ultimaker.com/download/170/Cura_User-Manual_v1.0.pdf
 				Cura ist eine Slicing Software von der Firma Ultimaker. Dieses Programm ist für die Umwandlung von 3D-Objektmodellen in spezifische Druckanweisungen verantwortlich. Dazu wird ein 3D-Modell zu einem Stapel von flachen Schichten umgerechnet beziehungsweise ''zerschnitten''. Zusätzliche Einstellungen für den 3D-Drucker werden vorgegeben, sodass Druckablauf, Temperaturen von Druckbett und Extruder, Filament-Art, 
 				Vortriebsgeschwindigkeiten und gegebenenfalls Stützen für den Druck von Überhängen festgelegt sind.
-			\subsection{Eagle}
+			\subsection*{Eagle}
 			\label{sec:Eagle}
 				%http://dl36mmdz94630.cloudfront.net/uploads/eagle_resources/files/000/002/278/original/step-by-step_tutorial.pdf?1484967932
 				Die Software Eagle von Autodesk ist ein Platinen-CAD Programm zum entwerfen von Schaltplänen und Platinenlayouts. Dabei sind zwei Hauptschritte der Bearbeitung auszuführen. Zum Einen die Gestaltung des Schaltplans, dazu bietet Eagle durch Einbinden von Bibliotheken annähernd alle erdenklichen 
 				Schaltsymbole und Bezeichnungen die für den Entwurf der Schaltung notwendig sind. Zusätzlich können manuell Symbole erstellt werden, falls spezielle unkonventionelle oder eigens entwickelte Elemente verwendet werden.
 				Im zweiten Schritt wird das Layout der Platine entworfen, um die Leiterbahnen und Bohrungen passend zu platzieren/ dimensionieren.
 		\section{Verwendete Hardware}
-			\subsection{Schrittmotor (unipolar)}
+				\subsection*{Arduino Nano}
+				\label{sec:Nano}
+					%Arduino Praxiseinstieg 2.3 Seite 23?
+					%https://store.arduino.cc/arduino-nano
+					Arduino ist eine Open-Source Elektronik Plattform, die aus zwei Teilen besteht. Einem Hardware- und einem Softwareteil [Brühlmann \cite[S.23]{Arduino_Plattform}]. Der Hardware-Teil ist eine Mikrocontroller-Schaltung mit serieller Schnittstelle. Diese ''Mikrocontroller-Boards'' gibt es in verschiedenen Ausführungen und unterscheiden sich in ihrer Größe, dem verwendeten Mikrocontroller und den somit einhergehenden Eigenschaften von Ein- und Ausgängen. Die Eingänge können Daten von Sensoren einlesen, die Ausgänge dienen zur Ansteuerung von Motoren, Dioden,	Relais oder anderen elektronischen Komponenten. Die Spannungsversorgung kann über die USB-Schnittstelle oder externem Netzteil erfolgen. Der im RotaCon verwendete Arduino Nano ist eine Leiterplattenversion von geringer Baugröße und nutzt als Basis den ATmega328 [Arduino \cite{Nano}]. Der Arduino Nano hat insgesamt 22 Input/Output-Pins, 8 davon können als analoge Eingänge benutzt werden. Die logische Spannung des Nanos beträgt 5V, die maximale Stromstärke pro Pin 40 mA. Mit einer Taktrate von 16 MHz und einem integrierten Speicher (EEPROM) von 1KB ist der Arduino Nano in seinen Funktionen für dieses Projekt gweählt worden.
+			\newpage
+			\subsection*{Schrittmotor (unipolar)}
 			\label{sec:Motor}
 				%Fachkunde Elektrotechnik Seite 461
 				%http://home.roboticlab.eu/de/examples/motor/stepper
 				%http://www.arduino-projekte.de/index.php?n=63
-				Der im RotaCon verwendete unipolare Schrittmotor \textit{28BYJ-48} hat vier Phasen. Das bedeutet vier Elektromagneten steuern die Bewegung des Dauermagnetrotors. Diese vier Elektromagneten werden durch zwei Spulen realisiert, deren Wicklungen je hälftig aufgeteilt und entgegengesetzt gewickelt sind. Sie sind statisch um den Rotor angeordnet (\ref{fig:imgMotor}). Die einzelnen Phasen werden nur in einer Richtung von Strom durchflossen und steuern so die Polung der Magneten beziehungsweise die Rotationsrichtung des Motors. Die Versorgungsspannung beträgt 5V und der Widerstand einer Spule ist mit 50$\Omega$ +- 7\% angegeben. Je nach Einphasensteuerung oder Zweiphasensteuerung ergeben sich daher Ströme von etwa 100mA (zweiphasig), bzw. 200mA (einphasig). Bei Schrittmotoren werden im Datenblatt Schrittwinkel und Getriebeübersetzung angegeben. Der hier verwendete Motor hat einen Schrittwinkel von 5,625° bei 64 Schritten angegeben und ein Getriebeverhältnis von 1/64. Daraus ergibt sich, dass eine volle Umdrehung der Motorachse 4096 Schritte benötigt (64x64). Diese Winkelangabe bezieht sich auf einen Halbschrittbetrieb, daher ist im Vollschrittbetrieb der Schrittwinkel 11,25° und eine Achsenumdrehung benötigt 2048 Schritte. Bei einem Halbschrittverfahren werden Ein- und Zweiphasensteuerung zusammen benutzt um den Motor in 45° Schritten zu bewegen (vergl. Deltron AG TOTOTOTOTOTOTOTOTOTO) Die Verwendung eines unipolaren Motors hat den Vorteil, dass auf Grund der einseitigen Stromflussrichtung, die Steurung rein durch Software erfolgen kann und daher auf H-Brücken oder ähnliche zusätzliche Schutzmaßnahmen in diesem Projekt verzichtet werden kann.
+				Der im RotaCon verwendete unipolare Schrittmotor \textit{28BYJ-48} hat vier Phasen. Das bedeutet vier Elektromagneten steuern die Bewegung des Dauermagnetrotors. Diese vier Elektromagneten werden durch zwei Spulen realisiert, deren Wicklungen je hälftig aufgeteilt und entgegengesetzt gewickelt sind. Sie sind statisch um den Rotor angeordnet (\ref{fig:imgMotor}). Die einzelnen Phasen werden nur in einer Richtung von Strom durchflossen und steuern so die Polung der Magneten beziehungsweise die Rotationsrichtung des Motors. Die Versorgungsspannung beträgt 5V und der Widerstand einer Spule ist mit 50$\Omega$ +- 7\% angegeben. Je nach Einphasensteuerung oder Zweiphasensteuerung ergeben sich daher Ströme von etwa 100mA (zweiphasig), bzw. 200mA (einphasig). Bei Schrittmotoren werden im Datenblatt Schrittwinkel und Getriebeübersetzung angegeben. Der hier verwendete Motor hat einen Schrittwinkel von 5,625° bei 64 Schritten angegeben und ein Getriebeverhältnis von 1/64. Daraus ergibt sich, dass eine volle Umdrehung der Motorachse 4096 Schritte benötigt (64x64). Diese Winkelangabe bezieht sich auf einen Halbschrittbetrieb, daher ist im Vollschrittbetrieb der Schrittwinkel 11,25° und eine Achsenumdrehung benötigt 2048 Schritte [vergl. Tkotz et al. \cite[S.641]{Winkelberechnung}]. Bei einem Halbschrittverfahren werden Ein- und Zweiphasensteuerung zusammen benutzt um den Motor in 45° Schritten zu bewegen [vergl. Deltron AG \cite{Schrittmotor_Steuerung}] Die Verwendung eines unipolaren Motors hat den Vorteil, dass auf Grund der einseitigen Stromflussrichtung, die Steurung rein durch Software erfolgen kann und daher auf H-Brücken oder ähnliche zusätzliche Schutzmaßnahmen in diesem Projekt verzichtet werden kann.
 				\begin{equation}
 					I=\frac{U}{R}=\frac{5V}{50\Omega} = 100mA \hspace{10pt} bzw. = \frac{5V}{25\Omega} = 200mA
 				\end{equation}
@@ -142,17 +155,12 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 					\caption{ Aufbau eines unipolaren Schrittmotors.
 					\label{fig:imgMotor}}
 				\end{figure}
-				\subsection{Arduino Nano}
-				\label{sec:Nano}
-					%Arduino Praxiseinstieg 2.3 Seite 23?
-					%https://store.arduino.cc/arduino-nano
-					Arduino ist eine Open-Source Elektronik Plattform, die aus zwei Teilen besteht. Einem Hardware- und einem Softwareteil. Der Hardware-Teil ist eine Mikrocontroller-Schaltung mit serieller Schnittstelle. Diese ''Mikrocontroller-Boards'' gibt es in verschiedenen Ausführungen und unterscheiden sich in ihrer Größe, dem verwendeten Mikrocontroller und den somit einhergehenden Eigenschaften von Ein- und Ausgängen. Die Eingänge können Daten von Sensoren einlesen, die Ausgänge dienen zur Ansteuerung von Motoren, Dioden,	Relais oder anderen elektronischen Komponenten. Die Spannungsversorgung kann über die USB-Schnittstelle oder externem Netzteil erfolgen. Der im RotaCon verwendete Arduino Nano ist eine Leiterplattenversion von geringer Baugröße und nutzt als Basis den ATmega328. Der Arduino Nano hat insgesamt 22 Input/Output-Pins, 8 davon können als analoge Eingänge benutzt werden. Die logische Spannung des Nanos beträgt 5V, die maximale Stromstärke pro Pin 40 mA. Mit einer Taktrate von 16 MHz und einem integrierten Speicher (EEPROM) von 1KB ist der Arduino Nano in seinen Funktionen für dieses Projekt gweählt worden.
 		\newpage
 		\section{Realisierung der Schaltung}
 			\subsection{Motorsteuerung}
 			\label{sec:Motorsteuerung}
 				%ULN, Darlington, Motormesswerte der Wiederstände, Berechnung der Ströme und Leistungen
-				Eine Darlington-Schaltung ist eine Schaltung zweier Transistoren mit hoher Stromverstärkung und wird zur Schaltung beziehungsweise Steuerung größerer Lasten eingesetzt. Dabei können die nötigen Steuerströme gering gehalten werden. Der hier verwendete ULN2003 beinhaltet mehrere Darlington-Transistoren in einem 
+				Eine Darlington-Schaltung ist eine Schaltung zweier Transistoren mit hoher Stromverstärkung und wird zur Schaltung beziehungsweise Steuerung größerer Lasten eingesetzt [Böhmer et al. \cite[S.290]{Darlington}]. Dabei können die nötigen Steuerströme gering gehalten werden. Der hier verwendete ULN2003 beinhaltet mehrere Darlington-Transistoren in einem 
 				Gehäuse und verstärkt die Steuersignale des Arduinos ohne dessen Ausgänge mit zu hohen Stromstärken zu belasten. Gemäß Datenblatt ist die Kollektor-Emitter-Sättigungs-Spannung im leitenden Zustand zwischen 0,9 und 1,3 Volt bei in Kapitel \ref{sec:Motor} angenommenen 100mA bis 200mA.
 				Bei der höchsten angenommenen Sättigungsspannung von 1,3 V ergibt sich ein Potentialunterschied an den jeweiligen Wicklungen von 3,7 V.
 				Die Messung der Widerstände der einzelnen Halbspulen\footnote{Messung durch Multimeter: \textit{testo67-2}} des verwendeten Motors ergibt, dass jede Phase etwa 23 $\Omega$ Widerstand hat. Bei Vollschrittbetrieb des Motors, bei dem je genau eine Phase geschalten wird, lassen sich die Ströme daher berechnen:
@@ -236,10 +244,12 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 			\newpage
 			\subsection{Anschlagerkennung durch Endschalter}
 				%Redundanz, pullUp
-			\subsection{Gesamtschaltung und Pinbelegungen}
+				Redundant zur Strommessung und Auswertung besitzt der RotaCon zwei Endschalter, diese sind Mikroschalter mit Flachhebel und im ''normaly open'' -Modus betrieben. Bei dem Prototypen sind diese Schalter durch Klebemasse befestigt und können je nach Potentiometer beliebig auf dem RotaCon-Gehäuse befestigt werden. Motorachse und Potentiometer sind durch eine flexible Wellenkupplung verbunden. An dieser Kupplung ist zusätzlich eine 25mm Schraube mit M4-Gewinde eingeschraubt, die als Hebel zum Auslösen der Schalter dient. Sobald einer der Schalter ausgelöst wird, wechselt der entsprechende Pin des Arduinos auf LOW und der Motor wird durch Software für diese Drehrichtung gestoppt.
+			\subsection{Pinbelegungen}
 			\label{sec:Gesamtschaltung}
 				%SChaltpläne eventuell als Beginn des Kapitels?
 				%Verbindung der Gehäuse mit DSUB9, Polbelegung DSUB
+				Durch die Verwendung zweier Platinen und resultierender Kabelverbindung, sind einzelne Signalpfade nur schwer nachzuvollziehen. Folgende Tabelle bietet eine Übersicht aller Pins. Die Platinen sind abgekürzt mit DB(Display-Board) und MB (Motor-Board).
 				\begin{table}[htbp]
 					\centering
 					\caption[Pin-Belegungen]{Pin-Belegungen}
@@ -273,18 +283,113 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 	
 					\end{tabular}
 				\end{table}
+				\newpage
+			\subsection{Gesamtschaltung der Display-Platine}
+				Da das Display durch seine Platzierung im Displaygehäuse von der Platine getrennt ist, wird eine Pinleiste auf der Platine eingesetzt. Display und Platine sind durch Kabelbrücken miteinander verbunden.
+				\vspace{3em}
+				\begin{figure}[htbp]
+					\centering
+					\includegraphics[width=\linewidth]{./img/DisplayComplete.png}
+					\caption{Finale Schaltung der Display-Platine.
+					\label{fig:imgDPComp}}			
+				\end{figure}
+				\newpage
+			\subsection{Gesamtschaltung der Motor-Platine}
+				Die Endschalter sind ebenfalls seperat zur Hauptplatine und daher nur als Steckverbindung zu erkennen. Diverse Testpunkte sind in die Schaltung integriert. Die USB-Spannungsquelle sowie sätzliche Klemmen für eine redundante Spannungsversorgung wurden hinzugefügt. Ein Anschluss für den Betrieb eines weiteren Ports des Arduinos um eventuelle Erweiterungen durchzuführen ist ebenfalls implementiert (A3).
+				\vspace{3em}
+				\begin{figure}[htbp]
+					\centering
+					\includegraphics[width=\linewidth]{./img/MotorComplete.png}
+					\caption{Finale Schaltung der Motor-Platine.
+					\label{fig:MotorComp}}			
+				\end{figure}
+		\newpage
 		\section{Software}
 		\label{sec:Software}
 			%Matrizen zur Motorsteuerung, case für IR-auslesen, Messung und Minimalwert
+			Die Schaltung des Motors ist einfach gehalten. Die vier Phasen-Ports sind über eine Liste angesteuert in der jeweils ein Wert auf HIGH und der Rest auf LOW gesetzt ist. Je nach Rotationsrichtung des Motors muss das HIGH-Bit nun innerhalb der Liste verschoben werden. Da es bei dem Einphasenbetrieb im Vollschrittverfahren nur vier Varianten dieser Liste gibt, wurde hier eine 4x4 Matrix implementiert deren Zeilen je einer dieser Listen entsprechen:
+
+			\begin{lstlisting}[gobble=28, language=C++]
+				int stepMatrix[4][4] = {
+  				  {HIGH, LOW, LOW, LOW},
+  				  {LOW, HIGH, LOW, LOW},
+  				  {LOW, LOW, HIGH, LOW},
+  				  {LOW, LOW, LOW, HIGH},
+				};
+			\end{lstlisting}
+
+			Eine volle Umdrehung der Motorachse benötigt 2048 dieser ''Zeilensprünge'' (siehe \ref{sec:Motor}). Als Anhalt für den maximalen Drehwinkel eines Potentiometers wird 320° angenommen. Dies entspricht etwa 1820 Motorschritten. Für die angestrebten 28 bis 30 Lautstärkestufen des RotaCons bedeutet das, dass je 64 Motorschritte für eine Lautstärkestufe passieren müssen. Damit Rotor und Getriebe sich in Bewegung setzen können, ist bewusst ein Delay zwischen den einzelnen Schritten implementiert.
+
+			Unmittelbar nach jedem Schritt wird die am A/D-Wandler liegende Spannung abgefragt, die den Motor-Stromverbrauch repräsentiert. Der tiefste Wert nach 64 Schritten wird übergeben und dient zur Feststellung ob der Motor den Endanschlag des Potentiometers erreicht hat. Sind die Werte überhalb eines Schwellwertes, ist dies ein Anzeichen, dass der Rotor starr schwischen den schaltenden Elektromagneten steht. Der Schwellwert wurde über Tests im seriellen Monitor ermittelt und liegt bei 2,8V.\newline
+			Wird somit ein Anschlag erkannt, oder einer der beiden Taster betätigt, ist die Motorsteuerung für eine Rotation in diese Richtung gesperrt und auf dem Display wird eine Warnung ausgegeben.
+
+			Für die Displaysteuerung und Datenauwertung des Infrarotempfängers werden entsprechende Bibliotheken benutzt. Eine ''Switch-Case-Anweisung'' koordiniert die Eingaben der Fernbedienung. So kann jeder Hexadezimalwert vom IR-Empfänger einer Methode zugewiesen werden. Hält der Benutzer eine beliebige Taste der Fernbedienung gedrückt, so sendet sie den Wert ''0xFFFFFFFF''. Dieser Wert steht für die Wiederholung des zuletzt gesendeten Hex-Codes, daher ist dieser Wert gesondert in der Software betrachtet. (siehe Anhang \ref{sec:Code}) 
+			Die aktuelle Motorposition, sowie Lautstärke wird im internen EEPROM-Speicher abgelegt. Sollte der RotaCon vom Strom getrennt werden, bleiben diese Werte somit unverändert.
+			
+			Die komplette Software ist in dem GitHub-Projekt einsehbar, daher werden weitere Details hier nicht weiter erläutert um den Umpfang dieser Dokumentation übersichtlich zu halten.
+		\newpage
 		\section{Das Gehäuse}
+		\label{sec:Casing}
+			Dieser Abschnitt bezieht sich auf Feststellungen aus Kapitel \ref{sec:Design}. Alle Angaben beziehen sich auf die in diesem Projekt verwendeten Materialien. So sind die Maße der Platinen und deren Bohrungen zum Beispiel ausschlaggebend für den Gehäuseentwurf. 
 			\subsection{Motorgehäuse}
+				Für den Prototypen wurde ein Gehäuse entworfen, dass weder verklebt noch vielseitig verschraubt werden muss. Somit kann zu Entwicklungszwecken ein häufiges unkompliziertes Öffnen stattfinden. Exakte Maße sind den detaillierteren technischen Zeichungen im Anhang zu entnehmen. Ausmaße des Gehäuses ergeben sich durch Platinen- und Motorgröße, da der Motor  komplett im Gehäuse untergebracht ist. Dieses Gehäuse besteht aus zwei einzeln gefertigten Teilen, die mit einem 3D-Drucker produziert werden. 3D-Modell und notwendige Dateien zum Druck sind im GitHub-Projekt abgelegt, variieren jedoch je nach verwendetem Filament und Drucker.
+				\vspace{3em}
 				%Zeichnung, Modell, gesliced, fertigstück ?
 				%Besonderheiten/Probleme
+				\begin{figure}[htbp]
+					\centering
+					\includegraphics[width=0.75\linewidth]{./img/Motor_Case_Draw.png}
+					\caption{Skizze Des Motorgehäuses
+					\label{fig:imgMotorDraw}}			
+				\end{figure}
+			\newpage
 			\subsection{Displaygehäuse}
+				Auch bei diesem Gehäuse wurde darauf geachtet, dass es möglichst einfach geöffnet werden kann. Höhe und Breite sind durch die Displaymaße beeinflusst. Die Öffnung für den IR-Empfänger ist mit möglichst dunkler Folie verdeckt, da Licht der Displaybeleuchtung sonst nach außen scheint. Display und Platine sind in diesem Gehäuse auf Platikstifte gesteckt und halten ohne Einsatz von Heißkleber oder Schrauben. Durch das 40cm lange D-Sub-Kabel kann dieses Gehäuse frei auf der Oberseite des Lautsprechers platziert werden. Zum Einen verbinden keilförmige Haken als Klemmverschlus die beiden Gehäuseteile miteinander, zum Anderen sorgt die D-Sub-Steckverbindung für den Zusammenhalt.
+				\vspace{3em}
+				\begin{figure}[htbp]
+					\centering
+					\includegraphics[width=0.75\linewidth]{./img/Display_Case_Draw.png}
+					\caption{Skizze Des Displaygehäuses
+					\label{fig:imgDisplayDraw}}			
+				\end{figure}
+			\newpage
 			\subsection{Gehäuseständer}
-	\chapter{Epilog}
+				Das Gehäusestativ ist provisorisch und aus entwicklungszeitlichen Gründen nur für den Protoytpen gestaltet. Eine Gewindestange ist in eine Einschraubmutter des lackierten Holzfußes eingeschraubt und durch ein an das Motorgehäuse geklebtes Winkelblech gesteckt. Durch Einsatz zweier Flügelmuttern und Unterlegscheiben lässt sich das Gehäuse somit sehr fein in der Höhe verstellen. Dieses Winkelblech kann bei zukünftigen Versionen zum Beispiel durch Laschen am Motorgehäuse direkt ersetzt werden. Angenehmer für den Benutzer wäre ein Gewinde innerhalb dieser Laschen und die gewindelose Lagerung der Gewindestange im Fuß, so könnte die Gehäusehöhe durch Rotation der Gewindestange eingestellt werden (z.B. via Motor oder Kurbel).
+				\vspace{3em}
+				\begin{figure}[htbp]
+					\centering
+					\includegraphics[width=0.75\linewidth]{./img/RotaCon.png}
+					\caption{Gehäuseständer des Prototyps
+					\label{fig:imgRotaCon}}			
+				\end{figure}
+		\newpage
+	\chapter{Ergebnis}
+	\label{sec:Epilog}
+		In diesem Kapitel wird die Inbetriebnahme des Prototypen geschildert. Probleme, die bei diesem Projekt aufgetreten sind werden dargestellt und Lösungsansätze erwähnt. Nach einer kurzen Zusammenfassung des RotaCon-Projekts folgt ein kurzer Abschnitt über mögliche Erweiterungen durch Folgeprojekte.
 		\section{Inbetriebnahme}
-		\section{Problemstellungen}
+			\label{sec:HowTo}
+			\begin{enumerate}
+				\item Abnehmen der Potentiometerkappe am Lautsprecher
+				\item Einstellen der Höhe des Motorgehäuses durch Flügelmuttern
+				\item Festschrauben der Wellenkupplung (Innensechskant 2mm)
+				\item Potentiometer mit Wellenkupplung auf Minimalwert stellen
+				\item Anbringen des ersten Tasters durch Klebemasse sodass Hebel gedrückt
+				\item Stellung auf Maximalwert und letzten Schritt wiederholen
+				\item Verbinden beider RotaCon-Gehäuse mit D-Sub-Kabel
+				\item Anschließen der Spannungsversorgung
+				\item Regeln des Potentiometers per Fernbedienung auf Minimalstellung
+				\item Auslösen des Minimalwert-Tasters setzt ''Volume'' auf 0
+				\item Der RotaCon ist betriebsbereit
+			\end{enumerate}
+		\section{Problemdiskussion}
+		\label{sec:Probleme}
+			1 Das D-Sub-Verbindungskabel ist sperrig und schränkt die Platzierung des Display-Gehäuses ein. Durch den Einsatz eines $I^{2}C$-Datenbuses können die Pinbelegungen und somit auch die Anzahl der Leitungen im Kabel so reduziert werden, dass ein flexibleres Micro-USB-Kabel verwendet werden kann.
+
+			2 Die Platzierung der Endschalter mit Klebemasse ist unzweckmäßig aber für den ersten Prototypen ausreichend. Eine in das Gehäuse integrierte Ringscheibe auf der die beiden Endschalter verschoben und befestigt werden können ist eine zweckmäßigere Variante. Darauf wurde jedoch aus Kosten- und Aufwandsgründen bisher verzichtet.
+			
+			3 Die Strommessung ist ein guter Ansatz, jedoch noch nicht ausreichend um sichere Aussagen über die Stellung des Potentiometers treffen zu können. Je nach Menge der Eingangssignale von der Fernbedienung oder der Leichtgängigkeit des Potentiometers variieren die gemessenen Werte. Weitere Tests durch Variation des Motorbetriebes (Softwaretechnisch) und damit verbundener Änderung der Messwiederstände können Abhilfe schaffen, wurden aus zeittechnischen Gründen in diesem Projekt jedoch nicht durchgeführt.
+
+			4 
 		\section{Zusammenfassung}
 		\section{Ausblick}
 	\chapter{Anhänge}
@@ -292,12 +397,135 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 		\section{Datenblätter}
 			Eine Tabelle mit der Auflistung aller Einzelteile mit anschließenden wichtigen Bereichen der Datenblätter.
 			Die gesamten Datenblätter werden nicht eingefügt, jedoch ein Link der zu einem derzeitigen Datenblatt im Internet führt.
-		\section{Schaltplan}
-			Die 2 Schaltpläne der eigenen Platinen.
-		\section{Layout}
-			Die 2 Platinenlayouts.
-		\section{Abmessungen}
-			Technische Zeichnungen von FreeCAD mit den Abmessungen der Gehäuse.
+		\newpage
+		\section{Layouts}
+			~
+			~
+			\begin{figure}[!htbp]
+				\centering
+				\includegraphics[height=0.9\linewidth ,angle=90]{./docs/Display_LayoutW.pdf}
+				\caption{Display-Platine}
+			\end{figure}
+			\newpage
+			~
+			~
+			~
+			\begin{figure}[!htbp]
+				\centering
+				\includegraphics[height=0.9\linewidth ,angle=90]{./docs/Motor_LayoutW.pdf}
+				\caption{Motor-Platine}
+			\end{figure}
+		\newpage
+		\addtocounter{section}{1}
+		\addcontentsline{toc}{section}{5.4\hspace{1em}Gehäusemaße}
+		\label{sec:TechDraws}
+			%Technische Zeichnungen von FreeCAD mit den Abmessungen der Gehäuse.
+			\begin{landscape}
+				\includegraphics[width=\linewidth]{./docs/Motor_Gehäuse_Oben.pdf}
+			\end{landscape}
+			\begin{landscape}
+				\includegraphics[width=\linewidth]{./docs/Motor_Gehäuse_Unten.pdf}
+			\end{landscape}
+			\begin{landscape}
+				\includegraphics[width=\linewidth]{./docs/Display_Gehäuse_Unten.pdf}
+			\end{landscape}
+			\begin{landscape}
+				\includegraphics[width=\linewidth]{./docs/Display_Gehäuse_Unten.pdf}
+			\end{landscape}
 		\section{Quellcode}
-			Ausschnitte des Quellcodes.
+		\label{sec:Code}
+			Ausschnitte des Quellcodes zur Motorsteuerung:
+			\begin{lstlisting}[gobble=28, frame=single, language=C++]
+				int arrayDefault[4] = {LOW, LOW, LOW, LOW};
+				int outArray[4];
+				int stepMatrix[4][4] = {
+  				  {HIGH, LOW, LOW, LOW},
+  				  {LOW, HIGH, LOW, LOW},
+  				  {LOW, LOW, HIGH, LOW},
+  				  {LOW, LOW, LOW, HIGH},
+				};
+
+				void writeStep(int outArray[4]) {
+				  digitalWrite(9, outArray[0]);
+				  digitalWrite(10, outArray[1]);
+				  digitalWrite(11, outArray[2]);
+				  digitalWrite(12, outArray[3]);
+				}
+
+				void moveOneStep(bool dir) { //dir = Richtung des Steps
+  				  if (currentStep >= 0 || currentStep <= 3) {
+    			    	  writeStep(stepMatrix[currentStep]);
+  				  } else {
+    			    	  writeStep(arrayDefault);
+  				  }
+  				  (dir == true) ? (currentStep++) : (currentStep--);
+  				  if (currentStep > 3) {
+    			    	  currentStep = 0;
+  				  } else if (currentStep < 0) {
+    			    	  currentStep = 3;
+  				  }
+  				  EEPROM.put(1, currentStep);
+				}
+
+				void moveSteps(bool dir, int steps) {
+  				  float lowestVoltage = 5.0;
+  				  for (int i = 0; i < steps; i++) {
+    				  moveOneStep(dir);
+    				  float u=currentVoltage();
+    				  if (u < lowestVoltage) {
+      					  lowestVoltage = u;
+    				  }
+    				  delay(2);
+  				  }
+  				  lcd.clear();
+  				  uaMin=lowestVoltage;
+				}
+			\end{lstlisting}
+			\newpage
+			Auschnitte der Messung und Auswertung der IR-Signale:
+			\begin{lstlisting}[gobble=28, frame=single, language=C++]
+				void check() {
+  				  if (uaMin > 2.8) {
+    			  	  impact = false;
+  				  } else {
+    			  	  Serial.println("ANSCHLAG");
+    			  	  impact = true;
+  				  }
+				}
+
+				float currentVoltage() {
+  				  return analogRead(messPinUa) * 5.0 / 1024;
+				}
+
+				void motorControl(unsigned long buttonID) {
+  				  switch (buttonID) {
+    			  	  //Remote pressed "+"
+    			  	  case 0xFF02FD:
+      					  if (!maxHit) {
+        					  moveSteps(true, 1 * 64);
+        					  Serial.println(uaMin);
+        					  check();
+        					  if (!impact) {
+          					  volume++;
+        					  } else {
+          					  lcd.print("STOP");
+          					  delay(2000);
+          					  lcd.clear();
+        					  }
+      					  } else {
+						  lcd.print("MAX");
+      					  }
+						EEPROM.put(0, volume);
+      					  lastButton = buttonID;
+      					  break;
+
+    				  //Remote hold button
+    				  case 0xFFFFFFFF:
+      					  motorControl(lastButton);
+      					  break;
+  				  }
+				}
+
+			\\end{lstlisting}
+	\printbibliography  
 \end{document}

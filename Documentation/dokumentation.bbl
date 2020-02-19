@@ -16,5 +16,174 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Lautstärkeregler}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c5bd6b1714874c8c77c4540d26d05b18}{%
+           family={o.A.},
+           familyi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{fullhash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{bibnamehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{authorbibnamehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{authornamehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{authorfullhash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lautstärkeregler}
+      \field{urlday}{12}
+      \field{urlmonth}{2}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Lautst%C3%A4rkeregler
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Lautst%C3%A4rkeregler
+      \endverb
+    \endentry
+    \entry{Arduino_Plattform}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c35388e0738b25a12e6b6933d1aaf181}{%
+           family={Brühlmann},
+           familyi={B\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {mitp}%
+      }
+      \strng{namehash}{c35388e0738b25a12e6b6933d1aaf181}
+      \strng{fullhash}{c35388e0738b25a12e6b6933d1aaf181}
+      \strng{bibnamehash}{c35388e0738b25a12e6b6933d1aaf181}
+      \strng{authorbibnamehash}{c35388e0738b25a12e6b6933d1aaf181}
+      \strng{authornamehash}{c35388e0738b25a12e6b6933d1aaf181}
+      \strng{authorfullhash}{c35388e0738b25a12e6b6933d1aaf181}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-8266-8342-8}
+      \field{subtitle}{Behandelt Arduino 1.0}
+      \field{title}{Arduino Praxiseinstieg}
+      \field{year}{2012}
+    \endentry
+    \entry{Nano}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c5bd6b1714874c8c77c4540d26d05b18}{%
+           family={o.A.},
+           familyi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{fullhash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{bibnamehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{authorbibnamehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{authornamehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{authorfullhash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Arduino Nano}
+      \field{urlday}{2}
+      \field{urlmonth}{2}
+      \field{urlyear}{2020}
+      \field{year}{o.J.}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://store.arduino.cc/arduino-nano
+      \endverb
+      \verb{url}
+      \verb https://store.arduino.cc/arduino-nano
+      \endverb
+    \endentry
+    \entry{Winkelberechnung}{book}{}
+      \name{author}{1}{}{%
+        {{hash=e89282234089ba660b35ad8945929d7f}{%
+           family={{Tkotz, Klaus Burgmaier, Monika Eichler, Walter Kober, Karsten Bastian, Peter Bumiller, Horst Käppel, Thomas Spielvogel, Otto Schwarz, Jürgen Manderla, Jürgen Ziegler, Klaus Klee, Werner Winter, Ulrich}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Europa Lehrmittel}%
+      }
+      \strng{namehash}{e89282234089ba660b35ad8945929d7f}
+      \strng{fullhash}{e89282234089ba660b35ad8945929d7f}
+      \strng{bibnamehash}{e89282234089ba660b35ad8945929d7f}
+      \strng{authorbibnamehash}{e89282234089ba660b35ad8945929d7f}
+      \strng{authornamehash}{e89282234089ba660b35ad8945929d7f}
+      \strng{authorfullhash}{e89282234089ba660b35ad8945929d7f}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-8085-3188-4}
+      \field{series}{Europa-Fachbuchreihe für elektrotechnische Berufe}
+      \field{title}{Fachkunde Elektrotechnik}
+      \field{year}{2009}
+    \endentry
+    \entry{Schrittmotor_Steuerung}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c5bd6b1714874c8c77c4540d26d05b18}{%
+           family={o.A.},
+           familyi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{fullhash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{bibnamehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{authorbibnamehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{authornamehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{authorfullhash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \field{extraname}{3}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Schrittmotor kurz erklärt}
+      \field{urlday}{2}
+      \field{urlmonth}{2}
+      \field{urlyear}{2020}
+      \field{year}{o.J.}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://wiki.ntb.ch/infoportal/_media/hardware/sysp/bauteile/schrittmotor_kurz_erklaert_d.pdf
+      \endverb
+      \verb{url}
+      \verb https://wiki.ntb.ch/infoportal/_media/hardware/sysp/bauteile/schrittmotor_kurz_erklaert_d.pdf
+      \endverb
+    \endentry
+    \entry{Darlington}{book}{}
+      \name{author}{1}{}{%
+        {{hash=e8fecd286f5f1ded814b728004b92dc1}{%
+           family={{Erwin Böhmer, Dietmar Ehrhardt, Wolfgang Oberschelp}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Vieweg+Teubner}%
+      }
+      \strng{namehash}{e8fecd286f5f1ded814b728004b92dc1}
+      \strng{fullhash}{e8fecd286f5f1ded814b728004b92dc1}
+      \strng{bibnamehash}{e8fecd286f5f1ded814b728004b92dc1}
+      \strng{authorbibnamehash}{e8fecd286f5f1ded814b728004b92dc1}
+      \strng{authornamehash}{e8fecd286f5f1ded814b728004b92dc1}
+      \strng{authorfullhash}{e8fecd286f5f1ded814b728004b92dc1}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-8348-0543-0}
+      \field{subtitle}{Kompendium für Ausbildung und Beruf}
+      \field{title}{Elemente der angewandten Elektronik}
+      \field{year}{2010}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
