@@ -321,7 +321,7 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 			Eine volle Umdrehung der Motorachse benötigt 2048 dieser ''Zeilensprünge'' (siehe \ref{sec:Motor}). Als Anhalt für den maximalen Drehwinkel eines Potentiometers wird 320° angenommen. Dies entspricht etwa 1820 Motorschritten. Für die angestrebten 28 bis 30 Lautstärkestufen des RotaCons bedeutet das, dass je 64 Motorschritte für eine Lautstärkestufe passieren müssen. Damit Rotor und Getriebe sich in Bewegung setzen können, ist bewusst ein Delay zwischen den einzelnen Schritten implementiert.
 
 			Unmittelbar nach jedem Schritt wird die am A/D-Wandler liegende Spannung abgefragt, die den Motor-Stromverbrauch repräsentiert. Der tiefste Wert nach 64 Schritten wird übergeben und dient zur Feststellung ob der Motor den Endanschlag des Potentiometers erreicht hat. Sind die Werte überhalb eines Schwellwertes, ist dies ein Anzeichen, dass der Rotor starr schwischen den schaltenden Elektromagneten steht. Der Schwellwert wurde über Tests im seriellen Monitor ermittelt und liegt bei 2,8V.\newline
-			Wird somit ein Anschlag erkannt, oder einer der beiden Taster betätigt, ist die Motorsteuerung für eine Rotation in diese Richtung gesperrt und auf dem Display wird eine Warnung ausgegeben.
+			Wird somit ein Anschlag erkannt, oder einer der beiden Taster betätigt, ist die Motorsteuerung für eine Rotation in diese Richtung gesperrt und auf dem Display wird eine Warnung ausgegeben. Das Display lässt sich durch eine Methode deaktivieren, die die Hintergrundbeleuchtung ausschaltet.
 
 			Für die Displaysteuerung und Datenauwertung des Infrarotempfängers werden entsprechende Bibliotheken benutzt. Eine ''Switch-Case-Anweisung'' koordiniert die Eingaben der Fernbedienung. So kann jeder Hexadezimalwert vom IR-Empfänger einer Methode zugewiesen werden. Hält der Benutzer eine beliebige Taste der Fernbedienung gedrückt, so sendet sie den Wert ''0xFFFFFFFF''. Dieser Wert steht für die Wiederholung des zuletzt gesendeten Hex-Codes, daher ist dieser Wert gesondert in der Software betrachtet. (siehe Anhang \ref{sec:Code}) 
 			Die aktuelle Motorposition, sowie Lautstärke wird im internen EEPROM-Speicher abgelegt. Sollte der RotaCon vom Strom getrennt werden, bleiben diese Werte somit unverändert.
@@ -373,7 +373,7 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 				\item Einstellen der Höhe des Motorgehäuses durch Flügelmuttern
 				\item Festschrauben der Wellenkupplung (Innensechskant 2mm)
 				\item Potentiometer mit Wellenkupplung auf Minimalwert stellen
-				\item Anbringen des ersten Tasters durch Klebemasse sodass Hebel gedrückt
+				\item Anbringen des ersten Tasters durch Klebemasse (Hebel gedrückt)
 				\item Stellung auf Maximalwert und letzten Schritt wiederholen
 				\item Verbinden beider RotaCon-Gehäuse mit D-Sub-Kabel
 				\item Anschließen der Spannungsversorgung
@@ -381,17 +381,22 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 				\item Auslösen des Minimalwert-Tasters setzt ''Volume'' auf 0
 				\item Der RotaCon ist betriebsbereit
 			\end{enumerate}
+		\newpage
 		\section{Problemdiskussion}
 		\label{sec:Probleme}
-			1 Das D-Sub-Verbindungskabel ist sperrig und schränkt die Platzierung des Display-Gehäuses ein. Durch den Einsatz eines $I^{2}C$-Datenbuses können die Pinbelegungen und somit auch die Anzahl der Leitungen im Kabel so reduziert werden, dass ein flexibleres Micro-USB-Kabel verwendet werden kann.
-
-			2 Die Platzierung der Endschalter mit Klebemasse ist unzweckmäßig aber für den ersten Prototypen ausreichend. Eine in das Gehäuse integrierte Ringscheibe auf der die beiden Endschalter verschoben und befestigt werden können ist eine zweckmäßigere Variante. Darauf wurde jedoch aus Kosten- und Aufwandsgründen bisher verzichtet.
+			\paragraph{Das D-Sub-Verbindungskabel}
+			ist sperrig und schränkt die Platzierung des Display-Gehäuses ein. Durch den Einsatz eines $I^{2}C$-Datenbuses können die Pinbelegungen und somit auch die Anzahl der Leitungen im Kabel so reduziert werden, dass ein flexibleres Micro-USB-Kabel verwendet werden kann.
 			
-			3 Die Strommessung ist ein guter Ansatz, jedoch noch nicht ausreichend um sichere Aussagen über die Stellung des Potentiometers treffen zu können. Je nach Menge der Eingangssignale von der Fernbedienung oder der Leichtgängigkeit des Potentiometers variieren die gemessenen Werte. Weitere Tests durch Variation des Motorbetriebes (Softwaretechnisch) und damit verbundener Änderung der Messwiederstände können Abhilfe schaffen, wurden aus zeittechnischen Gründen in diesem Projekt jedoch nicht durchgeführt.
+			\paragraph{Die Platzierung der Endschalter}
+			mit Klebemasse ist unzweckmäßig aber für den ersten Prototypen ausreichend. Eine in das Gehäuse integrierte Ringscheibe auf der die beiden Endschalter verschoben und befestigt werden können ist eine zweckmäßigere Variante. Darauf wurde jedoch aus Kosten- und Aufwandsgründen bisher verzichtet.
+			
+			\paragraph{Die Strommessung}
+			ist ein guter Ansatz, jedoch noch nicht ausreichend um sichere Aussagen über die Stellung des Potentiometers treffen zu können. Je nach Menge der Eingangssignale von der Fernbedienung oder der Leichtgängigkeit des Potentiometers variieren die gemessenen Werte. Weitere Tests durch Variation des Motorbetriebes (Softwaretechnisch) und damit verbundener Änderung der Messwiederstände können Abhilfe schaffen, wurden aus zeittechnischen Gründen in diesem Projekt jedoch nicht durchgeführt.
 
-			4 
 		\section{Zusammenfassung}
+			Viele aktive Lautsprechersysteme werden über einen am Lautsprechergehäuse befindlichen Potentiometer geregelt. Daher ist es üblich diese Pegel stets auf Maximalwert zu stellen und die tatsächliche Lautstärke über den Signalpegel zum Lautsprecher hin zu verstellen. Je nach verbautem Verstärker kann dies zu hohem Stromverbrauch, Störgeräuschen und hoher Temperaturentwicklung führen. Der RotaCon ist ein Gerät, durch das der Benutzer in der Lage ist, das Potentiometer direkt fernzusteuern. Er besteht aus zwei Gehäusen und einem Stativ. Das Hauptgehäuse auf dem Stativ ist in der Position verstellbar und beinhaltet einen Schrittmotor zur Rotation des Potentiometers. Über ein Kabel ist das zweite Gehäuse verbunden, welches auf dem Lautsprecher positioniert werden kann. Dieses beinhaltet den Infrarotempfänger für die Fernbedienbarkeit und ein Display zur Visualisierung der Lautstärke. Der RotaCon verbraucht sehr wenig Strom und ist daher über USB angeschlossen (Typ A male zu Typ A male). Um Motorgetriebe und Potentiometer zu schonen, erkennt der RotaCon selbst die Maximalstellungen und verhindert weitere Krafteinwirkung nach Anschlag. Dieser Prototyp wird über einen Arduino Nano gesteuert und bietet somit eine geeignete Schnittstelle zur Anpassung und Weiterentwicklung.
 		\section{Ausblick}
+			Neben der Behebung bereits erwähnter Probleme und Optimierung des Gehäusedesigns bietet der Prototyp des RotaCon mehrere Bereiche an, die erweitert werden können. Durch die Synchronisierung mehrerer RotaCon zum Beispiel, wäre es möglich multiple Lautsprecher simultan oder unabhängig von einander mit der gleichen Fernbedienung zu bedienen. Um den Benutzer selbst entscheiden zu lassen, wie sichtbar das Gerät sein soll, wäre es möglich die Bedienung von Infrarotsteuerung auf WLAN-Steuerung zu verlegen. Durch die Verwendung des Arduinos, ist es leicht weitere Funktionen zu implementieren, so zum Beispiel die Speicherung von Pegelwerten als ''Preset'' für ein schnelles Wechseln zwischen Standartlautstärken.
 	\chapter{Anhänge}
 		\section{Tabelle Teileübersicht}
 		\section{Datenblätter}
