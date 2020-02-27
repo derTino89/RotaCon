@@ -56,7 +56,8 @@
       <file>blx-natbib.def</file>
       <file>standard.bbx</file>
       <file>numeric.bbx</file>
-      <file>numeric.cbx</file>
+      <file>numeric-comp.cbx</file>
+      <file>science.cbx</file>
       <file>biblatex.cfg</file>
       <file>german.lbx</file>
       <file>ngerman.lbx</file>
