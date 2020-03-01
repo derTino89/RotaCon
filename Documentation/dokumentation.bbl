@@ -32,8 +32,8 @@
       \strng{authornamehash}{c5bd6b1714874c8c77c4540d26d05b18}
       \strng{authorfullhash}{c5bd6b1714874c8c77c4540d26d05b18}
       \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Erste Schritte}
@@ -62,8 +62,8 @@
       \strng{authornamehash}{c5bd6b1714874c8c77c4540d26d05b18}
       \strng{authorfullhash}{c5bd6b1714874c8c77c4540d26d05b18}
       \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Cura 13.11.2 User manual}
@@ -77,6 +77,36 @@
       \endverb
       \verb{url}
       \verb https://ultimaker.com/download/170/Cura_User-Manual_v1.0.pdf
+      \endverb
+    \endentry
+    \entry{Eagle}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c5bd6b1714874c8c77c4540d26d05b18}{%
+           family={o.A.},
+           familyi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{fullhash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{bibnamehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{authorbibnamehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{authornamehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{authorfullhash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \field{extraname}{3}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Eagle Tutorial}
+      \field{urlday}{2}
+      \field{urlmonth}{2}
+      \field{urlyear}{2020}
+      \field{year}{o.J.}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://dl36mmdz94630.cloudfront.net/uploads/eagle_resources/files/000/002/278/original/step-by-step_tutorial.pdf?1484967932
+      \endverb
+      \verb{url}
+      \verb http://dl36mmdz94630.cloudfront.net/uploads/eagle_resources/files/000/002/278/original/step-by-step_tutorial.pdf?1484967932
       \endverb
     \endentry
     \entry{Arduino_Plattform}{book}{}
@@ -96,8 +126,8 @@
       \strng{authorbibnamehash}{c35388e0738b25a12e6b6933d1aaf181}
       \strng{authornamehash}{c35388e0738b25a12e6b6933d1aaf181}
       \strng{authorfullhash}{c35388e0738b25a12e6b6933d1aaf181}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-3-8266-8342-8}
@@ -117,9 +147,9 @@
       \strng{authorbibnamehash}{c5bd6b1714874c8c77c4540d26d05b18}
       \strng{authornamehash}{c5bd6b1714874c8c77c4540d26d05b18}
       \strng{authorfullhash}{c5bd6b1714874c8c77c4540d26d05b18}
-      \field{extraname}{3}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{extraname}{4}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Arduino Nano}
@@ -133,6 +163,36 @@
       \endverb
       \verb{url}
       \verb https://store.arduino.cc/arduino-nano
+      \endverb
+    \endentry
+    \entry{NanoImg}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c5bd6b1714874c8c77c4540d26d05b18}{%
+           family={o.A.},
+           familyi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{fullhash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{bibnamehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{authorbibnamehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{authornamehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{authorfullhash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \field{extraname}{5}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Arduino Nano Tutorial – Pinout and Schematics}
+      \field{urlday}{29}
+      \field{urlmonth}{2}
+      \field{urlyear}{2020}
+      \field{year}{o.J.}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.circuitstoday.com/arduino-nano-tutorial-pinout-schematics
+      \endverb
+      \verb{url}
+      \verb http://www.circuitstoday.com/arduino-nano-tutorial-pinout-schematics
       \endverb
     \endentry
     \entry{Winkelberechnung}{book}{}
@@ -150,8 +210,8 @@
       \strng{authorbibnamehash}{e89282234089ba660b35ad8945929d7f}
       \strng{authornamehash}{e89282234089ba660b35ad8945929d7f}
       \strng{authorfullhash}{e89282234089ba660b35ad8945929d7f}
-      \field{sortinit}{5}
-      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-3-8085-3188-4}
@@ -171,9 +231,9 @@
       \strng{authorbibnamehash}{c5bd6b1714874c8c77c4540d26d05b18}
       \strng{authornamehash}{c5bd6b1714874c8c77c4540d26d05b18}
       \strng{authorfullhash}{c5bd6b1714874c8c77c4540d26d05b18}
-      \field{extraname}{4}
-      \field{sortinit}{6}
-      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{extraname}{6}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Schrittmotor kurz erklärt}
@@ -203,8 +263,8 @@
       \strng{authorbibnamehash}{12e13be98f33511e0bae92377c5213dc}
       \strng{authornamehash}{12e13be98f33511e0bae92377c5213dc}
       \strng{authorfullhash}{12e13be98f33511e0bae92377c5213dc}
-      \field{sortinit}{7}
-      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Eagle Tutorial}
@@ -235,14 +295,44 @@
       \strng{authorbibnamehash}{e8fecd286f5f1ded814b728004b92dc1}
       \strng{authornamehash}{e8fecd286f5f1ded814b728004b92dc1}
       \strng{authorfullhash}{e8fecd286f5f1ded814b728004b92dc1}
-      \field{sortinit}{8}
-      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-3-8348-0543-0}
       \field{subtitle}{Kompendium für Ausbildung und Beruf}
       \field{title}{Elemente der angewandten Elektronik}
       \field{year}{2010}
+    \endentry
+    \entry{Spule}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c5bd6b1714874c8c77c4540d26d05b18}{%
+           family={o.A.},
+           familyi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{fullhash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{bibnamehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{authorbibnamehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{authornamehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{authorfullhash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \field{extraname}{7}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Auf- und Entladung Spule}
+      \field{urlday}{2}
+      \field{urlmonth}{2}
+      \field{urlyear}{2020}
+      \field{year}{o.J.}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Datei:Auf-_und_Entladung_Spule.png
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Datei:Auf-_und_Entladung_Spule.png
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

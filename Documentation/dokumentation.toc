@@ -25,14 +25,14 @@
 \contentsline {chapter}{\numberline {4}Ergebnis}{22}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Inbetriebnahme}{22}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Problemdiskussion}{23}{section.4.2}%
-\contentsline {paragraph}{Das D-Sub-Verbindungskabel}{23}{section*.26}%
-\contentsline {paragraph}{Die Platzierung der Endschalter}{23}{section*.27}%
-\contentsline {paragraph}{Die Strommessung}{23}{section*.28}%
+\contentsline {paragraph}{Das D-Sub-Verbindungskabel}{23}{section*.28}%
+\contentsline {paragraph}{Die Platzierung der Endschalter}{23}{section*.29}%
+\contentsline {paragraph}{Die Strommessung}{23}{section*.30}%
 \contentsline {section}{\numberline {4.3}Zusammenfassung}{23}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Ausblick}{23}{section.4.4}%
 \contentsline {chapter}{\numberline {5}Anhänge}{24}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Tabelle Teileübersicht}{24}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Datenblätter}{24}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Layouts}{25}{section.5.3}%
-\contentsline {section}{5.4\hspace {1em}Gehäusemaße}{27}{figure.caption.30}%
-\contentsline {section}{\numberline {5.5}Quellcode}{35}{section.5.5}%
+\contentsline {section}{\numberline {5.3}Layouts}{41}{section.5.3}%
+\contentsline {section}{5.4\hspace {1em}Gehäusemaße}{43}{figure.caption.33}%
+\contentsline {section}{\numberline {5.5}Quellcode}{47}{section.5.5}%

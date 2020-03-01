@@ -114,29 +114,29 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 
 			Für den Entwurf der Schaltung sowie die Erstellung des Platinenlayouts soll ein Leiterplatten-Editor benutzt werden. So können externe Platinen-Hersteller oder hochschuleigene Maschinen die Produktion der Leiterplatten sicherstellen.
 
-			Die Gestaltung der Gehäuse muss präzise modeliert werden, damit Steckverbindungen und Display formschlüssig integriert werden können. Dabei soll zusätzlich darauf geachtet werden, dass alle Teile von einem 3D-Drucker gerfertigt werden können.
+			Die Gestaltung der Gehäuse muss präzise modelliert werden, damit Steckverbindungen und Display formschlüssig integriert werden können. Dabei soll zusätzlich darauf geachtet werden, dass alle Teile von einem 3D-Drucker gefertigt werden können.
 
 
 		\section{Theorie Mechanik und Design}
 		\label{sec:Design}
 			Die Übertragung des Drehmoments vom Motor an den Drehregler des Lautsprechers kann nur stattfinden, wenn der Motor starr gelagert ist. Daher ist das Gehäuse mit Motor und Motorsteuerung zu fixieren. Weiterhin sind Lautstärkeregler an unterschiedlichen Lautsprechern auch an verschiedenen Positionen, sodass dieses Gehäuse zusätzlich in seiner Position variabel positionierbar sein muss. 
-			\newline Einige Lautsprecher mit stärkeren Verstärkern haben zusätzlich Kühlkörper an der Lautsprecherrückseite, aus diesem Grund und der Tatsache, dass eventuell weitere Regler (Phase, TP, EQ) vorhanden sind, ist ein gewisser Abstand zwischen den Gehäusen notwendig. Auch die Positionen der Endanschläge sind nicht überall gleich, das bedeutet, dass auch die Endschalter in ihrer Position variierbar sein müssen.
+			\newline Einige Lautsprecher mit stärkeren Verstärkern haben zusätzlich Kühlkörper an der Rückseite des Lautsprechers. Aus diesem Grund und der Tatsache, dass eventuell weitere Regler (Phase, TP, EQ) vorhanden sind, ist ein gewisser Abstand zwischen den Gehäusen notwendig. Auch die Positionen der Endanschläge sind nicht überall gleich, das bedeutet, dass auch die Endschalter in ihrer Position variierbar sein müssen.
 		\label{sec:Theorie Mechanik}
 	\chapter{Prototyp-Entwicklung}
 	\label{sec:Praxistil}
 		Folgendes Kapitel beinhaltet die Beschreibung aller im RotaCon verwendeten Bestandteile, sowie der Software, die zum Entwickeln benutzt wurden.
 		Es wird auf die Programmierung des Mikrocontrollers eingegangen, die elektronische Schaltung und der Entwurf der Gehäuse wird erläutert.
 		\section{Notwendige Software}
-			Die folgend näher erläuterten Programme wurden bei der Entwicklung des RotaCon verwendet und sind keine zwingende Vorraussetzung zur Produktion. Jedes dieser Programme kann bei Bedarf durch äquivalente Software ersetzt werden. 
+			Die folgend näher erläuterten Programme wurden bei der Entwicklung des RotaCon verwendet und sind keine zwingende Voraussetzung zur Produktion. Jedes dieser Programme kann bei Bedarf durch äquivalente Software ersetzt werden. 
 			\subsection*{Arduino IDE}
 			\label{sec:Arduino IDE}
 				%gleiche Quellen wie oben
-				Diese Entwicklungsumgebung (IDE\footnote{IDE steht für \textit{Integrated Development Environment} und bedeutet Entwicklungsumgebung.}) stellt den Softareteil der Arduino-Plattform dar und basiert auf Processing, einer stark typisierten Programmiersprache mit integrierter Entwicklungsumgebung. Die Programmiersprache ähnelt C++ und ist darauf ausgelegt, ohne tiefgründige Programmierkenntnisse Programme schreiben zu können. Programme dieser IDE werden ''Sketch'' genannt. \newline Solch ein Sketch wird in der Umgebung compiliert und kann via USB-Schnittstelle direkt auf den Speicher des Arduino-Boards geladen werden. Ein in die IDE integrierter serieller Monitor kann die jeweiligen Zustände der Ein- und Ausgänge überwachen und ist ein Hilfsmittel zur Fehlersuche in der Entwicklungsphase.
+				Diese Entwicklungsumgebung (IDE\footnote{IDE steht für \textit{Integrated Development Environment} und bedeutet Entwicklungsumgebung.}) stellt den Softwareteil der Arduino-Plattform dar und basiert auf Processing, einer stark typisierten Programmiersprache mit integrierter Entwicklungsumgebung. Die Programmiersprache ähnelt C++ und ist darauf ausgelegt, ohne tiefgründige Programmierkenntnisse Programme schreiben zu können. Programme dieser IDE werden ''Sketch'' genannt. \newline Solch ein Sketch wird in der Umgebung compiliert und kann via USB-Schnittstelle direkt auf den Speicher des Arduino-Boards geladen werden. Ein in die IDE integrierter serieller Monitor kann die jeweiligen Zustände der Ein- und Ausgänge überwachen und ist ein Hilfsmittel zur Fehlersuche in der Entwicklungsphase.
 				\newline Damit die Übertragung des Sketches stattfinden kann, muss jedoch vorerst das richtige Board mit dem richtigen Prozessor in den Werkzeugen ausgewählt werden. Verwendete Version: Arduino 1.8.10
 			\subsection*{FreeCAD}
 			\label{sec:FreeCAD}
-				FreeCAD\footnote{CAD steht für \textit{computer-aided design} und beschreibt das rechnergestützte Erzeugen geometrischer Modelle} ist eine parametrische Modellierungsanwendung. 3D-Objekte können mit hoher Päzision modelliert und angeordnet werden. Vorteil gegenüber einer Modellierungsanwendung, wie Cinema 4D, besteht in der Möglichkeit der Herstellung von Unterlagen zum designten Modell. So können beispielsweise technische Zeichnungen und Montagepläne erstellt werden. [FreeCAD\cite{FreeCAD}] 
-				\newline Die Anwendung ist ein Open-Source Projekt, daher wird es gemeinschaftlich weiterentwickelt und wächst in seinem Funktionsumfang. Verwendete Version: FreeCAD 0.18
+				FreeCAD\footnote{CAD steht für \textit{computer-aided design} und beschreibt das rechnergestützte Erzeugen geometrischer Modelle} ist eine parametrische Modellierungsanwendung. 3D-Objekte können mit hoher Präzision modelliert und angeordnet werden. Vorteil gegenüber einer Modellierungsanwendung, wie Cinema 4D, besteht in der Möglichkeit der Herstellung von Unterlagen zum designten Modell. So können beispielsweise technische Zeichnungen und Montagepläne erstellt werden. [FreeCAD\cite{FreeCAD}] 
+				\newline Die Anwendung ist ein Open-Source-Projekt, daher wird es gemeinschaftlich weiterentwickelt und wächst in seinem Funktionsumfang. Verwendete Version: FreeCAD 0.18
 				%https://www.freecadweb.org/wiki/Getting_started/de
 				%https://de.wikipedia.org/wiki/CAD#Herstellen_von_Fertigungs-/Herstellungsunterlagen
 			\newpage	
@@ -149,26 +149,37 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 			\subsection*{Eagle}
 			\label{sec:Eagle}
 				%http://dl36mmdz94630.cloudfront.net/uploads/eagle_resources/files/000/002/278/original/step-by-step_tutorial.pdf?1484967932
-				Die Software Eagle von Autodesk ist ein Platinen-CAD Programm zum entwerfen von Schaltplänen und Platinenlayouts. Dabei sind zwei Hauptschritte der Bearbeitung auszuführen. Zum Einen die Gestaltung des Schaltplans, dazu bietet Eagle durch Einbinden von Bibliotheken annähernd alle erdenklichen 
-				Schaltsymbole und Bezeichnungen die für den Entwurf der Schaltung notwendig sind. Zusätzlich können manuell Symbole erstellt werden, falls spezielle unkonventionelle oder eigens entwickelte Elemente verwendet werden.
+				Die Software Eagle von Autodesk ist ein Platinen-CAD Programm zum Entwerfen von Schaltplänen und Platinenlayouts.[Eagle \cite{Eagle}] Dabei sind zwei Hauptschritte der Bearbeitung auszuführen. Zum einen die Gestaltung des Schaltplans, wobei Eagle durch Einbinden von Bibliotheken annähernd alle erdenklichen Schaltsymbole und Bezeichnungen darstellen kann, die für den Entwurf der Schaltung notwendig sind. Zusätzlich können manuell Symbole erstellt werden, falls spezielle unkonventionelle oder eigens entwickelte Elemente verwendet werden.
 				Im zweiten Schritt wird das Layout der Platine entworfen, um die Leiterbahnen und Bohrungen passend zu platzieren bzw. zu dimensionieren.
 		\section{Verwendete Hardware}
 				\subsection*{Arduino Nano}
 				\label{sec:Nano}
 					%Arduino Praxiseinstieg 2.3 Seite 23?
 					%https://store.arduino.cc/arduino-nano
-					Arduino ist eine Open-Source Elektronik Plattform, die aus zwei Teilen besteht. Einem Hardware- und einem Softwareteil [Brühlmann \cite[S.23]{Arduino_Plattform}]. Der Hardware-Teil ist eine Mikrocontroller-Schaltung mit serieller Schnittstelle. Diese ''Mikrocontroller-Boards'' gibt es in verschiedenen Ausführungen und unterscheiden sich in ihrer Größe, dem verwendeten Mikrocontroller und den somit einhergehenden Eigenschaften von Ein- und Ausgängen. Die Eingänge können Daten von Sensoren einlesen, die Ausgänge dienen zur Ansteuerung von Motoren, Dioden,	Relais oder anderen elektronischen Komponenten. Die Spannungsversorgung kann über die USB-Schnittstelle oder externem Netzteil erfolgen. Der im RotaCon verwendete Arduino Nano ist eine Leiterplattenversion von geringer Baugröße und nutzt als Basis den ATmega328 [Arduino \cite{Nano}]. Der Arduino Nano hat insgesamt 22 Input/Output-Pins, 8 davon können als analoge Eingänge benutzt werden. Die logische Spannung des Nanos beträgt 5V, die maximale Stromstärke pro Pin 40 mA. Mit einer Taktrate von 16 MHz und einem integrierten Speicher (EEPROM) von 1KB ist der Arduino Nano in seinen Funktionen für dieses Projekt gweählt worden.
+					%Bild: http://www.circuitstoday.com/arduino-nano-tutorial-pinout-schematics
+					Arduino ist eine Open-Source Elektronik Plattform, die aus zwei Teilen besteht. Einem Hardware- und einem Softwareteil [Brühlmann \cite[S.23]{Arduino_Plattform}]. Der Hardware-Teil ist eine Mikrocontroller-Schaltung mit serieller Schnittstelle. Diese ''Mikrocontroller-Boards'' gibt es in verschiedenen Ausführungen und unterscheiden sich in ihrer Größe, dem verwendeten Mikrocontroller und den somit einhergehenden Eigenschaften von Ein- und Ausgängen. Die Eingänge können Daten von Sensoren einlesen, die Ausgänge dienen zur Ansteuerung von Motoren, Dioden,	Relais oder anderen elektronischen Komponenten. Die Spannungsversorgung kann über die USB-Schnittstelle oder externem Netzteil erfolgen. 
+					\newline Der im RotaCon verwendete Arduino Nano ist eine Leiterplattenversion von geringer Baugröße und nutzt als Basis den ATmega328 [Arduino \cite{Nano}]. Der Arduino Nano hat insgesamt 22 Input/Output-Pins, 8 davon können als analoge Eingänge benutzt werden. Die logische Spannung des Nanos beträgt 5V, die maximale Stromstärke pro Pin 40 mA. Mit einer Taktrate von 16 MHz und einem integrierten Speicher (EEPROM) von 1KB ist der Arduino Nano wegen seinen Funktionen für dieses Projekt gewählt worden.
+					\begin{figure}[htbp]
+						\centering
+						\includegraphics[width=0.8\linewidth]{./img/Nano_PinOut.jpg}
+						\caption{ Übersicht Arduino Nano [Bildquelle: \cite{NanoImg}]
+						\label{fig:imgNano}}
+					\end{figure}
 			\newpage
 			\subsection*{Schrittmotor (unipolar)}
 			\label{sec:Motor}
 				%Fachkunde Elektrotechnik Seite 461
 				%http://home.roboticlab.eu/de/examples/motor/stepper
 				%http://www.arduino-projekte.de/index.php?n=63
-				Der im RotaCon verwendete unipolare Schrittmotor \textit{28BYJ-48} hat vier Phasen. Das bedeutet vier Elektromagneten steuern die Bewegung des Dauermagnetrotors. Diese vier Elektromagneten werden durch zwei Spulen realisiert, deren Wicklungen je hälftig aufgeteilt und entgegengesetzt gewickelt sind. Sie sind statisch um den Rotor angeordnet (\ref{fig:Spulen}). Die einzelnen Phasen werden nur in einer Richtung von Strom durchflossen und steuern so die Polung der Magneten beziehungsweise die Rotationsrichtung des Motors. Die Versorgungsspannung beträgt 5V und der Widerstand einer Spule ist mit 50$\Omega$ +- 7\% angegeben. Je nach Einphasensteuerung oder Zweiphasensteuerung ergeben sich daher Ströme von etwa 100mA (zweiphasig), bzw. 200mA (einphasig). Bei Schrittmotoren werden im Datenblatt Schrittwinkel und Getriebeübersetzung angegeben. Der hier verwendete Motor hat einen Schrittwinkel von 5,625° bei 64 Schritten angegeben und ein Getriebeverhältnis von 1/64. Daraus ergibt sich, dass eine volle Umdrehung der Motorachse 4096 Schritte benötigt (64x64). Diese Winkelangabe bezieht sich auf einen Halbschrittbetrieb, daher ist im Vollschrittbetrieb der Schrittwinkel 11,25° und eine Achsenumdrehung benötigt 2048 Schritte [vergl. Tkotz et al. \cite[S.641]{Winkelberechnung}]. Bei einem Halbschrittverfahren werden Ein- und Zweiphasensteuerung zusammen benutzt um den Motor in 45° Schritten zu bewegen [vergl. Deltron AG \cite{Schrittmotor_Steuerung}] Die Verwendung eines unipolaren Motors hat den Vorteil, dass auf Grund der einseitigen Stromflussrichtung, die Steuerung rein durch Software erfolgen kann und daher auf H-Brücken oder ähnliche zusätzliche Schutzmaßnahmen in diesem Projekt verzichtet werden kann.
+				Der im RotaCon verwendete unipolare Schrittmotor \textit{28BYJ-48} hat vier Phasen. Das bedeutet vier Elektromagneten steuern die Bewegung des Dauermagnetrotors. Diese vier Elektromagneten werden durch zwei Spulen realisiert, deren Wicklungen je hälftig aufgeteilt und entgegengesetzt gewickelt sind. Sie sind statisch um den Rotor (Anker) angeordnet (\ref{fig:Spulen}). Die einzelnen Phasen werden nur in einer Richtung von Strom durchflossen und steuern so die Polung der Magneten beziehungsweise die Rotationsrichtung des Motors. 
+				\newline Die Versorgungsspannung beträgt 5V und der Widerstand einer Spule ist mit 50$\Omega$ +- 7\% angegeben. Je nach Einphasensteuerung\footnote{Es wird genau eine Halbspule geschaltet.} oder Zweiphasensteuerung\footnote{Es werden zwei benachbarte Halbspulen geschaltet, die nicht Teil der gleichen Induktivität sind.} ergeben sich daher unterschiedliche Ströme. Da die Spannungsversorgung des Motors je zwischen den Halbspulen anliegt (vergl. Abb.\ref{fig:Spulen}) und sie somit parallel geschaltet sind, ist der Gesamtwiderstand bei Zweiphasensteuerung nur halb so groß (12,5$\Omega$). 
+				\newline Bei Schrittmotoren werden im Datenblatt Schrittwinkel und Getriebeübersetzung angegeben. Der hier verwendete Motor hat einen Schrittwinkel von 5,625° bei 64 Schritten angegeben und ein Getriebeverhältnis von 1/64. Daraus ergibt sich, dass eine volle Umdrehung der Motorachse 4096 Schritte benötigt (64x64). Diese Winkelangabe bezieht sich auf einen Halbschrittbetrieb, daher ist im Vollschrittbetrieb der Schrittwinkel 11,25° und eine Achsenumdrehung benötigt 2048 Schritte [vergl. Tkotz et al. \cite[S.641]{Winkelberechnung}]. Bei einem Halbschrittverfahren werden Ein- und Zweiphasensteuerung zusammen benutzt, um den Motor in 45° Schritten zu bewegen [vergl. Deltron AG \cite[S.7]{Schrittmotor_Steuerung}] 
+				\newline Die Verwendung eines unipolaren Motors hat den Vorteil, dass aufgrund der einseitigen Stromflussrichtung, die Steuerung rein durch Software erfolgen kann und daher auf H-Brücken oder ähnliche zusätzliche Schutzmaßnahmen in diesem Projekt verzichtet werden kann.
 
 
 				\begin{equation}
-					I=\frac{U}{R}=\frac{5V}{50\Omega} = 100mA \hspace{20pt} bzw. = \frac{5V}{25\Omega} = 200mA
+					\label{eq:StromMinMax}
+					I=\frac{U}{R}=\frac{5V}{25\Omega} = 200mA \hspace{20pt} bzw. = \frac{5V}{12.5\Omega} = 400mA
 				\end{equation}
 
 
@@ -187,23 +198,22 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 			\subsection{Motorsteuerung}
 			\label{sec:Motorsteuerung}
 				%ULN, Darlington, Motormesswerte der Wiederstände, Berechnung der Ströme und Leistungen
-				Eine Darlington-Schaltung ist eine Schaltung zweier Transistoren mit hoher Stromverstärkung und wird zur Schaltung beziehungsweise Steuerung größerer Lasten eingesetzt [Böhmer et al. \cite[S.290]{Darlington}]. Dabei können die nötigen Steuerströme gering gehalten werden. Der hier verwendete ULN2003 beinhaltet mehrere Darlington-Transistoren in einem 
-				Gehäuse und verstärkt die Steuersignale des Arduinos ohne dessen Ausgänge mit zu hohen Stromstärken zu belasten. Gemäß Datenblatt ist die Kollektor-Emitter-Sättigungs-Spannung im leitenden Zustand zwischen 0,9 und 1,3 Volt bei in Kapitel \ref{sec:Motor} angenommenen 100mA bis 200mA.
-				Bei der höchsten angenommenen Sättigungsspannung von 1,3 V ergibt sich ein Potentialunterschied an den jeweiligen Wicklungen von 3,7 V.
-				Die Messung der Widerstände der einzelnen Halbspulen\footnote{Messung durch Multimeter: \textit{testo67-2}} des verwendeten Motors ergibt, dass jede Phase etwa 23 $\Omega$ Widerstand hat. Bei Vollschrittbetrieb des Motors, bei dem je genau eine Phase geschalten wird, lassen sich die Ströme daher berechnen:
+				Eine Darlington-Schaltung ist eine Schaltung zweier Transistoren mit hoher Stromverstärkung und wird zur Schaltung beziehungsweise Steuerung größerer Lasten eingesetzt [Böhmer et al. \cite[S.290]{Darlington}]. Dabei können die nötigen Steuerströme gering gehalten werden. 
+				\newline Der hier verwendete ULN2003 beinhaltet mehrere Darlington-Transistoren in einem Gehäuse und verstärkt die Steuersignale des Arduinos ohne dessen Ausgänge mit zu hohen Stromstärken zu belasten. Gemäß Datenblatt ist die Kollektor-Emitter-Sättigungs-Spannung im leitenden Zustand zwischen 1,1 und 1,3 Volt bei oben angenommener Stromstärke im Einphasenbetrieb und 1,3 bis 1,6 Volt bei Zweiphasenbetrieb des Motors (Gleichung \ref{eq:StromMinMax}). Bei der höchsten angenommenen Sättigungsspannung von 1,6 V ergibt sich ein Potenzialunterschied an den jeweiligen Wicklungen von 3,4 V.
+				Die Messung der Widerstände der einzelnen Halbspulen\footnote{Messung durch Multimeter: \textit{testo67-2}} des verwendeten Motors ergibt, dass jede Phase etwa 23 $\Omega$ Widerstand hat. Bei Vollschrittbetrieb des Motors, bei dem je genau eine Phase geschaltet wird, lassen sich die Ströme daher berechnen:
 				\begin{equation}
-					I_{Phase}=\frac{\text{Versorgungsspannung (5V)} - \text{Sättigungsspannung}}{\text{Phasenwiderstand}}
+					I_{Phase}=\frac{\text{Versorgungsspannung (5V)} - \text{Sättigungsspannung}}{\text{Phasenwiderstand (23$\Omega$)}}
 				\end{equation}
 
 
-				\vspace{5em}
-				Stromberechung\footnote{Berechnung nur gültig für Vollschrittverfahren des Motors und Schaltung je nur einer Phase} je nach Sättigung:
+				\vspace{3em}
+				Berechnung der maximalen und minimalen Stromstärke:
 				\begin{equation}
-					I_{min}=\frac{3,7 V}{23 \Omega}=160 mA \hspace{10em}
-					I_{max}=\frac{4,1 V}{23 \Omega}=178 mA
+					I_{max}=\frac{3.4 V}{11.5 \Omega}=295.6 mA \hspace{10em}
+					I_{min}=\frac{3.7 V}{23 \Omega}=160.8 mA
 				\end{equation}
 				\newline
-				Da die Spannungsversorgung des Motors je zwischen den Halbspulen anliegt (vergl.\ref{fig:imgMotor}) und sie somit parallel geschaltet sind, betragen Strom und Spannung bei einer Zweiphasensteuerung pro Phase nur die Hälfte. Der Gesamtstrom am Treiber jedoch entspricht dem der Einphasensteuerung.
+				Die berechneten Stromstärken liegen deutlich unter dem Maximalwert des ULN2003, daher kann eine beliebige Variante der Motorsteuerung gewählt werden, ohne diesen zu beschädigen (siehe Anhang \ref{sec:data}). 
 				\begin{figure}[htbp]
 					\centering
 					\includegraphics[width=\linewidth]{./img/Motorsteuerung.png}
@@ -214,20 +224,22 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 			\subsection{IR-Empfänger}
 			\label{sec:IR}
 				%FilterKondensator, FrqBank, Pullup
-				Das verwendete Infrarotempfänger-Modul TSOP4838 beinhaltet einen Photosensor, Demodulator und Vorverstärker. Signalpulse mit einer Trägerfrequenz von 38 KHz werden Empfangen, demoduliert, vorverstärkt und an den Output gegeben. Durch den Pull-Up-Widerstand wird dieses Signal weiter verstärkt und an den Arduino Nano geleitet. Der analoge Eingang A5 des Arduinos kann als digitaler Eingang betrieben werden und wird hier benutzt um das Platinenlayout übersichtlich zu halten. Zur Filterung von Störsignalen dient der RC-Tiefpassfilter.
+				Das verwendete Infrarotempfänger-Modul TSOP4838 beinhaltet einen Fotosensor, Demodulator und Vorverstärker. Signalimpulse mit einer Trägerfrequenz von 38 kHz werden Empfangen, demoduliert, vorverstärkt und an den Output gegeben. Durch den Pull-up-Widerstand wird dieses Signal weiter verstärkt und an den Arduino Nano geleitet. Der analoge Eingang A5 des Arduinos kann als digitaler Eingang betrieben werden und wird hier benutzt, um das Platinenlayout übersichtlich zu halten. Zur Filterung von Störsignalen dient der RC-Tiefpassfilter.
 
-				Tastendrücke auf einer Fernbedieung in diesem Frequenzbereich werden vom Empfänger als Hexadezimalcode weitergegeben. Bei Betrieb des Arduinos und zeitgleich verbundener serieller Schnittstelle, können die demodulierten Hexadezimalcodes über den Seriellen Monitor der Arduino IDE ausgegeben werden.
+				Tastendrücke auf einer Fernbedienung in diesem Frequenzbereich werden vom Empfänger als Hexadezimalcode weitergegeben. Bei Betrieb des Arduinos und zeitgleich verbundener serieller Schnittstelle, können die demodulierten Hexadezimalcodes über den seriellen Monitor der Arduino IDE ausgegeben werden.
+
+				\hspace{5em}
 				\begin{figure}[htbp]
 					\centering
 					\includegraphics[width=\linewidth]{./img/ir.png}
-					\caption{ Infrarot-Empfänger mit Pull-Up-Widerstand und Filterkondensator.
+					\caption{ Infrarot-Empfänger mit Pull-up-Widerstand und Filter.
 					\label{fig:imgIR}}
 				\end{figure}
 			\newpage	
 			\subsection{Display}
 			\label{sec:Display}
 				%LCD 16.2, Pinbelegung, Kontrastberechnungl
-				Das im RotaCon verwendete LCD-Display ist ein \textit{TC1602B-01}. Wie in Kapitel \ref{sec:Theorie Hardware} erläutert, besteht der RotaCon aus 2 Gehäusen. Neben dem IR-Empfänger befindet sich auch das Display in einem für den Nutzer sichtbaren Gehäuse, dass mit einem D-Sub-Kabel\footnote{D-Sub ist eine Bauform für Steckersysteme mit n Datenpolen und einer Zusätzlichen Masse. Im RotaCon wird ein 9 Pol D-Sub benutzt} verbunden ist. Die meisten Pins sind direkt mit dem Arduino Nano verbunden, werden rein über Software gesteuert und sind in \ref{sec:Gesamtschaltung} beschrieben oder dem Datenblatt zu entnehmen. Display-Pin 3 setzt zusätzlich einen Spannungsteiler voraus um den Bildschirmkontrast festzulegen. Die im RotaCon benutzten Widerstandsgrößen sind durch den Einsatz eines Potentiometers ($10k\Omega$) ermittelt und ergeben die optimale Lesbarkeit bei einer Versorgungsspannung des verwendeten Display von 5V.
+				Das im RotaCon verwendete LCD-Display ist ein \textit{TC1602B-01}. Wie in Kapitel \ref{sec:Theorie Hardware} erläutert, besteht der RotaCon aus 2 Gehäusen. Neben dem IR-Empfänger befindet sich auch das Display in einem für den Nutzer sichtbaren Gehäuse, dass mit einem D-Sub-Kabel\footnote{D-Sub ist eine Bauform für Steckersysteme mit n Datenpolen und einer zusätzlichen Masse. Im RotaCon wird ein 9 Pol D-Sub benutzt} verbunden ist. Die meisten Pins sind direkt mit dem Arduino Nano verbunden, werden rein über Software gesteuert und sind in \ref{sec:Gesamtschaltung} beschrieben oder dem Datenblatt zu entnehmen. Display-Pin 3 setzt zusätzlich einen Spannungsteiler voraus, um den Bildschirmkontrast festzulegen. Die dafür im RotaCon benutzten Widerstandsgrößen sind durch den Einsatz eines Potentiometers ($10k\Omega$) ermittelt und ergeben die optimale Lesbarkeit bei einer Versorgungsspannung des verwendeten Displays von 5V.
 				\begin{figure}[htbp]
 					\includegraphics[width=\linewidth]{./img/dsub2.png}
 					\label{fig:imgDisplay}
@@ -238,20 +250,22 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 					\label{fig:imgDSUB}}
 				\end{figure}
 
-				An dieser Stelle sei genannt, dass durch die Spiegelung der D-Dub-Schnittstelle die Pin-Nummern beachtet werden müssen. So ist beispielsweise die Versorgungsspannung bei dem D-Sub der Hauptplatine auf Pin 1, bei der Display-Platine jedoch auf Pin 5. (siehe Abbildung \ref{fig:imgDSUB})
+				An dieser Stelle sei genannt, dass durch die Spiegelung der D-Sub-Schnittstelle die Pin-Nummern beachtet werden müssen. So ist beispielsweise die Versorgungsspannung bei dem D-Sub der Hauptplatine auf Pin 1, bei der Display-Platine jedoch auf Pin 5. (siehe Abbildung \ref{fig:imgDSUB})
 			\newpage
 			\subsection{Anschlagerkennung durch Strommessung}
 			\label{sec:op}
 				%OP-Verstärker, Berechnung, vergleich mit Messungen/Erwartungen (TABELLE?)
-				LM324N Durch eine zusätzliche Schaltung wird der durch den Motor verbrauchte Strom gemessen. Dadurch wird untersucht, ob der Motor bei Erreichen der Maximalstellung des Potentiometers vom Normalstromverbrauch abweicht und dies softwaretechnisch zur Motorsteuerung beitragen kann. Durch einen nicht invertierenden Verstärker wird der Strom zu einer für den Arduino auswertbaren Spannung gewandelt. Die allgemeine Funktionsweise von Operationsverstärkern wird hier nicht weiter erläutert. Aufgrund der in Abschnitt \ref{sec:Motorsteuerung} genannten Sättigung wird die Ausgangsspannung (U$_{a}$) der Operationsverstärkerschaltung als Ausgangsgröße auf 4V festgelegt. Diese soll durch den in den Arduino integrierten Analog-Digitalwandler ausgewertet werden können. Für einen möglichst geringen Leistungsverlust, werden 2 parallel geschaltete Strommess-Widerstände (R1 und R2 in Abb.\ref{fig:imgOP}) eingesetzt und die Eingangsspannung (U$_{e}$) auf 0,5V festgelegt. R3 und R4 in der Schaltung haben einen Widerstand von 4,7 $k\Omega$. Durch die angenommenen Spannungen ergibt sich ein benötigter Verstärkungsfaktor (V) von 8, welcher wiederum zur Berechnung von R5 ausschlaggebend ist.
+				 Durch eine zusätzliche Schaltung wird der durch den Motor verbrauchte Strom gemessen. Dadurch wird untersucht, ob der Motor bei Erreichen der Maximalstellung des Potentiometers vom Normalstromverbrauch abweicht und dies softwaretechnisch zur Motorsteuerung beitragen kann. Durch einen nicht invertierenden Verstärker wird der Strom zu einer für den Arduino auswertbaren Spannung gewandelt. Die allgemeine Funktionsweise von Operationsverstärkern wird hier nicht weiter erläutert. 
+				 \newline Aufgrund der in Abschnitt \ref{sec:Motorsteuerung} genannten Sättigung wird die Ausgangsspannung (U$_{a}$) der Operationsverstärkerschaltung als Ausgangsgröße auf 4V festgelegt. Diese soll durch den in den Arduino integrierten Analog-Digitalwandler ausgewertet werden können. Für einen möglichst geringen Leistungsverlust, werden 2 parallel geschaltete Strommess-Widerstände (R1 und R2 in Abb.\ref{fig:imgOP}) eingesetzt und die Eingangsspannung (U$_{e}$) auf 0,5V festgelegt. R3 und R4 in der Schaltung haben einen Widerstand von 4,7 $k\Omega$. Durch die angenommenen Spannungen ergibt sich ein benötigter Verstärkungsfaktor (V) von 8, welcher wiederum zur Berechnung von R5 ausschlaggebend ist (siehe Gleichung \ref{eq:op}).
 				\begin{equation}
+					\label{eq:op}
 					V = \frac{U_a}{U_e} =\frac{4V}{0,5V}= 8 \hspace{6em} V = 1+\frac{R5}{R4} \hspace{6em} R5 = R4\cdot(V-1) = 32900\Omega \equiv 33k\Omega
 				\end{equation}
 
 				\begin{figure}[htbp]
 					\centering
 					\includegraphics[width=\linewidth]{./img/op2.png}
-					\caption{Einsatz eines nicht-invertierenden Verstärkers zur Strommessung
+					\caption{Einsatz eines nicht-invertierenden Verstärkers zur Strommessung (LM324N)
 					\label{fig:imgOP}}			
 				\end{figure}
 				\newpage
@@ -262,12 +276,26 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 					U_{e}=R1\cdot\frac{I}{2}=0,5V \hspace{6em} R1=R2=\frac{2\cdot U_{e}}{I}=\frac{1V}{0,16A}=6,25\Omega \equiv 6R2
 				\end{equation}
 
-				Bei Schaltung einer Phase des Motors misst der Arduino mit dem integrierten A/D-Wandler 3,5V. Durch die bekannte Verstärkung\footnote{Die in dieser Rechnung verwendete Verstärkung ist 7,94 und bezieht sich auf die tatsächlich gemessenen Werte der verbauten Widerstände} errechnet sich so ein $U_{e}$ von 0,441V am Widerstand R1. Daraus ergibt sich eine errechnete Stromstärke von 146 mA. Das Amperemeter\footnote{Verwendetes Multimeter: testo 760-2} gemäß Abb. \ref{fig:imgOP} misst 144mA als Maximalwert. Somit entsprechen die im seriellen Monitor der Arduino IDE gelisteten Werte den etwa tatsächlichen Werten der Schaltung und können ausgewertet werden.
+				Bei Schaltung einer Phase des Motors misst der Arduino mit dem integrierten A/D-Wandler 3,5V. Durch die bekannte Verstärkung\footnote{Die in dieser Rechnung verwendete Verstärkung ist 7,94 und bezieht sich auf die gemessenen Werte der verbauten Widerstände} errechnet sich so ein $U_{e}$ von 0,441V am Widerstand R1. Daraus ergibt sich eine errechnete Stromstärke von 145 mA. Das Amperemeter\footnote{Verwendetes Multimeter: testo 760-2} gemäß Abb. \ref{fig:imgOP} misst 144mA. Somit entsprechen die im seriellen Monitor der Arduino IDE gelisteten Werte, den etwa tatsächlichen Werten der Schaltung und können ausgewertet werden. Der verwendete Widerstand 6R2 hat einen gemessenen Wert von 6.1$\Omega$.
 
-				Induktivitäten benötigen eine gewisse Zeit um sich zu entladen und ein Schritt des RotaCons entspricht 64 Schaltvorgängen, die mit einer Frequenz von 500Hz (siehe Abschnitt \ref{sec:Software}) stattfinden. Somit wird jede Phase einmal alle 8ms geschalten wobei 2 Phasen zu je einer Induktivität gehören. Der Strom ist daher nicht konstant und der Zeitpunkt des Messens muss möglichst nah am Schaltzeitpunkt liegen.
+				\begin{equation}
+					\label{eq:ue}
+					U_{e}=\frac{U_{a}}{\text{V}} = \frac{3.5V}{7.94} = 0.441V \hspace{6em} I=\frac{2\cdot U_{e}}{R1}=\frac{2\cdot 0.441V}{6.1\Omega}=0.145A
+				\end{equation}
 
+				Induktivitäten benötigen eine gewisse Zeit um sich zu laden bzw. entladen und ein Schritt des RotaCons entspricht 64 Schaltvorgängen, die mit einer Frequenz von 500Hz (siehe Abschnitt \ref{sec:Software}) stattfinden. Somit wird jede Phase einmal alle 8ms geschalten wobei 2 Phasen zu je einer Induktivität gehören. Der Strom ist daher nicht konstant und der Zeitpunkt des Messens müsste möglichst am Ende eines Schaltimpulses liegen.
 				
+				\vspace{1.5em}
+				\begin{figure}[htbp]
+					\label{fig:spule}
+					\centering
+					\includegraphics[width=0.7\linewidth]{img/Spule.png}
+					\caption{Auf- und Entladung einer Spule [Bildquelle: \cite{Spule}]}
+				\end{figure}	
 				
+				Die Messung im RotaCon ist jedoch unmittelbar nach dem Schaltbeginn um möglichst große Differenzen bei Erreichen des Potentiometer-Anschlags zu erkennen.
+				\newline Ist der Anker des Schrittmotors blockiert, während die Phasen weiterhin geschaltet werden, so ändert sich das Verhältnis der Magnetfelder und ein zusätzlicher Strom wird induziert. Daher ist die Differenz zwischen Minimalwert und Maximalwert der Ströme bei erreichen des Anschlags geringer. Der Anschlag ist somit zwar erkennbar,
+				aber diese Differenz ist nicht konstant. Die kleinste gemessene Differenz $\Delta U_{a}$ beträgt 0,3V und entspricht etwa einem $\Delta U_{e}$ von 0,04V und somit etwa 13mA. Minimale Schwankungen tragen somit bereits zur Ungenauigkeit bei (Berechnung gem. Gleichung \ref{eq:ue}).
 			\newpage
 			\subsection{Anschlagerkennung durch Endschalter}
 				%Redundanz, pullUp
@@ -427,8 +455,77 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 	\chapter{Anhänge}
 		\section{Tabelle Teileübersicht}
 		\section{Datenblätter}
-			Eine Tabelle mit der Auflistung aller Einzelteile mit anschließenden wichtigen Bereichen der Datenblätter.
-			Die gesamten Datenblätter werden nicht eingefügt, jedoch ein Link der zu einem derzeitigen Datenblatt im Internet führt.
+		\label{sec:data}
+			Folgende Tabelle bietet eine Übersicht der verwendeten elektrischen Bauteile. Innerhalb der Dokumentation in pdf-Format, sind alle verfügbaren Datenblätter in der letzten Spalte verlinkt. Wichtige Auschnitte von Datenblättern sind zusätzlich hinter der Tabelle einsehbar.
+
+			\hspace{5em}
+			\begin{table}[htbp]
+				\centering
+				\caption{Teile-Übersicht}
+				\begin{tabular}{llcc}
+					\toprule
+					\textbf{Typ} & \textbf{Modell} & \textbf{Anzahl} & \textbf{Datenblatt} \\
+					\midrule
+					IR-Receiver 			& TSOP4838 			& 1 & \href{https://cdn-reichelt.de/documents/datenblatt/A500/TSOP48XX.PDF}{Link} \\
+					Widerstände 			& Metallschicht 1\%, 6,2$\Omega$ - 33$k\Omega$ & 12 & - \\
+					Operationsverstärker 	& LM324 			& 1 &  \href{http://www.bonafidecn.com/PDF/UTC/OP\%20Amplifiers/LM324.pdf}{Link}\\
+					Darlington-Array		& ULN2003A 			& 1 & \href{https://cdn-reichelt.de/documents/datenblatt/A200/ULN2001A_ULN2002A_ULN2003A_ULN2004A\%23STM.pdf}{Link} \\
+					Board					& Arduino Nano V3 	& 1 & \href{https://www.arduino.cc/en/uploads/Main/ArduinoNanoManual23.pdf}{Link} \\
+					USB-Buchse 				& RND 205-00856 	& 1 & \href{https://cdn-reichelt.de/documents/datenblatt/C300/RND\%20205-00856_ENG_TDS.pdf}{Link}\\
+					D-Sub-Buchse 9 Pin male & RND 205-00770		& 1 & \href{https://cdn-reichelt.de/documents/datenblatt/C300/RND\%20205-00770_ENG_TDS.pdf}{Link}\\
+					D-Sub-Buchse 9 Pin female & RND 205-00769 	& 1 & \href{https://cdn-reichelt.de/documents/datenblatt/C120/RND_205-00769_ENG_TDS.pdf}{Link}\\
+					D-Sub-Kabel 9 Pin 		& RND 765-00023		& 1 & \href{https://cdn-reichelt.de/documents/datenblatt/C610/RND_765-00022_00027_DB-EN.pdf}{Link}\\
+					LCD-Display				& TC1602B01			& 1 & \href{https://github.com/derTino89/RotaCon/blob/master/Datenbl\%C3\%A4tter/LCD1602.pdf}{Link}\\
+					Kondensator 			& Vielschicht-Kerko 100nF & 1 & \href{https://cdn-reichelt.de/documents/datenblatt/B300/HITANO-S-SERIES_ENG_TDS.pdf}{Link}\\
+					Schrittmotor			& 28BYJ-48-5V		& 1 & \href{https://www.digikey.at/de/datasheets/mikroelektronika/mikroelektronika-step-motor-5v-28byj48-datasheet}{Link}\\
+					Stiftleiste 1x5 		& MOLEX 22292051	& 1 & \href{https://cdn-reichelt.de/documents/datenblatt/C160/04380804.pdf}{Link}\\
+					Stift- bzw. Buchsenleisten	& Einreihig gerade 2 bis 12 Pins & 7 & - \\
+					Endschalter				& Mikroschalter Flachhebel & 2 &\href{https://cdn-reichelt.de/documents/datenblatt/C200/AVX3_DB_EN.pdf}{Link}\\
+					Drahtbrücken			& 7cm Buchse-Buchse	& 12 & -\\
+
+				\end{tabular}
+			\end{table}			
+			\newpage
+				\begin{center}
+					\vspace*{\fill}
+					\centering \Huge Motor
+					\vspace*{\fill}
+				\end{center}				
+			\newpage
+			\includepdf[pages={1},width=1.1\linewidth, pagecommand={\thispagestyle{plain}}]{docs/Data_28BYJ-48.pdf}
+			\newpage
+			\begin{center}
+				\vspace*{\fill}
+				\centering \Huge Display
+				\vspace*{\fill}
+			\end{center}				
+			\newpage
+			\includepdf[pages={5,6,10},width=1.1\linewidth, pagecommand={\thispagestyle{plain}}]{./docs/Data_LCD1602.pdf}
+			\newpage
+			\begin{center}
+				\vspace*{\fill}
+				\centering \Huge Operationsverstärker
+				\vspace*{\fill}
+			\end{center}				
+			\newpage
+			\includepdf[pages={1,3},pagecommand={\thispagestyle{plain}}]{docs/Data_LM324.pdf}
+			\newpage
+			\begin{center}
+				\vspace*{\fill}
+				\centering \Huge Darlington-Array
+				\vspace*{\fill}
+			\end{center}				
+			\newpage
+			\includepdf[pages={4,5,6},width=1.1\linewidth, pagecommand={\thispagestyle{plain}}]{docs/Data_uln2003.pdf}
+			\newpage
+			\begin{center}
+				\vspace*{\fill}
+				\centering \Huge Arduino Nano
+				\vspace*{\fill}
+			\end{center}				
+			\newpage
+			\includepdf[width=1\linewidth, pagecommand={\thispagestyle{plain}}]{./docs/Data_NanoV3_Datenblatt.pdf}
+			\includepdf[width=0.9\linewidth, pagecommand={\thispagestyle{plain}}]{./docs/Data_NanoV3_pins.pdf}		
 		\newpage
 		\section{Layouts}
 			~
@@ -452,18 +549,10 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 		\addcontentsline{toc}{section}{5.4\hspace{1em}Gehäusemaße}
 		\label{sec:TechDraws}
 			%Technische Zeichnungen von FreeCAD mit den Abmessungen der Gehäuse.
-			\begin{landscape}
-				\includegraphics[width=\linewidth]{./docs/Motor_Gehäuse_Oben.pdf}
-			\end{landscape}
-			\begin{landscape}
-				\includegraphics[width=\linewidth]{./docs/Motor_Gehäuse_Unten.pdf}
-			\end{landscape}
-			\begin{landscape}
-				\includegraphics[width=\linewidth]{./docs/Display_Gehäuse_Unten.pdf}
-			\end{landscape}
-			\begin{landscape}
-				\includegraphics[width=\linewidth]{./docs/Display_Gehäuse_Unten.pdf}
-			\end{landscape}
+			\includepdf[width=1\linewidth, pagecommand={\thispagestyle{plain}}]{./docs/Motor_Case_Oben.pdf}
+			\includepdf[width=1\linewidth, pagecommand={\thispagestyle{plain}}]{./docs/Motor_Case_Unten.pdf}
+			\includepdf[width=1\linewidth, pagecommand={\thispagestyle{plain}}]{./docs/Display_Case_Oben.pdf}
+			\includepdf[width=1\linewidth, pagecommand={\thispagestyle{plain}}]{./docs/Display_Case_Unten.pdf}
 		\section{Quellcode}
 		\label{sec:Code}
 			Ausschnitte des Quellcodes zur Motorsteuerung:

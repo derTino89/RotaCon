@@ -1,22 +1,25 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'dokumentation.blg'
-[101] biber-MSWIN64:322> INFO - === 
-[125] Biber.pm:415> INFO - Reading 'dokumentation.bcf'
-[276] Biber.pm:943> INFO - Found 8 citekeys in bib section 0
-[303] Biber.pm:4256> INFO - Processing section 0
-[303] Utils.pm:75> INFO - Globbing data source 'references.bib'
-[316] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
-[336] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
-[341] bibtex.pm:1653> INFO - LaTeX decoding ...
-[361] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
-[392] Utils.pm:304> WARN - year field 'o.J.' in entry 'Cura' is not an integer - this will probably not sort properly.
-[429] Utils.pm:304> WARN - year field 'o.J.' in entry 'Nano' is not an integer - this will probably not sort properly.
-[437] Utils.pm:304> WARN - year field 'o.J.' in entry 'Schrittmotor_Steuerung' is not an integer - this will probably not sort properly.
-[441] Utils.pm:304> WARN - year field 'o.J.' in entry 'Schrittmotor_Getriebe' is not an integer - this will probably not sort properly.
-[470] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[470] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[470] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
-[470] Biber.pm:4090> INFO - No sort tailoring available for locale 'de-DE'
-[486] bbl.pm:652> INFO - Writing 'dokumentation.bbl' with encoding 'UTF-8'
-[491] bbl.pm:755> INFO - Output to dokumentation.bbl
-[496] Biber.pm:128> INFO - WARNINGS: 4
+[110] biber-MSWIN64:322> INFO - === 
+[136] Biber.pm:415> INFO - Reading 'dokumentation.bcf'
+[305] Biber.pm:943> INFO - Found 11 citekeys in bib section 0
+[329] Biber.pm:4256> INFO - Processing section 0
+[329] Utils.pm:75> INFO - Globbing data source 'references.bib'
+[344] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
+[369] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
+[373] bibtex.pm:1653> INFO - LaTeX decoding ...
+[398] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
+[434] Utils.pm:304> WARN - year field 'o.J.' in entry 'Cura' is not an integer - this will probably not sort properly.
+[438] Utils.pm:304> WARN - year field 'o.J.' in entry 'Eagle' is not an integer - this will probably not sort properly.
+[470] Utils.pm:304> WARN - year field 'o.J.' in entry 'Nano' is not an integer - this will probably not sort properly.
+[474] Utils.pm:304> WARN - year field 'o.J.' in entry 'NanoImg' is not an integer - this will probably not sort properly.
+[484] Utils.pm:304> WARN - year field 'o.J.' in entry 'Schrittmotor_Steuerung' is not an integer - this will probably not sort properly.
+[489] Utils.pm:304> WARN - year field 'o.J.' in entry 'Schrittmotor_Getriebe' is not an integer - this will probably not sort properly.
+[498] Utils.pm:304> WARN - year field 'o.J.' in entry 'Spule' is not an integer - this will probably not sort properly.
+[527] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[527] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[527] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
+[528] Biber.pm:4090> INFO - No sort tailoring available for locale 'de-DE'
+[550] bbl.pm:652> INFO - Writing 'dokumentation.bbl' with encoding 'UTF-8'
+[556] bbl.pm:755> INFO - Output to dokumentation.bbl
+[561] Biber.pm:128> INFO - WARNINGS: 7

@@ -417,6 +417,8 @@ INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documenta
 OUTPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\dokumentation.lot
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\fira\FiraSans-Italic-osf-t1.vf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Italic-osf-t1--base.tfm
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Bold-osf-t1.tfm
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
@@ -477,14 +479,17 @@ INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\fira\Fira
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Bold-osf-t1--base.tfm
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\fira\FiraSans-Regular-osf-t1.vf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Regular-osf-t1--base.tfm
-INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\fira\FiraSans-Italic-osf-t1.vf
-INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Italic-osf-t1--base.tfm
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\fira\FiraSans-Regular-osf-t1.vf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Regular-osf-t1--base.tfm
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\fira\FiraSans-Regular-osf-t1.vf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Regular-osf-t1--base.tfm
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\fira\FiraSans-Italic-osf-t1.vf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Italic-osf-t1--base.tfm
+INPUT img\Nano_PinOut.jpg
+INPUT .\img\Nano_PinOut.jpg
+INPUT .\img\Nano_PinOut.jpg
+INPUT .\img\Nano_PinOut.jpg
+INPUT .\img\Nano_PinOut.jpg
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Regular-osf-ts1.tfm
@@ -525,6 +530,39 @@ INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\Fir
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\fira\FiraSans-Regular-osf-ts1.vf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Regular-osf-ts1--base.tfm
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Regular-osf-t1.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr6.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi6.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy6.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmss8.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmtt8.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtxsf\ntxsfmia.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsym.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsyc.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxexa.tfm
+INPUT C:\Users\tlieb\AppData\Local\MiKTeX\2.9\fonts\tfm\public\trsym\trsy10.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cyrillic\wncyr10.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr5.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr5.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi5.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi5.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy5.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy5.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmss8.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmss8.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmtt8.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmtt8.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtxsf\ntxsfmia.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtxsf\ntxsfmia.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsym.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsym.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsyc.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxsyc.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxexa.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxexa.tfm
+INPUT C:\Users\tlieb\AppData\Local\MiKTeX\2.9\fonts\tfm\public\trsym\trsy10.tfm
+INPUT C:\Users\tlieb\AppData\Local\MiKTeX\2.9\fonts\tfm\public\trsym\trsy10.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cyrillic\wncyr10.tfm
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cyrillic\wncyr10.tfm
 INPUT img\Motorsteuerung.png
 INPUT .\img\Motorsteuerung.png
 INPUT .\img\Motorsteuerung.png
@@ -558,6 +596,11 @@ INPUT .\img\op2.png
 INPUT .\img\op2.png
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\img\Spule.png
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\img\Spule.png
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\img\Spule.png
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\img\Spule.png
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\img\Spule.png
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
@@ -620,6 +663,236 @@ INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\txfonts\
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\txfonts\txsyb.tfm
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_28BYJ-48.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_28BYJ-48.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_28BYJ-48.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_28BYJ-48.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_28BYJ-48.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_28BYJ-48.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_28BYJ-48.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_28BYJ-48.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_28BYJ-48.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_28BYJ-48.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_28BYJ-48.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_28BYJ-48.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_28BYJ-48.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_28BYJ-48.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_28BYJ-48.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_28BYJ-48.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_28BYJ-48.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_28BYJ-48.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_28BYJ-48.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_28BYJ-48.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_28BYJ-48.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_28BYJ-48.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_28BYJ-48.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT docs\Data_LCD1602.pdf
+INPUT docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT docs\Data_LCD1602.pdf
+INPUT .\docs\Data_LCD1602.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_LM324.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT e:\OneDrive\Fachhochschule\Medienelektronik\Mein Projekt\RotaCon\Documentation\docs\Data_uln2003.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT docs\Data_NanoV3_Datenblatt.pdf
+INPUT docs\Data_NanoV3_Datenblatt.pdf
+INPUT .\docs\Data_NanoV3_Datenblatt.pdf
+INPUT .\docs\Data_NanoV3_Datenblatt.pdf
+INPUT .\docs\Data_NanoV3_Datenblatt.pdf
+INPUT .\docs\Data_NanoV3_Datenblatt.pdf
+INPUT .\docs\Data_NanoV3_Datenblatt.pdf
+INPUT docs\Data_NanoV3_Datenblatt.pdf
+INPUT .\docs\Data_NanoV3_Datenblatt.pdf
+INPUT .\docs\Data_NanoV3_Datenblatt.pdf
+INPUT .\docs\Data_NanoV3_Datenblatt.pdf
+INPUT docs\Data_NanoV3_Datenblatt.pdf
+INPUT .\docs\Data_NanoV3_Datenblatt.pdf
+INPUT .\docs\Data_NanoV3_Datenblatt.pdf
+INPUT .\docs\Data_NanoV3_Datenblatt.pdf
+INPUT docs\Data_NanoV3_Datenblatt.pdf
+INPUT .\docs\Data_NanoV3_Datenblatt.pdf
+INPUT docs\Data_NanoV3_Datenblatt.pdf
+INPUT .\docs\Data_NanoV3_Datenblatt.pdf
+INPUT docs\Data_NanoV3_Datenblatt.pdf
+INPUT .\docs\Data_NanoV3_Datenblatt.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT docs\Data_NanoV3_Datenblatt.pdf
+INPUT .\docs\Data_NanoV3_Datenblatt.pdf
+INPUT docs\Data_NanoV3_pins.pdf
+INPUT docs\Data_NanoV3_pins.pdf
+INPUT .\docs\Data_NanoV3_pins.pdf
+INPUT .\docs\Data_NanoV3_pins.pdf
+INPUT .\docs\Data_NanoV3_pins.pdf
+INPUT .\docs\Data_NanoV3_pins.pdf
+INPUT .\docs\Data_NanoV3_pins.pdf
+INPUT docs\Data_NanoV3_pins.pdf
+INPUT .\docs\Data_NanoV3_pins.pdf
+INPUT .\docs\Data_NanoV3_pins.pdf
+INPUT .\docs\Data_NanoV3_pins.pdf
+INPUT docs\Data_NanoV3_pins.pdf
+INPUT .\docs\Data_NanoV3_pins.pdf
+INPUT .\docs\Data_NanoV3_pins.pdf
+INPUT .\docs\Data_NanoV3_pins.pdf
+INPUT docs\Data_NanoV3_pins.pdf
+INPUT .\docs\Data_NanoV3_pins.pdf
+INPUT docs\Data_NanoV3_pins.pdf
+INPUT .\docs\Data_NanoV3_pins.pdf
+INPUT docs\Data_NanoV3_pins.pdf
+INPUT .\docs\Data_NanoV3_pins.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT docs\Data_NanoV3_pins.pdf
+INPUT .\docs\Data_NanoV3_pins.pdf
 INPUT docs\Display_LayoutW.pdf
 INPUT .\docs\Display_LayoutW.pdf
 INPUT .\docs\Display_LayoutW.pdf
@@ -632,36 +905,106 @@ INPUT .\docs\Motor_LayoutW.pdf
 INPUT .\docs\Motor_LayoutW.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
-INPUT docs\Motor_Gehäuse_Oben.pdf
-INPUT .\docs\Motor_Gehäuse_Oben.pdf
-INPUT .\docs\Motor_Gehäuse_Oben.pdf
-INPUT .\docs\Motor_Gehäuse_Oben.pdf
+INPUT docs\Motor_Case_Oben.pdf
+INPUT docs\Motor_Case_Oben.pdf
+INPUT .\docs\Motor_Case_Oben.pdf
+INPUT .\docs\Motor_Case_Oben.pdf
+INPUT .\docs\Motor_Case_Oben.pdf
+INPUT .\docs\Motor_Case_Oben.pdf
+INPUT .\docs\Motor_Case_Oben.pdf
+INPUT docs\Motor_Case_Oben.pdf
+INPUT .\docs\Motor_Case_Oben.pdf
+INPUT .\docs\Motor_Case_Oben.pdf
+INPUT .\docs\Motor_Case_Oben.pdf
+INPUT docs\Motor_Case_Oben.pdf
+INPUT .\docs\Motor_Case_Oben.pdf
+INPUT .\docs\Motor_Case_Oben.pdf
+INPUT .\docs\Motor_Case_Oben.pdf
+INPUT docs\Motor_Case_Oben.pdf
+INPUT .\docs\Motor_Case_Oben.pdf
+INPUT docs\Motor_Case_Oben.pdf
+INPUT .\docs\Motor_Case_Oben.pdf
+INPUT docs\Motor_Case_Oben.pdf
+INPUT .\docs\Motor_Case_Oben.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT docs\Motor_Case_Oben.pdf
+INPUT .\docs\Motor_Case_Oben.pdf
+INPUT docs\Motor_Case_Unten.pdf
+INPUT docs\Motor_Case_Unten.pdf
+INPUT .\docs\Motor_Case_Unten.pdf
+INPUT .\docs\Motor_Case_Unten.pdf
+INPUT .\docs\Motor_Case_Unten.pdf
+INPUT .\docs\Motor_Case_Unten.pdf
+INPUT .\docs\Motor_Case_Unten.pdf
+INPUT docs\Motor_Case_Unten.pdf
+INPUT .\docs\Motor_Case_Unten.pdf
+INPUT .\docs\Motor_Case_Unten.pdf
+INPUT .\docs\Motor_Case_Unten.pdf
+INPUT docs\Motor_Case_Unten.pdf
+INPUT .\docs\Motor_Case_Unten.pdf
+INPUT .\docs\Motor_Case_Unten.pdf
+INPUT .\docs\Motor_Case_Unten.pdf
+INPUT docs\Motor_Case_Unten.pdf
+INPUT .\docs\Motor_Case_Unten.pdf
+INPUT docs\Motor_Case_Unten.pdf
+INPUT .\docs\Motor_Case_Unten.pdf
+INPUT docs\Motor_Case_Unten.pdf
+INPUT .\docs\Motor_Case_Unten.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
-INPUT docs\Motor_Gehäuse_Unten.pdf
-INPUT .\docs\Motor_Gehäuse_Unten.pdf
-INPUT .\docs\Motor_Gehäuse_Unten.pdf
-INPUT .\docs\Motor_Gehäuse_Unten.pdf
+INPUT docs\Motor_Case_Unten.pdf
+INPUT .\docs\Motor_Case_Unten.pdf
+INPUT docs\Display_Case_Oben.pdf
+INPUT docs\Display_Case_Oben.pdf
+INPUT .\docs\Display_Case_Oben.pdf
+INPUT .\docs\Display_Case_Oben.pdf
+INPUT .\docs\Display_Case_Oben.pdf
+INPUT .\docs\Display_Case_Oben.pdf
+INPUT .\docs\Display_Case_Oben.pdf
+INPUT docs\Display_Case_Oben.pdf
+INPUT .\docs\Display_Case_Oben.pdf
+INPUT .\docs\Display_Case_Oben.pdf
+INPUT .\docs\Display_Case_Oben.pdf
+INPUT docs\Display_Case_Oben.pdf
+INPUT .\docs\Display_Case_Oben.pdf
+INPUT .\docs\Display_Case_Oben.pdf
+INPUT .\docs\Display_Case_Oben.pdf
+INPUT docs\Display_Case_Oben.pdf
+INPUT .\docs\Display_Case_Oben.pdf
+INPUT docs\Display_Case_Oben.pdf
+INPUT .\docs\Display_Case_Oben.pdf
+INPUT docs\Display_Case_Oben.pdf
+INPUT .\docs\Display_Case_Oben.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT docs\Display_Case_Oben.pdf
+INPUT .\docs\Display_Case_Oben.pdf
+INPUT docs\Display_Case_Unten.pdf
+INPUT docs\Display_Case_Unten.pdf
+INPUT .\docs\Display_Case_Unten.pdf
+INPUT .\docs\Display_Case_Unten.pdf
+INPUT .\docs\Display_Case_Unten.pdf
+INPUT .\docs\Display_Case_Unten.pdf
+INPUT .\docs\Display_Case_Unten.pdf
+INPUT docs\Display_Case_Unten.pdf
+INPUT .\docs\Display_Case_Unten.pdf
+INPUT .\docs\Display_Case_Unten.pdf
+INPUT .\docs\Display_Case_Unten.pdf
+INPUT docs\Display_Case_Unten.pdf
+INPUT .\docs\Display_Case_Unten.pdf
+INPUT .\docs\Display_Case_Unten.pdf
+INPUT .\docs\Display_Case_Unten.pdf
+INPUT docs\Display_Case_Unten.pdf
+INPUT .\docs\Display_Case_Unten.pdf
+INPUT docs\Display_Case_Unten.pdf
+INPUT .\docs\Display_Case_Unten.pdf
+INPUT docs\Display_Case_Unten.pdf
+INPUT .\docs\Display_Case_Unten.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
-INPUT docs\Display_Gehäuse_Unten.pdf
-INPUT .\docs\Display_Gehäuse_Unten.pdf
-INPUT .\docs\Display_Gehäuse_Unten.pdf
-INPUT .\docs\Display_Gehäuse_Unten.pdf
-INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
-INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
-INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
-INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
-INPUT docs\Display_Gehäuse_Unten.pdf
-INPUT .\docs\Display_Gehäuse_Unten.pdf
-INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
-INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
-INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
-INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
+INPUT docs\Display_Case_Unten.pdf
+INPUT .\docs\Display_Case_Unten.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf

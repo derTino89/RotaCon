@@ -2182,14 +2182,19 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">FreeCAD</bcf:citekey>
-    <bcf:citekey order="2">Cura</bcf:citekey>
-    <bcf:citekey order="3">Arduino_Plattform</bcf:citekey>
-    <bcf:citekey order="4">Nano</bcf:citekey>
-    <bcf:citekey order="5">Winkelberechnung</bcf:citekey>
-    <bcf:citekey order="6">Schrittmotor_Steuerung</bcf:citekey>
-    <bcf:citekey order="7">Schrittmotor_Getriebe</bcf:citekey>
-    <bcf:citekey order="8">Darlington</bcf:citekey>
+    <bcf:citekey order="3">FreeCAD</bcf:citekey>
+    <bcf:citekey order="4">Cura</bcf:citekey>
+    <bcf:citekey order="5">Eagle</bcf:citekey>
+    <bcf:citekey order="6">Arduino_Plattform</bcf:citekey>
+    <bcf:citekey order="7">Nano</bcf:citekey>
+    <bcf:citekey order="8">NanoImg</bcf:citekey>
+    <bcf:citekey order="9">NanoImg</bcf:citekey>
+    <bcf:citekey order="10">Winkelberechnung</bcf:citekey>
+    <bcf:citekey order="11">Schrittmotor_Steuerung</bcf:citekey>
+    <bcf:citekey order="12">Schrittmotor_Getriebe</bcf:citekey>
+    <bcf:citekey order="13">Darlington</bcf:citekey>
+    <bcf:citekey order="14">Spule</bcf:citekey>
+    <bcf:citekey order="15">Spule</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
