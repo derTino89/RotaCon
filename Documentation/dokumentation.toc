@@ -1,38 +1,38 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {german}{}
-\contentsline {chapter}{\numberline {1}Prolog}{4}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Konzeptentwurf}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Theorie Hardware}{5}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Theorie Software}{6}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Theorie Mechanik und Design}{6}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Prototyp-Entwicklung}{7}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Notwendige Software}{7}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Verwendete Hardware}{8}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Realisierung der Schaltung}{10}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Motorsteuerung}{10}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}IR-Empfänger}{11}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Display}{12}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Anschlagerkennung durch Strommessung}{13}{subsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.3.5}Anschlagerkennung durch Endschalter}{15}{subsection.3.3.5}%
-\contentsline {subsection}{\numberline {3.3.6}Pinbelegungen}{15}{subsection.3.3.6}%
-\contentsline {subsection}{\numberline {3.3.7}Gesamtschaltung der Display-Platine}{16}{subsection.3.3.7}%
-\contentsline {subsection}{\numberline {3.3.8}Gesamtschaltung der Motor-Platine}{17}{subsection.3.3.8}%
-\contentsline {section}{\numberline {3.4}Software}{18}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Das Gehäuse}{19}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Motorgehäuse}{19}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Displaygehäuse}{20}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Gehäuseständer}{21}{subsection.3.5.3}%
-\contentsline {chapter}{\numberline {4}Ergebnis}{22}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Inbetriebnahme}{22}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Problemdiskussion}{23}{section.4.2}%
-\contentsline {paragraph}{Das D-Sub-Verbindungskabel}{23}{section*.28}%
-\contentsline {paragraph}{Die Platzierung der Endschalter}{23}{section*.29}%
-\contentsline {paragraph}{Die Strommessung}{23}{section*.30}%
-\contentsline {section}{\numberline {4.3}Zusammenfassung}{23}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Ausblick}{23}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Anhänge}{24}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Tabelle Teileübersicht}{24}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Datenblätter}{24}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Layouts}{41}{section.5.3}%
-\contentsline {section}{5.4\hspace {1em}Gehäusemaße}{43}{figure.caption.33}%
-\contentsline {section}{\numberline {5.5}Quellcode}{47}{section.5.5}%
+\contentsline {chapter}{\numberline {1}Überblick}{5}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Konzeptentwurf}{6}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Theorie Hardware}{6}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Theorie Software}{7}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Theorie Mechanik und Design}{7}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Prototyp-Entwicklung}{8}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Notwendige Software}{8}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Verwendete Hardware}{9}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Realisierung der Schaltung}{11}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Motorsteuerung}{11}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}IR-Empfänger}{12}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Display}{13}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Anschlagerkennung durch Strommessung}{14}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Anschlagerkennung durch Endschalter}{16}{subsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.3.6}Pinbelegungen}{16}{subsection.3.3.6}%
+\contentsline {subsection}{\numberline {3.3.7}Gesamtschaltung der Display-Platine}{17}{subsection.3.3.7}%
+\contentsline {subsection}{\numberline {3.3.8}Gesamtschaltung der Motor-Platine}{18}{subsection.3.3.8}%
+\contentsline {section}{\numberline {3.4}Software}{19}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Das Gehäuse}{20}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Motorgehäuse}{20}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Displaygehäuse}{21}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Gehäuseständer}{22}{subsection.3.5.3}%
+\contentsline {chapter}{\numberline {4}Ergebnis}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Inbetriebnahme}{23}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Problemdiskussion}{24}{section.4.2}%
+\contentsline {paragraph}{Das D-Sub-Verbindungskabel}{24}{section*.27}%
+\contentsline {paragraph}{Die Platzierung der Endschalter}{24}{section*.28}%
+\contentsline {paragraph}{Die Strommessung}{24}{section*.29}%
+\contentsline {section}{\numberline {4.3}Zusammenfassung}{24}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Ausblick}{24}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Anhänge}{25}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Tabelle Teileübersicht}{25}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Datenblätter}{26}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Layouts}{42}{section.5.3}%
+\contentsline {section}{5.4\hspace {1em}Technische Zeichnungen - Gehäuse}{44}{figure.caption.32}%
+\contentsline {section}{\numberline {5.5}Quellcode}{48}{section.5.5}%

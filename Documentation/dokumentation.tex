@@ -31,7 +31,7 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 \hbadness=10000
 
 \begin{document}
-\begin{titlepage}
+	\begin{titlepage}
 	\hsellogo\hfill Projektarbeit
 	\par
 	\vspace{4cm}
@@ -46,8 +46,16 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 	\vspace{2cm}
 	betreut duch\newline
 	Dipl.-Ing. (FH) Jörg Strick\newline
-	Abgabedatum: 30.01.2020
-\end{titlepage}
+	Abgabedatum: 05.03.2020
+	\end{titlepage}
+	\newpage
+	\noindent E I D E S S T A T T L I C H E \hspace{1em} V E R S I C H E R U N G
+
+		Ich, der/die Unterzeichnende, erkläre hiermit an Eides statt, dass ich die vorliegende Arbeit selbständig verfasst habe und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe. Alle Quellenangaben und Zitate sind richtig und vollständig wiedergegeben und in den jeweiligen Kapiteln und im Literaturverzeichnis wiedergegeben. Die vorliegende Arbeit wurde nicht in dieser oder einer ähnlichen Form ganz oder in Teilen zur Erlangung eines akademischen Abschlussgrades oder einer anderen Prüfungsleistung eingereicht.  Mir ist bekannt, dass falsche Angaben im Zusammenhang mit dieser Erklärung strafrechtlich verfolgt werden können.
+
+		\vspace{50pt}
+		\noindent\rule{5cm}{.4pt}\hfill\rule{5cm}{.4pt}\par
+		\noindent Datum, Ort \hfill Unterschrift
 	\newpage
 	\tableofcontents
 	\newpage
@@ -75,29 +83,24 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 		\acro{usb}[USB]{Universal Serial Bus}
     \end{acronym}
 	\newpage
-	\chapter{Prolog}
-		Hier wird Tino am Ende der Arbeit eine tolle Einleitung hinzaubern, die dei Ausgangslage zu derzeitigen Aktivlautsprechern beschreibt, ähnlich der Idee. Außerdem schreibe ich in männlicher Form etc...\newline
-		Außerdem reden wir immer vom AKTIV-Lautsprecher...
-	\section*{Überblick}
-		Überblick über den Aufbau der Dokumentation.\newline
-		Diese Dokumentation ist in vier Hauptteile gegliedert. Im Prolog wird die Ausgangssituation geschildert, sowie die Kerngedanken zum RotaCon.
+	\chapter{Überblick}
+		Viele medientechnische Geräte, zum Beispiel Aktivlautsprecher haben ihren Lautstärkeregler an der Rückseite. Zur Bedienung ist der Nutzer somit gezwungen sich unmittelbar am Gerät zu befinden. Von dieser Position ist die Beurteilung der gewählten Einstellungen jedoch eher ungenau und erfordert häufig eine weitere Person zur Unterstützung. Der RotaCon soll dem Abhilfe verschaffen und eine alleinige Bedienung optimieren. Diese Dokumentation beschreibt die Entwicklung des Gerätes und ist in fünf Hauptteile gegliedert. Im ersten Kapitel wird die Ausgangssituation geschildert, sowie die Kerngedanken zum RotaCon. Folgend sind diese Gedanken zu einem Konzept geformt und kategorisch aufgeteilt im zweiten Kapitel niedergeschrieben. Das dritte Kapitel bildet den inhaltlichen Hauptteil der Dokumentation und erläutert die Entwicklung des RotaCon-Prototyps, gefolgt von einer kurzen Zusammenfassung und schlussendlich den Anhängen. Das gesamte Projekt ist als GitHub-Repository mit all seinen Bestandteilen öffentlich einsehbar\footnote{GitHub-Repository: \protect\href{https://github.com/derTino89/RotaCon}{github.com/derTino89/RotaCon}}. 
+		\newline Aus Gründen der Lesbarkeit wird in dieser Arbeit die männliche Form für Personenbeschreibungen genutzt.
+		Diese beziehen sich trotzdem auf Angehörige aller Geschlechter/Gender.
 	\section*{Ziel}
-		was möchte Tino heute eigentlich machen?\newline
-		Ziel ist es ein Gerät zur Fernbedienbarkeit von Potentiometern, speziell an Lautsprechern, zu entwickeln. Dabei sollen weder Veränderungen am Lautsprechergehäuse, oder an der Technik vorgenommen werden. Zusätzlich ist eine Diskretisierung der Pegelwerte und deren Visualisierung via LCD-Display angedacht, sodass der Benutzer sichtbare 
+		Ziel ist es ein Gerät zur Fernbedienbarkeit von Potentiometern, speziell an Lautsprechern, zu entwickeln. Dabei sollen weder Veränderungen am Lautsprechergehäuse, noch an der Technik vorgenommen werden. Zusätzlich ist eine Diskretisierung der Pegelwerte und deren Visualisierung via LCD-Display angedacht, sodass der Benutzer sichtbare 
 		Werte zur Orientierung der aktuellen Einstellung bekommt. 
 	\section*{Stand der Technik}	
-		gibts sowas schon?\newline
-		Fernsteuerungen für Pegeleinstellungen sind nicht neu auf dem Markt. Dabei sind zwei Varianten verbreitet, zum Einen besteht die Möglichkeit, den Potentiometer auf der Platine des Lautsprechers auszutauschen, zum Anderen die Integrierung eines Controllers in den Signalweg. Die erste Variante setzt somit die Öffnung des Lautsprechergehäuses sowie Manipulation der Elektronik voraus. Dies ist nicht nur für den durchschnittlichen
-		Lautsprecherbesitzer ein schwieriger Eingriff, sondern hat ebenfalls Einfluss auf diverse Garantieansprüche.\newline
-		Die andere Variante beinhaltet keine Veränderungen am Lautsprecher selbst, regelt jedoch nur die Signalpegel zum Lautsprecher hin und nicht den integrierten Verstärker. Somit muss für diese Version der Verstärker stets auf Maximum geregelt sein, dies hat je nach Verstärker Einflüsse auf Soundqualität und Stromverbrauch.
+		Fernsteuerungen für Pegeleinstellungen sind nicht neu auf dem Markt. Dabei sind zwei Varianten verbreitet, zum einen besteht die Möglichkeit, den Potentiometer auf der Platine des Lautsprechers auszutauschen, zum Anderen die Integrierung eines Controllers in den Signalweg. Die erste Variante setzt somit die Öffnung des Lautsprechergehäuses sowie Manipulation der Elektronik voraus. Dies ist nicht nur für den durchschnittlichen
+		Lautsprecherbesitzer ein schwieriger Eingriff, sondern hat ebenfalls Einfluss auf diverse Garantieansprüche. Die andere Variante beinhaltet keine Veränderungen am Lautsprecher selbst, regelt jedoch nur die Signalpegel zum Lautsprecher hin und nicht den integrierten Verstärker. Somit muss für diese Version der Verstärker stets auf Maximum geregelt sein, dies hat je nach Verstärker\footnote{Der Stromverbrauch von Klasse A Verstärkern wird aufgrund des konstanten Ruhestroms nicht beeinflusst.} Einflüsse auf Soundqualität und Stromverbrauch.
 	\chapter{Konzeptentwurf}
 		Das folgende Kapitel beinhaltet die theoretischen Bestandteile zur Umsetzung der Idee. Diese bilden in ihrer Gesamtheit das Konzept,
 		nachdem der Prototyp entwickelt wird.
 		\section{Theorie Hardware}
 		\label{sec:Theorie Hardware}
-			Lautstärkeregler sind in den meisten Fällen Potentiometer oder Inkrementalgeber. %[Lautstärkeregler\cite{Lautstärkeregler}] 
-			Diese besitzen in der Regel eine 6mm oder 6.35mm Achse, in D-Form oder geriffelt. Um diese Achse rotieren zu können muss also ein Motor mit einer passenden Kupplung angebracht werden. Für präzise Kontrolle und ausreichendes Drehmoment ist ein Schrittmotor geeignet. Diesen gibt es in verschiedenen Ausfertigungen: unipolar und bipolar. Unipolare Schrittmotoren haben vier Phasen (Elektromagnete) und werden nur in einer Richtung von Strom durchflossen. Bipolare polen ihre Magnetfelder durch Umkehrung der Stromrichtung um, sie haben zwei Phasen, erreichen ein höheres Drehmoment und sind durch ihre Funktionsweise etwas aufwendiger anzusteuern. 
-			\newline Für eine Schrittmotorsteuerung sind drei Funktionseinheiten notwendig. Diese bestehen aus Mikrocontroller, Steuerschaltung und Treiberstufen. Für dieses Projekt ist ein unipolarer Schrittmotor ausreichend, da keine hohen Drehmomente erreicht werden müssen. Dies hat zusätzlich den Vorteil, dass die Steuerschaltung simpel ist und rein auf Softwarebasis gelegt werden kann. Als Treiber soll eine Darlington-Schaltung für den Motor dienen. Die softwaretechnische Besteuerung ist durch ein Arduino mit integriertem Mikrocontroller angestrebt, dessen Spannungsversorgung von 5V idealer Weise auch für die anderen Komponenten ausreichen soll, sodass ein Betrieb des Gerätes durch USB-Spannungsversorgung ermöglicht wird. 
+			Lautstärkeregler sind in den meisten Fällen Potentiometer oder Inkrementalgeber. Diese besitzen in der Regel eine 6mm oder 6.35mm Achse, in D-Form oder geriffelt. Um diese Achse rotieren zu können muss also ein Motor mit einer passenden Kupplung angebracht werden. Für präzise Kontrolle und ausreichendes Drehmoment ist ein Schrittmotor geeignet. Diesen gibt es in verschiedenen Ausfertigungen: unipolar und bipolar. 
+			\newline Unipolare Schrittmotoren haben vier Phasen (Elektromagnete) und werden nur in einer Richtung von Strom durchflossen. Bipolare polen ihre Magnetfelder durch Umkehrung der Stromrichtung um, sie haben zwei Phasen, erreichen ein höheres Drehmoment und sind durch ihre Funktionsweise etwas aufwendiger anzusteuern [Schrittmotoren \cite[S.4]{Schrittmotoren}]\footnote{Angaben in eckigen Klammern sind verweise auf das Literaturverzeichnis [Bezeichnung(Referenznummer,Seite)]}.
+			\newline Für eine Schrittmotorsteuerung sind drei Funktionseinheiten notwendig. Diese bestehen aus Mikrocontroller, Steuerschaltung und Treiberstufen. Für dieses Projekt ist ein unipolarer Schrittmotor ausreichend, da keine hohen Drehmomente erreicht werden müssen. Dies hat zusätzlich den Vorteil, dass die Steuerschaltung simpel ist und rein auf Softwarebasis gelegt werden kann. Als Treiber soll eine Darlington-Schaltung für den Motor dienen. Die softwaretechnische Steuerung ist durch ein Arduino mit integriertem Mikrocontroller angestrebt, dessen Spannungsversorgung von 5V idealer Weise auch für die anderen Komponenten ausreichen soll, sodass ein Betrieb des Gerätes durch USB-Spannungsversorgung ermöglicht wird. 
 			\newline Da analoge Drehregler durch eine Minimal- und Maximalstellung begrenzt sind, ist auch der Antrieb des Motors in diesen Bereichen zu stoppen. In erster Linie sollen Endschalter den Potentiometer-Anschlag erkennen und Software-gesteuert die Rotation einstellen. Redundant dazu wird der Stromverbrauch des Schrittmotors durch die Kombination eines nicht-invertierenden Verstärkers und dem Analog-Digital-Wandler vom Mikrocontroller überwacht. 
 			\newline Für die Bedienung des Gerätes soll ein Infrarotempfänger mit passender Fernbedienung im Frequenzbereich verwendet werden. Da sich Lautstärkeregler meist nicht sichtbar am Lautsprecher befinden, ein IR-Empfänger jedoch eine quasioptische Verbindung voraussetzt, bieten sich zwei getrennte Gehäuseteile an, die durch ein Kabel verbunden sind. In dem sichtbaren Gehäuse befindet sich zusätzlich das Display.
 		\newpage
@@ -120,7 +123,8 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 		\section{Theorie Mechanik und Design}
 		\label{sec:Design}
 			Die Übertragung des Drehmoments vom Motor an den Drehregler des Lautsprechers kann nur stattfinden, wenn der Motor starr gelagert ist. Daher ist das Gehäuse mit Motor und Motorsteuerung zu fixieren. Weiterhin sind Lautstärkeregler an unterschiedlichen Lautsprechern auch an verschiedenen Positionen, sodass dieses Gehäuse zusätzlich in seiner Position variabel positionierbar sein muss. 
-			\newline Einige Lautsprecher mit stärkeren Verstärkern haben zusätzlich Kühlkörper an der Rückseite des Lautsprechers. Aus diesem Grund und der Tatsache, dass eventuell weitere Regler (Phase, TP, EQ) vorhanden sind, ist ein gewisser Abstand zwischen den Gehäusen notwendig. Auch die Positionen der Endanschläge sind nicht überall gleich, das bedeutet, dass auch die Endschalter in ihrer Position variierbar sein müssen.
+			\newline Einige Lautsprecher mit stärkeren Verstärkern haben zusätzlich Kühlkörper an der Rückseite des Lautsprechers. Aus diesem Grund und der Tatsache, dass eventuell weitere Regler (Phase, TP, EQ)\footnote{Phasenverschiebung, Grenzfrequenz des Tiefpass-Filters, Equalizer.} vorhanden sind, ist ein gewisser Abstand zwischen den Gehäusen notwendig. Auch die Positionen der Endanschläge sind nicht überall gleich, das bedeutet, dass auch die Endschalter in ihrer Position variierbar sein müssen.
+			\newline Aufgrund der Komplexität der Gehäuse-Voraussetzungen wird der Schwerpunkt beim Prototyp auf die mechanische Funktionalität gelegt, sodass das Design nach Abschluss der Funktionstests angepasst und optimiert werden kann.
 		\label{sec:Theorie Mechanik}
 	\chapter{Prototyp-Entwicklung}
 	\label{sec:Praxistil}
@@ -131,7 +135,7 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 			\subsection*{Arduino IDE}
 			\label{sec:Arduino IDE}
 				%gleiche Quellen wie oben
-				Diese Entwicklungsumgebung (IDE\footnote{IDE steht für \textit{Integrated Development Environment} und bedeutet Entwicklungsumgebung.}) stellt den Softwareteil der Arduino-Plattform dar und basiert auf Processing, einer stark typisierten Programmiersprache mit integrierter Entwicklungsumgebung. Die Programmiersprache ähnelt C++ und ist darauf ausgelegt, ohne tiefgründige Programmierkenntnisse Programme schreiben zu können. Programme dieser IDE werden ''Sketch'' genannt. \newline Solch ein Sketch wird in der Umgebung compiliert und kann via USB-Schnittstelle direkt auf den Speicher des Arduino-Boards geladen werden. Ein in die IDE integrierter serieller Monitor kann die jeweiligen Zustände der Ein- und Ausgänge überwachen und ist ein Hilfsmittel zur Fehlersuche in der Entwicklungsphase.
+				Diese Entwicklungsumgebung (IDE\footnote{IDE steht für \textit{Integrated Development Environment} und bedeutet Entwicklungsumgebung.}) stellt den Softwareteil der Arduino-Plattform dar und basiert auf Processing, einer stark typisierten Programmiersprache mit integrierter Entwicklungsumgebung. Die Programmiersprache ähnelt C++ und ist darauf ausgelegt, ohne tiefgründige Programmierkenntnisse Programme schreiben zu können. Programme dieser IDE werden ''Sketch'' genannt. \newline Solch ein Sketch wird in der Umgebung kompiliert und kann via USB-Schnittstelle direkt auf den Speicher des Arduino-Boards geladen werden. Ein in die IDE integrierter serieller Monitor kann die jeweiligen Zustände der Ein- und Ausgänge überwachen und ist ein Hilfsmittel zur Fehlersuche in der Entwicklungsphase.
 				\newline Damit die Übertragung des Sketches stattfinden kann, muss jedoch vorerst das richtige Board mit dem richtigen Prozessor in den Werkzeugen ausgewählt werden. Verwendete Version: Arduino 1.8.10
 			\subsection*{FreeCAD}
 			\label{sec:FreeCAD}
@@ -150,7 +154,7 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 			\label{sec:Eagle}
 				%http://dl36mmdz94630.cloudfront.net/uploads/eagle_resources/files/000/002/278/original/step-by-step_tutorial.pdf?1484967932
 				Die Software Eagle von Autodesk ist ein Platinen-CAD Programm zum Entwerfen von Schaltplänen und Platinenlayouts.[Eagle \cite{Eagle}] Dabei sind zwei Hauptschritte der Bearbeitung auszuführen. Zum einen die Gestaltung des Schaltplans, wobei Eagle durch Einbinden von Bibliotheken annähernd alle erdenklichen Schaltsymbole und Bezeichnungen darstellen kann, die für den Entwurf der Schaltung notwendig sind. Zusätzlich können manuell Symbole erstellt werden, falls spezielle unkonventionelle oder eigens entwickelte Elemente verwendet werden.
-				Im zweiten Schritt wird das Layout der Platine entworfen, um die Leiterbahnen und Bohrungen passend zu platzieren bzw. zu dimensionieren.
+				Im zweiten Schritt wird das Layout der Platine entworfen, um die Leiterbahnen und Bohrungen passend zu platzieren beziehungsweise zu dimensionieren.
 		\section{Verwendete Hardware}
 				\subsection*{Arduino Nano}
 				\label{sec:Nano}
@@ -162,7 +166,7 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 					\begin{figure}[htbp]
 						\centering
 						\includegraphics[width=0.8\linewidth]{./img/Nano_PinOut.jpg}
-						\caption{ Übersicht Arduino Nano [Bildquelle: \cite{NanoImg}]
+						\caption[Übersicht Arduino Nano]{ Übersicht Arduino Nano [Bildquelle: \cite{NanoImg}]
 						\label{fig:imgNano}}
 					\end{figure}
 			\newpage
@@ -171,7 +175,7 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 				%Fachkunde Elektrotechnik Seite 461
 				%http://home.roboticlab.eu/de/examples/motor/stepper
 				%http://www.arduino-projekte.de/index.php?n=63
-				Der im RotaCon verwendete unipolare Schrittmotor \textit{28BYJ-48} hat vier Phasen. Das bedeutet vier Elektromagneten steuern die Bewegung des Dauermagnetrotors. Diese vier Elektromagneten werden durch zwei Spulen realisiert, deren Wicklungen je hälftig aufgeteilt und entgegengesetzt gewickelt sind. Sie sind statisch um den Rotor (Anker) angeordnet (\ref{fig:Spulen}). Die einzelnen Phasen werden nur in einer Richtung von Strom durchflossen und steuern so die Polung der Magneten beziehungsweise die Rotationsrichtung des Motors. 
+				Der im RotaCon verwendete unipolare Schrittmotor \textit{28BYJ-48} hat vier Phasen. Das bedeutet vier Elektromagneten steuern die Bewegung des Dauermagnetrotors. Diese vier Elektromagneten werden durch zwei Spulen realisiert, deren Wicklungen je hälftig aufgeteilt und entgegengesetzt gewickelt sind. Sie sind statisch um den Rotor (Anker) angeordnet. Die einzelnen Phasen werden nur in einer Richtung von Strom durchflossen und steuern so die Polung der Magneten beziehungsweise die Rotationsrichtung des Motors. 
 				\newline Die Versorgungsspannung beträgt 5V und der Widerstand einer Spule ist mit 50$\Omega$ +- 7\% angegeben. Je nach Einphasensteuerung\footnote{Es wird genau eine Halbspule geschaltet.} oder Zweiphasensteuerung\footnote{Es werden zwei benachbarte Halbspulen geschaltet, die nicht Teil der gleichen Induktivität sind.} ergeben sich daher unterschiedliche Ströme. Da die Spannungsversorgung des Motors je zwischen den Halbspulen anliegt (vergl. Abb.\ref{fig:Spulen}) und sie somit parallel geschaltet sind, ist der Gesamtwiderstand bei Zweiphasensteuerung nur halb so groß (12,5$\Omega$). 
 				\newline Bei Schrittmotoren werden im Datenblatt Schrittwinkel und Getriebeübersetzung angegeben. Der hier verwendete Motor hat einen Schrittwinkel von 5,625° bei 64 Schritten angegeben und ein Getriebeverhältnis von 1/64. Daraus ergibt sich, dass eine volle Umdrehung der Motorachse 4096 Schritte benötigt (64x64). Diese Winkelangabe bezieht sich auf einen Halbschrittbetrieb, daher ist im Vollschrittbetrieb der Schrittwinkel 11,25° und eine Achsenumdrehung benötigt 2048 Schritte [vergl. Tkotz et al. \cite[S.641]{Winkelberechnung}]. Bei einem Halbschrittverfahren werden Ein- und Zweiphasensteuerung zusammen benutzt, um den Motor in 45° Schritten zu bewegen [vergl. Deltron AG \cite[S.7]{Schrittmotor_Steuerung}] 
 				\newline Die Verwendung eines unipolaren Motors hat den Vorteil, dass aufgrund der einseitigen Stromflussrichtung, die Steuerung rein durch Software erfolgen kann und daher auf H-Brücken oder ähnliche zusätzliche Schutzmaßnahmen in diesem Projekt verzichtet werden kann.
@@ -239,14 +243,14 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 			\subsection{Display}
 			\label{sec:Display}
 				%LCD 16.2, Pinbelegung, Kontrastberechnungl
-				Das im RotaCon verwendete LCD-Display ist ein \textit{TC1602B-01}. Wie in Kapitel \ref{sec:Theorie Hardware} erläutert, besteht der RotaCon aus 2 Gehäusen. Neben dem IR-Empfänger befindet sich auch das Display in einem für den Nutzer sichtbaren Gehäuse, dass mit einem D-Sub-Kabel\footnote{D-Sub ist eine Bauform für Steckersysteme mit n Datenpolen und einer zusätzlichen Masse. Im RotaCon wird ein 9 Pol D-Sub benutzt} verbunden ist. Die meisten Pins sind direkt mit dem Arduino Nano verbunden, werden rein über Software gesteuert und sind in \ref{sec:Gesamtschaltung} beschrieben oder dem Datenblatt zu entnehmen. Display-Pin 3 setzt zusätzlich einen Spannungsteiler voraus, um den Bildschirmkontrast festzulegen. Die dafür im RotaCon benutzten Widerstandsgrößen sind durch den Einsatz eines Potentiometers ($10k\Omega$) ermittelt und ergeben die optimale Lesbarkeit bei einer Versorgungsspannung des verwendeten Displays von 5V.
+				Das im RotaCon verwendete LCD-Display ist ein \textit{TC1602B-01}. Wie in Kapitel \ref{sec:Theorie Hardware} erläutert, besteht der RotaCon aus 2 Gehäusen. Neben dem IR-Empfänger befindet sich auch das Display in einem für den Nutzer sichtbaren Gehäuse, dass mit einem D-Sub-Kabel\footnote{D-Sub ist eine Bauform für Steckersysteme mit n Datenpolen und einer zusätzlichen Masse. Im RotaCon wird ein 9 Pol D-Sub benutzt.} verbunden ist. Die meisten Pins sind direkt mit dem Arduino Nano verbunden, werden rein über Software gesteuert und sind in \ref{sec:Gesamtschaltung} beschrieben oder dem Datenblatt zu entnehmen. Display-Pin 3 setzt zusätzlich einen Spannungsteiler voraus, um den Bildschirmkontrast festzulegen. Die dafür im RotaCon benutzten Widerstandsgrößen sind durch den Einsatz eines Potentiometers ($10k\Omega$) ermittelt und ergeben die optimale Lesbarkeit bei einer Versorgungsspannung des verwendeten Displays von 5V.
 				\begin{figure}[htbp]
 					\includegraphics[width=\linewidth]{./img/dsub2.png}
 					\label{fig:imgDisplay}
 				\end{figure}
 				\begin{figure}[htbp]
 					\includegraphics[width=\linewidth]{./img/display2.png}
-					\caption{D-Sub-Pinbelegung für Display und IR-Receiver(gestrichelte Linie).
+					\caption[D-Sub-Pinbelegung für Display und IR-Receiver]{D-Sub-Pinbelegung für Display und IR-Receiver(gestrichelte Linie).
 					\label{fig:imgDSUB}}
 				\end{figure}
 
@@ -255,8 +259,9 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 			\subsection{Anschlagerkennung durch Strommessung}
 			\label{sec:op}
 				%OP-Verstärker, Berechnung, vergleich mit Messungen/Erwartungen (TABELLE?)
-				 Durch eine zusätzliche Schaltung wird der durch den Motor verbrauchte Strom gemessen. Dadurch wird untersucht, ob der Motor bei Erreichen der Maximalstellung des Potentiometers vom Normalstromverbrauch abweicht und dies softwaretechnisch zur Motorsteuerung beitragen kann. Durch einen nicht invertierenden Verstärker wird der Strom zu einer für den Arduino auswertbaren Spannung gewandelt. Die allgemeine Funktionsweise von Operationsverstärkern wird hier nicht weiter erläutert. 
+				 Durch eine zusätzliche Schaltung wird der durch den Motor verbrauchte Strom gemessen. Dadurch wird untersucht, ob der Motor bei Erreichen der Maximalstellung des Potentiometers vom Normalstromverbrauch abweicht und dies softwaretechnisch zur Motorsteuerung beitragen kann. Durch einen nicht invertierenden Verstärker wird der Strom zu einer für den Arduino auswertbaren Spannung gewandelt. Die allgemeine Funktionsweise von Operationsverstärkern wird hier nicht tiefer erläutert. 
 				 \newline Aufgrund der in Abschnitt \ref{sec:Motorsteuerung} genannten Sättigung wird die Ausgangsspannung (U$_{a}$) der Operationsverstärkerschaltung als Ausgangsgröße auf 4V festgelegt. Diese soll durch den in den Arduino integrierten Analog-Digitalwandler ausgewertet werden können. Für einen möglichst geringen Leistungsverlust, werden 2 parallel geschaltete Strommess-Widerstände (R1 und R2 in Abb.\ref{fig:imgOP}) eingesetzt und die Eingangsspannung (U$_{e}$) auf 0,5V festgelegt. R3 und R4 in der Schaltung haben einen Widerstand von 4,7 $k\Omega$. Durch die angenommenen Spannungen ergibt sich ein benötigter Verstärkungsfaktor (V) von 8, welcher wiederum zur Berechnung von R5 ausschlaggebend ist (siehe Gleichung \ref{eq:op}).
+				\vspace*{1.5em}
 				\begin{equation}
 					\label{eq:op}
 					V = \frac{U_a}{U_e} =\frac{4V}{0,5V}= 8 \hspace{6em} V = 1+\frac{R5}{R4} \hspace{6em} R5 = R4\cdot(V-1) = 32900\Omega \equiv 33k\Omega
@@ -265,7 +270,7 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 				\begin{figure}[htbp]
 					\centering
 					\includegraphics[width=\linewidth]{./img/op2.png}
-					\caption{Einsatz eines nicht-invertierenden Verstärkers zur Strommessung (LM324N)
+					\caption[Einsatz eines nicht-invertierenden Verstärkers zur Strommessung]{Einsatz eines nicht-invertierenden Verstärkers zur Strommessung (LM324N)
 					\label{fig:imgOP}}			
 				\end{figure}
 				\newpage
@@ -283,19 +288,19 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 					U_{e}=\frac{U_{a}}{\text{V}} = \frac{3.5V}{7.94} = 0.441V \hspace{6em} I=\frac{2\cdot U_{e}}{R1}=\frac{2\cdot 0.441V}{6.1\Omega}=0.145A
 				\end{equation}
 
-				Induktivitäten benötigen eine gewisse Zeit um sich zu laden bzw. entladen und ein Schritt des RotaCons entspricht 64 Schaltvorgängen, die mit einer Frequenz von 500Hz (siehe Abschnitt \ref{sec:Software}) stattfinden. Somit wird jede Phase einmal alle 8ms geschalten wobei 2 Phasen zu je einer Induktivität gehören. Der Strom ist daher nicht konstant und der Zeitpunkt des Messens müsste möglichst am Ende eines Schaltimpulses liegen.
+				Induktivitäten benötigen eine gewisse Zeit, um sich zu laden bzw. entladen und ein Schritt des RotaCons entspricht 64 Schaltvorgängen, die mit einer Frequenz von 500Hz (siehe Abschnitt \ref{sec:Software}) stattfinden. Somit wird jede Phase einmal alle 8ms geschaltet wobei 2 Phasen zu je einer Induktivität gehören. Der Strom ist daher nicht konstant und der Zeitpunkt des Messens müsste möglichst am Ende eines Schaltimpulses liegen.
 				
 				\vspace{1.5em}
 				\begin{figure}[htbp]
 					\label{fig:spule}
 					\centering
 					\includegraphics[width=0.7\linewidth]{img/Spule.png}
-					\caption{Auf- und Entladung einer Spule [Bildquelle: \cite{Spule}]}
+					\caption[Auf- und Entladung einer Spule]{Auf- und Entladung einer Spule [Bildquelle: \cite{Spule}]}
 				\end{figure}	
 				
 				Die Messung im RotaCon ist jedoch unmittelbar nach dem Schaltbeginn um möglichst große Differenzen bei Erreichen des Potentiometer-Anschlags zu erkennen.
-				\newline Ist der Anker des Schrittmotors blockiert, während die Phasen weiterhin geschaltet werden, so ändert sich das Verhältnis der Magnetfelder und ein zusätzlicher Strom wird induziert. Daher ist die Differenz zwischen Minimalwert und Maximalwert der Ströme bei erreichen des Anschlags geringer. Der Anschlag ist somit zwar erkennbar,
-				aber diese Differenz ist nicht konstant. Die kleinste gemessene Differenz $\Delta U_{a}$ beträgt 0,3V und entspricht etwa einem $\Delta U_{e}$ von 0,04V und somit etwa 13mA. Minimale Schwankungen tragen somit bereits zur Ungenauigkeit bei (Berechnung gem. Gleichung \ref{eq:ue}).
+				\newline Ist der Anker des Schrittmotors blockiert, während die Phasen weiterhin geschaltet werden, so ändert sich das Verhältnis der Magnetfelder und ein zusätzlicher Strom wird induziert. Daher ist die Differenz zwischen Minimalwert und Maximalwert der Ströme beim Erreichen des Anschlags geringer. Der Anschlag ist somit zwar erkennbar,
+				aber diese Differenz ist nicht konstant. Die kleinste gemessene Differenz $\Delta U_{a}$ beträgt 0,3V und entspricht etwa einem $\Delta U_{e}$ von 0,04V und somit etwa 13mA. Minimale Schwankungen werden mit verstärkt tragen somit bereits zur Ungenauigkeit bei (Berechnung gem. Gleichung \ref{eq:ue}).
 			\newpage
 			\subsection{Anschlagerkennung durch Endschalter}
 				%Redundanz, pullUp
@@ -350,7 +355,7 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 				\end{figure}
 				\newpage
 			\subsection{Gesamtschaltung der Motor-Platine}
-				Die Endschalter sind ebenfalls seperat zur Hauptplatine und daher nur als Steckverbindung zu erkennen. Diverse Testpunkte sind in die Schaltung integriert. Die USB-Spannungsquelle sowie sätzliche Klemmen für eine redundante Spannungsversorgung wurden hinzugefügt. Ein Anschluss für den Betrieb eines weiteren Ports des Arduinos um eventuelle Erweiterungen durchzuführen ist ebenfalls implementiert (A3).
+				Die Endschalter sind ebenfalls separat zur Hauptplatine und daher nur als Steckverbindung zu erkennen. Diverse Testpunkte sind in die Schaltung integriert. Die USB-Spannungsquelle sowie zusätzliche Klemmen für eine redundante Spannungsversorgung wurden hinzugefügt. Ein Anschluss für den Betrieb eines weiteren Ports des Arduinos um eventuelle Erweiterungen durchzuführen ist ebenfalls implementiert (Nano-Pin A3).
 				\vspace{3em}
 				\begin{figure}[htbp]
 					\centering
@@ -373,43 +378,43 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 				};
 			\end{lstlisting}
 
-			Eine volle Umdrehung der Motorachse benötigt 2048 dieser ''Zeilensprünge'' (siehe \ref{sec:Motor}). Als Anhalt für den maximalen Drehwinkel eines Potentiometers wird 320° angenommen. Dies entspricht etwa 1820 Motorschritten. Für die angestrebten 28 bis 30 Lautstärkestufen des RotaCons bedeutet das, dass je 64 Motorschritte für eine Lautstärkestufe passieren müssen. Damit Rotor und Getriebe sich in Bewegung setzen können, ist bewusst ein Delay zwischen den einzelnen Schritten implementiert.
+			Eine volle Umdrehung der Motorachse benötigt 2048 dieser ''Zeilensprünge'' (siehe \ref{sec:Motor}). Als Anhalt für den maximalen Drehwinkel eines Potentiometers wird 320° angenommen. Dies entspricht etwa 1820 Motorschritten. Für die angestrebten 28 bis 30 Lautstärkestufen des RotaCons bedeutet das, dass je 64 Motorschritte für eine Lautstärkestufe passieren müssen. Damit Rotor und Getriebe sich in Bewegung setzen können, ist bewusst ein Delay von 2ms zwischen den einzelnen Schritten implementiert.
 
-			Unmittelbar nach jedem Schritt wird die am A/D-Wandler liegende Spannung abgefragt, die den Motor-Stromverbrauch repräsentiert. Der tiefste Wert nach 64 Schritten wird übergeben und dient zur Feststellung ob der Motor den Endanschlag des Potentiometers erreicht hat. Sind die Werte überhalb eines Schwellwertes, ist dies ein Anzeichen, dass der Rotor starr schwischen den schaltenden Elektromagneten steht. Der Schwellwert wurde über Tests im seriellen Monitor ermittelt und liegt bei 2,8V.\newline
+			Unmittelbar nach jedem Schritt wird die am A/D-Wandler liegende Spannung abgefragt, die den Motor-Stromverbrauch repräsentiert. Der tiefste Wert nach 64 Schritten wird übergeben und dient zur Feststellung, ob der Motor den Endanschlag des Potentiometers erreicht hat. Sind die Werte oberhalb eines Schwellwertes, ist dies ein Anzeichen, dass der Rotor starr zwischen den schaltenden Elektromagneten steht. Der Schwellwert wurde über Tests im seriellen Monitor ermittelt und liegt bei etwa 2,8V.\newline
 			Wird somit ein Anschlag erkannt, oder einer der beiden Taster betätigt, ist die Motorsteuerung für eine Rotation in diese Richtung gesperrt und auf dem Display wird eine Warnung ausgegeben. Das Display lässt sich durch eine Methode deaktivieren, die die Hintergrundbeleuchtung ausschaltet.
 
-			Für die Displaysteuerung und Datenauwertung des Infrarotempfängers werden entsprechende Bibliotheken benutzt. Eine ''Switch-Case-Anweisung'' koordiniert die Eingaben der Fernbedienung. So kann jeder Hexadezimalwert vom IR-Empfänger einer Methode zugewiesen werden. Hält der Benutzer eine beliebige Taste der Fernbedienung gedrückt, so sendet sie den Wert ''0xFFFFFFFF''. Dieser Wert steht für die Wiederholung des zuletzt gesendeten Hex-Codes, daher ist dieser Wert gesondert in der Software betrachtet. (siehe Anhang \ref{sec:Code}) 
+			Für die Displaysteuerung und Datenauswertung des Infrarotempfängers werden entsprechende Bibliotheken benutzt. Eine ''Switch-Case-Anweisung'' koordiniert die Eingaben der Fernbedienung. So kann jeder Hexadezimalwert vom IR-Empfänger einer Methode zugewiesen werden. Hält der Benutzer eine beliebige Taste der Fernbedienung gedrückt, so sendet sie den Wert ''0xFFFFFFFF''. Dieser Wert steht für die Wiederholung des zuletzt gesendeten Hex-Codes, daher ist dieser Wert gesondert in der Software betrachtet. (siehe Anhang \ref{sec:Code}) 
 			Die aktuelle Motorposition, sowie Lautstärke wird im internen EEPROM-Speicher abgelegt. Sollte der RotaCon vom Strom getrennt werden, bleiben diese Werte somit unverändert.
 			
-			Die komplette Software ist in dem GitHub-Projekt einsehbar, daher werden weitere Details hier nicht weiter erläutert um den Umpfang dieser Dokumentation übersichtlich zu halten.
+			Die komplette Software ist in dem GitHub-Projekt einsehbar, daher werden weitere Details hier nicht weiter erläutert, um den Umfang dieser Dokumentation übersichtlich zu halten.
 		\newpage
 		\section{Das Gehäuse}
 		\label{sec:Casing}
 			Dieser Abschnitt bezieht sich auf Feststellungen aus Kapitel \ref{sec:Design}. Alle Angaben beziehen sich auf die in diesem Projekt verwendeten Materialien. So sind die Maße der Platinen und deren Bohrungen zum Beispiel ausschlaggebend für den Gehäuseentwurf. 
 			\subsection{Motorgehäuse}
-				Für den Prototypen wurde ein Gehäuse entworfen, dass weder verklebt noch vielseitig verschraubt werden muss. Somit kann zu Entwicklungszwecken ein häufiges unkompliziertes Öffnen stattfinden. Exakte Maße sind den detaillierteren technischen Zeichungen im Anhang zu entnehmen. Ausmaße des Gehäuses ergeben sich durch Platinen- und Motorgröße, da der Motor  komplett im Gehäuse untergebracht ist. Dieses Gehäuse besteht aus zwei einzeln gefertigten Teilen, die mit einem 3D-Drucker produziert werden. 3D-Modell und notwendige Dateien zum Druck sind im GitHub-Projekt abgelegt, variieren jedoch je nach verwendetem Filament und Drucker.
+				Für den Prototypen wurde ein Gehäuse entworfen, das weder verklebt noch vielseitig verschraubt werden muss. Somit kann zu Entwicklungszwecken ein häufiges unkompliziertes Öffnen stattfinden. Exakte Maße sind den detaillierteren technischen Zeichnungen im Anhang zu entnehmen. Ausmaße des Gehäuses ergeben sich durch Platinen- und Motorgröße, da der Motor  komplett im Gehäuse untergebracht ist. Dieses Gehäuse besteht aus zwei einzeln gefertigten Teilen, die mit einem 3D-Drucker produziert werden. 3D-Modell und notwendige Dateien zum Druck sind im GitHub-Projekt abgelegt, variieren jedoch je nach verwendetem Filament und Drucker.
 				\vspace{3em}
 				%Zeichnung, Modell, gesliced, fertigstück ?
 				%Besonderheiten/Probleme
 				\begin{figure}[htbp]
 					\centering
 					\includegraphics[width=0.75\linewidth]{./img/Motor_Case_Draw.png}
-					\caption{Skizze Des Motorgehäuses
+					\caption{Skizze des Motorgehäuses
 					\label{fig:imgMotorDraw}}			
 				\end{figure}
 			\newpage
 			\subsection{Displaygehäuse}
-				Auch bei diesem Gehäuse wurde darauf geachtet, dass es möglichst einfach geöffnet werden kann. Höhe und Breite sind durch die Displaymaße beeinflusst. Die Öffnung für den IR-Empfänger ist mit möglichst dunkler Folie verdeckt, da Licht der Displaybeleuchtung sonst nach außen scheint. Display und Platine sind in diesem Gehäuse auf Platikstifte gesteckt und halten ohne Einsatz von Heißkleber oder Schrauben. Durch das 40cm lange D-Sub-Kabel kann dieses Gehäuse frei auf der Oberseite des Lautsprechers platziert werden. Zum Einen verbinden keilförmige Haken als Klemmverschlus die beiden Gehäuseteile miteinander, zum Anderen sorgt die D-Sub-Steckverbindung für den Zusammenhalt.
+				Auch bei diesem Gehäuse wurde darauf geachtet, dass es möglichst einfach geöffnet werden kann. Höhe und Breite sind durch die Displaymaße beeinflusst. Die Öffnung für den IR-Empfänger ist mit möglichst dunkler Folie verdeckt, da Licht der Displaybeleuchtung sonst nach außen scheint. Display und Platine sind in diesem Gehäuse auf Plastikstifte gesteckt und halten ohne Einsatz von Heißkleber oder Schrauben. Durch das 40cm lange D-Sub-Kabel kann dieses Gehäuse frei auf der Oberseite des Lautsprechers platziert werden. Zum einen verbinden keilförmige Haken als Klemmverschluss die beiden Gehäuseteile miteinander, zum anderen sorgt die D-Sub-Steckverbindung für den Zusammenhalt.
 				\vspace{3em}
 				\begin{figure}[htbp]
 					\centering
 					\includegraphics[width=0.75\linewidth]{./img/Display_Case_Draw.png}
-					\caption{Skizze Des Displaygehäuses
+					\caption{Skizze des Displaygehäuses
 					\label{fig:imgDisplayDraw}}			
 				\end{figure}
 			\newpage
 			\subsection{Gehäuseständer}
-				Das Gehäusestativ ist provisorisch und aus entwicklungszeitlichen Gründen nur für den Protoytpen gestaltet. Eine Gewindestange ist in eine Einschraubmutter des lackierten Holzfußes eingeschraubt und durch ein an das Motorgehäuse geklebtes Winkelblech gesteckt. Durch Einsatz zweier Flügelmuttern und Unterlegscheiben lässt sich das Gehäuse somit sehr fein in der Höhe verstellen. Dieses Winkelblech kann bei zukünftigen Versionen zum Beispiel durch Laschen am Motorgehäuse direkt ersetzt werden. Angenehmer für den Benutzer wäre ein Gewinde innerhalb dieser Laschen und die gewindelose Lagerung der Gewindestange im Fuß, so könnte die Gehäusehöhe durch Rotation der Gewindestange eingestellt werden (z.B. via Motor oder Kurbel).
+				Das Gehäusestativ ist provisorisch und aus entwicklungszeitlichen Gründen nur für den Prototytpen gestaltet. Eine Gewindestange ist in eine Einschraubmutter des lackierten Holzfußes eingeschraubt und durch ein an das Motorgehäuse geklebtes Winkelblech gesteckt. Durch Einsatz zweier Flügelmuttern und Unterlegscheiben lässt sich das Gehäuse somit sehr fein in der Höhe verstellen. Dieses Winkelblech kann bei zukünftigen Versionen zum Beispiel durch Laschen am Motorgehäuse direkt ersetzt werden. Angenehmer für den Benutzer wäre ein Gewinde innerhalb dieser Laschen und die gewindelose Lagerung der Gewindestange im Fuß, so könnte die Gehäusehöhe durch Rotation der Gewindestange eingestellt werden (z.B. via Motor oder Kurbel).
 				\vspace{3em}
 				\begin{figure}[htbp]
 					\centering
@@ -420,7 +425,7 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 		\newpage
 	\chapter{Ergebnis}
 	\label{sec:Epilog}
-		In diesem Kapitel wird die Inbetriebnahme des Prototypen geschildert. Probleme, die bei diesem Projekt aufgetreten sind werden dargestellt und Lösungsansätze erwähnt. Nach einer kurzen Zusammenfassung des RotaCon-Projekts folgt ein kurzer Abschnitt über mögliche Erweiterungen durch Folgeprojekte.
+		In diesem Kapitel wird die Inbetriebnahme des Prototyps geschildert. Probleme, die bei diesem Projekt aufgetreten sind, werden dargestellt und Lösungsansätze erwähnt. Nach einer kurzen Zusammenfassung des RotaCon-Projekts folgt ein kurzer Abschnitt über mögliche Erweiterungen durch Folgeprojekte.
 		\section{Inbetriebnahme}
 			\label{sec:HowTo}
 			\begin{enumerate}
@@ -440,23 +445,22 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 		\section{Problemdiskussion}
 		\label{sec:Probleme}
 			\paragraph{Das D-Sub-Verbindungskabel}
-			ist sperrig und schränkt die Platzierung des Display-Gehäuses ein. Durch den Einsatz eines $I^{2}C$-Datenbuses können die Pinbelegungen und somit auch die Anzahl der Leitungen im Kabel so reduziert werden, dass ein flexibleres Micro-USB-Kabel verwendet werden kann.
+			ist sperrig und schränkt die Platzierung des Display-Gehäuses ein. Durch den Einsatz eines $I^{2}C$-Datenbusses können die Pinbelegungen und somit auch die Anzahl der Leitungen im Kabel so reduziert werden, dass ein flexibleres Micro-USB-Kabel verwendet werden kann.
 			
 			\paragraph{Die Platzierung der Endschalter}
-			mit Klebemasse ist unzweckmäßig aber für den ersten Prototypen ausreichend. Eine in das Gehäuse integrierte Ringscheibe auf der die beiden Endschalter verschoben und befestigt werden können ist eine zweckmäßigere Variante. Darauf wurde jedoch aus Kosten- und Aufwandsgründen bisher verzichtet.
+			mit Klebemasse ist unzweckmäßig aber für den ersten Prototyp ausreichend. Eine in das Gehäuse integrierte Ringscheibe, auf der die beiden Endschalter verschoben und befestigt werden können ist eine zweckmäßigere Variante. Darauf wurde jedoch aus Kosten- und Aufwandsgründen bisher verzichtet.
 			
 			\paragraph{Die Strommessung}
-			ist ein guter Ansatz, jedoch noch nicht ausreichend um sichere Aussagen über die Stellung des Potentiometers treffen zu können. Je nach Menge der Eingangssignale von der Fernbedienung oder der Leichtgängigkeit des Potentiometers variieren die gemessenen Werte. Weitere Tests durch Variation des Motorbetriebes (Softwaretechnisch) und damit verbundener Änderung der Messwiederstände können Abhilfe schaffen, wurden aus zeittechnischen Gründen in diesem Projekt jedoch nicht durchgeführt.
+			ist ein guter Ansatz, jedoch noch nicht ausreichend um sichere Aussagen über die Stellung des Potentiometers treffen zu können. Je nach Menge der Eingangssignale von der Fernbedienung oder der Leichtgängigkeit des Potentiometers variieren die gemessenen Werte. Weitere Tests durch Variation des Motorbetriebes (Softwaretechnisch) und damit verbundener Änderung der Messwiderstände können Abhilfe schaffen, wurden aus zeittechnischen Gründen in diesem Projekt jedoch nicht durchgeführt.
 
 		\section{Zusammenfassung}
 			Viele aktive Lautsprechersysteme werden über einen am Lautsprechergehäuse befindlichen Potentiometer geregelt. Daher ist es üblich diese Pegel stets auf Maximalwert zu stellen und die tatsächliche Lautstärke über den Signalpegel zum Lautsprecher hin zu verstellen. Je nach verbautem Verstärker kann dies zu hohem Stromverbrauch, Störgeräuschen und hoher Temperaturentwicklung führen. Der RotaCon ist ein Gerät, durch das der Benutzer in der Lage ist, das Potentiometer direkt fernzusteuern. Er besteht aus zwei Gehäusen und einem Stativ. Das Hauptgehäuse auf dem Stativ ist in der Position verstellbar und beinhaltet einen Schrittmotor zur Rotation des Potentiometers. Über ein Kabel ist das zweite Gehäuse verbunden, welches auf dem Lautsprecher positioniert werden kann. Dieses beinhaltet den Infrarotempfänger für die Fernbedienbarkeit und ein Display zur Visualisierung der Lautstärke. Der RotaCon verbraucht sehr wenig Strom und ist daher über USB angeschlossen (Typ A male zu Typ A male). Um Motorgetriebe und Potentiometer zu schonen, erkennt der RotaCon selbst die Maximalstellungen und verhindert weitere Krafteinwirkung nach Anschlag. Dieser Prototyp wird über einen Arduino Nano gesteuert und bietet somit eine geeignete Schnittstelle zur Anpassung und Weiterentwicklung.
 		\section{Ausblick}
-			Neben der Behebung bereits erwähnter Probleme und Optimierung des Gehäusedesigns bietet der Prototyp des RotaCon mehrere Bereiche an, die erweitert werden können. Durch die Synchronisierung mehrerer RotaCon zum Beispiel, wäre es möglich multiple Lautsprecher simultan oder unabhängig von einander mit der gleichen Fernbedienung zu bedienen. Um den Benutzer selbst entscheiden zu lassen, wie sichtbar das Gerät sein soll, wäre es möglich die Bedienung von Infrarotsteuerung auf WLAN-Steuerung zu verlegen. Durch die Verwendung des Arduinos, ist es leicht weitere Funktionen zu implementieren, so zum Beispiel die Speicherung von Pegelwerten als ''Preset'' für ein schnelles Wechseln zwischen Standartlautstärken.
+			Neben der Behebung bereits erwähnter Probleme und Optimierung des Gehäusedesigns bietet der Prototyp des RotaCon mehrere Bereiche an, die erweitert werden können. Durch die Synchronisierung mehrerer RotaCon zum Beispiel, wäre es möglich multiple Lautsprecher simultan oder unabhängig voneinander mit der gleichen Fernbedienung zu bedienen. Um den Benutzer selbst entscheiden zu lassen, wie sichtbar das Gerät sein soll, wäre es möglich die Bedienung von Infrarotsteuerung auf WLAN-Steuerung zu verlegen. Durch die Verwendung des Arduinos, ist es leicht weitere Funktionen zu implementieren, so zum Beispiel die Speicherung von Pegelwerten als ''Preset'' für ein schnelles Wechseln zwischen Standardlautstärken.
 	\chapter{Anhänge}
+		Die wichtigsten Anhänge werden hier aufgelistet, so zum Beispiel ein Teil der Datenblätter, die beiden Platinenlayouts, die technischen Zeichnungen der 3D-Modelle sowie Ausschnitte aus der Software. Alle weiteren Daten sind im Projektordner auf GitHub zu finden.
 		\section{Tabelle Teileübersicht}
-		\section{Datenblätter}
-		\label{sec:data}
-			Folgende Tabelle bietet eine Übersicht der verwendeten elektrischen Bauteile. Innerhalb der Dokumentation in pdf-Format, sind alle verfügbaren Datenblätter in der letzten Spalte verlinkt. Wichtige Auschnitte von Datenblättern sind zusätzlich hinter der Tabelle einsehbar.
+		Folgende Tabelle bietet eine Übersicht der verwendeten elektrischen Bauteile. Innerhalb der Dokumentation in pdf-Format, sind alle verfügbaren Datenblätter in der letzten Spalte verlinkt. Wichtige Auschnitte von Datenblättern sind zusätzlich hinter der Tabelle einsehbar.
 
 			\hspace{5em}
 			\begin{table}[htbp]
@@ -485,7 +489,10 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 
 				\end{tabular}
 			\end{table}			
-			\newpage
+			
+		\section{Datenblätter}
+		\label{sec:data}
+			%\newpage
 				\begin{center}
 					\vspace*{\fill}
 					\centering \Huge Motor
@@ -546,7 +553,7 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 			\end{figure}
 		\newpage
 		\addtocounter{section}{1}
-		\addcontentsline{toc}{section}{5.4\hspace{1em}Gehäusemaße}
+		\addcontentsline{toc}{section}{5.4\hspace{1em}Technische Zeichnungen - Gehäuse}
 		\label{sec:TechDraws}
 			%Technische Zeichnungen von FreeCAD mit den Abmessungen der Gehäuse.
 			\includepdf[width=1\linewidth, pagecommand={\thispagestyle{plain}}]{./docs/Motor_Case_Oben.pdf}

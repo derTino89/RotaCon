@@ -19,6 +19,35 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{Schrittmotoren}{online}{}
+      \name{author}{1}{}{%
+        {{hash=28cbf2838f23f681aabfc2625c65d876}{%
+           family={o.A.l},
+           familyi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{28cbf2838f23f681aabfc2625c65d876}
+      \strng{fullhash}{28cbf2838f23f681aabfc2625c65d876}
+      \strng{bibnamehash}{28cbf2838f23f681aabfc2625c65d876}
+      \strng{authorbibnamehash}{28cbf2838f23f681aabfc2625c65d876}
+      \strng{authornamehash}{28cbf2838f23f681aabfc2625c65d876}
+      \strng{authorfullhash}{28cbf2838f23f681aabfc2625c65d876}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Schrittmotoren (Einführung)}
+      \field{urlday}{2}
+      \field{urlmonth}{2}
+      \field{urlyear}{2020}
+      \field{year}{o.J.}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.controllersandpcs.de/pdfs/schrittmotoren.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.controllersandpcs.de/pdfs/schrittmotoren.pdf
+      \endverb
+    \endentry
     \entry{FreeCAD}{online}{}
       \name{author}{1}{}{%
         {{hash=c5bd6b1714874c8c77c4540d26d05b18}{%
@@ -32,8 +61,8 @@
       \strng{authornamehash}{c5bd6b1714874c8c77c4540d26d05b18}
       \strng{authorfullhash}{c5bd6b1714874c8c77c4540d26d05b18}
       \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Erste Schritte}
@@ -62,8 +91,8 @@
       \strng{authornamehash}{c5bd6b1714874c8c77c4540d26d05b18}
       \strng{authorfullhash}{c5bd6b1714874c8c77c4540d26d05b18}
       \field{extraname}{2}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Cura 13.11.2 User manual}
@@ -92,8 +121,8 @@
       \strng{authornamehash}{c5bd6b1714874c8c77c4540d26d05b18}
       \strng{authorfullhash}{c5bd6b1714874c8c77c4540d26d05b18}
       \field{extraname}{3}
-      \field{sortinit}{5}
-      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Eagle Tutorial}
@@ -126,8 +155,8 @@
       \strng{authorbibnamehash}{c35388e0738b25a12e6b6933d1aaf181}
       \strng{authornamehash}{c35388e0738b25a12e6b6933d1aaf181}
       \strng{authorfullhash}{c35388e0738b25a12e6b6933d1aaf181}
-      \field{sortinit}{6}
-      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-3-8266-8342-8}
@@ -148,8 +177,8 @@
       \strng{authornamehash}{c5bd6b1714874c8c77c4540d26d05b18}
       \strng{authorfullhash}{c5bd6b1714874c8c77c4540d26d05b18}
       \field{extraname}{4}
-      \field{sortinit}{7}
-      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Arduino Nano}
@@ -178,8 +207,8 @@
       \strng{authornamehash}{c5bd6b1714874c8c77c4540d26d05b18}
       \strng{authorfullhash}{c5bd6b1714874c8c77c4540d26d05b18}
       \field{extraname}{5}
-      \field{sortinit}{8}
-      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Arduino Nano Tutorial – Pinout and Schematics}
@@ -210,8 +239,8 @@
       \strng{authorbibnamehash}{e89282234089ba660b35ad8945929d7f}
       \strng{authornamehash}{e89282234089ba660b35ad8945929d7f}
       \strng{authorfullhash}{e89282234089ba660b35ad8945929d7f}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-3-8085-3188-4}
