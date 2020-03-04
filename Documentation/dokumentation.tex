@@ -139,7 +139,7 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 				\newline Damit die Übertragung des Sketches stattfinden kann, muss jedoch vorerst das richtige Board mit dem richtigen Prozessor in den Werkzeugen ausgewählt werden. Verwendete Version: Arduino 1.8.10
 			\subsection*{FreeCAD}
 			\label{sec:FreeCAD}
-				FreeCAD\footnote{CAD steht für \textit{computer-aided design} und beschreibt das rechnergestützte Erzeugen geometrischer Modelle} ist eine parametrische Modellierungsanwendung. 3D-Objekte können mit hoher Präzision modelliert und angeordnet werden. Vorteil gegenüber einer Modellierungsanwendung, wie Cinema 4D, besteht in der Möglichkeit der Herstellung von Unterlagen zum designten Modell. So können beispielsweise technische Zeichnungen und Montagepläne erstellt werden. [FreeCAD\cite{FreeCAD}] 
+				FreeCAD\footnote{CAD steht für \textit{computer-aided design} und beschreibt das rechnergestützte Erzeugen geometrischer Modelle.} ist eine parametrische Modellierungsanwendung. 3D-Objekte können mit hoher Präzision modelliert und angeordnet werden. Vorteil gegenüber einer Modellierungsanwendung, wie Cinema 4D, besteht in der Möglichkeit der Herstellung von Unterlagen zum designten Modell. So können beispielsweise technische Zeichnungen und Montagepläne erstellt werden. [FreeCAD\cite{FreeCAD}] 
 				\newline Die Anwendung ist ein Open-Source-Projekt, daher wird es gemeinschaftlich weiterentwickelt und wächst in seinem Funktionsumfang. Verwendete Version: FreeCAD 0.18
 				%https://www.freecadweb.org/wiki/Getting_started/de
 				%https://de.wikipedia.org/wiki/CAD#Herstellen_von_Fertigungs-/Herstellungsunterlagen
@@ -163,6 +163,7 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 					%Bild: http://www.circuitstoday.com/arduino-nano-tutorial-pinout-schematics
 					Arduino ist eine Open-Source Elektronik Plattform, die aus zwei Teilen besteht. Einem Hardware- und einem Softwareteil [Brühlmann \cite[S.23]{Arduino_Plattform}]. Der Hardware-Teil ist eine Mikrocontroller-Schaltung mit serieller Schnittstelle. Diese ''Mikrocontroller-Boards'' gibt es in verschiedenen Ausführungen und unterscheiden sich in ihrer Größe, dem verwendeten Mikrocontroller und den somit einhergehenden Eigenschaften von Ein- und Ausgängen. Die Eingänge können Daten von Sensoren einlesen, die Ausgänge dienen zur Ansteuerung von Motoren, Dioden,	Relais oder anderen elektronischen Komponenten. Die Spannungsversorgung kann über die USB-Schnittstelle oder externem Netzteil erfolgen. 
 					\newline Der im RotaCon verwendete Arduino Nano ist eine Leiterplattenversion von geringer Baugröße und nutzt als Basis den ATmega328 [Arduino \cite{Nano}]. Der Arduino Nano hat insgesamt 22 Input/Output-Pins, 8 davon können als analoge Eingänge benutzt werden. Die logische Spannung des Nanos beträgt 5V, die maximale Stromstärke pro Pin 40 mA. Mit einer Taktrate von 16 MHz und einem integrierten Speicher (EEPROM) von 1KB ist der Arduino Nano wegen seinen Funktionen für dieses Projekt gewählt worden.
+					
 					\begin{figure}[htbp]
 						\centering
 						\includegraphics[width=0.8\linewidth]{./img/Nano_PinOut.jpg}
@@ -281,7 +282,7 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 					U_{e}=R1\cdot\frac{I}{2}=0,5V \hspace{6em} R1=R2=\frac{2\cdot U_{e}}{I}=\frac{1V}{0,16A}=6,25\Omega \equiv 6R2
 				\end{equation}
 
-				Bei Schaltung einer Phase des Motors misst der Arduino mit dem integrierten A/D-Wandler 3,5V. Durch die bekannte Verstärkung\footnote{Die in dieser Rechnung verwendete Verstärkung ist 7,94 und bezieht sich auf die gemessenen Werte der verbauten Widerstände} errechnet sich so ein $U_{e}$ von 0,441V am Widerstand R1. Daraus ergibt sich eine errechnete Stromstärke von 145 mA. Das Amperemeter\footnote{Verwendetes Multimeter: testo 760-2} gemäß Abb. \ref{fig:imgOP} misst 144mA. Somit entsprechen die im seriellen Monitor der Arduino IDE gelisteten Werte, den etwa tatsächlichen Werten der Schaltung und können ausgewertet werden. Der verwendete Widerstand 6R2 hat einen gemessenen Wert von 6.1$\Omega$.
+				Bei Schaltung einer Phase des Motors misst der Arduino mit dem integrierten A/D-Wandler 3,5V. Durch die bekannte Verstärkung\footnote{Die in dieser Rechnung verwendete Verstärkung ist 7,94 und bezieht sich auf die gemessenen Werte der verbauten Widerstände.} errechnet sich so ein $U_{e}$ von 0,441V am Widerstand R1. Daraus ergibt sich eine errechnete Stromstärke von 145 mA. Das Amperemeter\footnote{Verwendetes Multimeter: testo 760-2} gemäß Abb. \ref{fig:imgOP} misst 144mA. Somit entsprechen die im seriellen Monitor der Arduino IDE gelisteten Werte, den etwa tatsächlichen Werten der Schaltung und können ausgewertet werden. Der verwendete Widerstand 6R2 hat einen gemessenen Wert von 6.1$\Omega$.
 
 				\begin{equation}
 					\label{eq:ue}
