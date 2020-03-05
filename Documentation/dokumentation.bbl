@@ -278,6 +278,36 @@
       \verb https://wiki.ntb.ch/infoportal/_media/hardware/sysp/bauteile/schrittmotor_kurz_erklaert_d.pdf
       \endverb
     \endentry
+    \entry{Schrittmotor_Bild}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c5bd6b1714874c8c77c4540d26d05b18}{%
+           family={o.A.},
+           familyi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{fullhash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{bibnamehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{authorbibnamehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{authornamehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{authorfullhash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \field{extraname}{7}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Schrittmotor}
+      \field{urlday}{2}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://home.roboticlab.eu/de/examples/motor/stepper
+      \endverb
+      \verb{url}
+      \verb http://home.roboticlab.eu/de/examples/motor/stepper
+      \endverb
+    \endentry
     \entry{Schrittmotor_Getriebe}{online}{}
       \name{author}{1}{}{%
         {{hash=12e13be98f33511e0bae92377c5213dc}{%
@@ -345,7 +375,7 @@
       \strng{authorbibnamehash}{c5bd6b1714874c8c77c4540d26d05b18}
       \strng{authornamehash}{c5bd6b1714874c8c77c4540d26d05b18}
       \strng{authorfullhash}{c5bd6b1714874c8c77c4540d26d05b18}
-      \field{extraname}{7}
+      \field{extraname}{8}
       \field{sortinit}{1}
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}

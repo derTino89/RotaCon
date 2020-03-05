@@ -501,11 +501,6 @@ INPUT .\img\motor_stepper_unipolar.png
 INPUT .\img\motor_stepper_unipolar.png
 INPUT .\img\motor_stepper_unipolar.png
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Regular-osf-t1.tfm
-INPUT img\gear.png
-INPUT .\img\gear.png
-INPUT .\img\gear.png
-INPUT .\img\gear.png
-INPUT .\img\gear.png
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr10.tfm
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi10.tfm
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy10.tfm
@@ -517,6 +512,11 @@ INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\nt
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\newtx\ntxexa.tfm
 INPUT C:\Users\tlieb\AppData\Local\MiKTeX\2.9\fonts\tfm\public\trsym\trsy10.tfm
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cyrillic\wncyr10.tfm
+INPUT img\gear.png
+INPUT .\img\gear.png
+INPUT .\img\gear.png
+INPUT .\img\gear.png
+INPUT .\img\gear.png
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\fira\FiraSans-Regular-osf-ts1.tfm
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf
 INPUT C:\Users\tlieb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\local\Corporate_Design_HSEL-master\HSEL-images\welle_hdk.pdf

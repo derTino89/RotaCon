@@ -190,14 +190,15 @@ hyperref=true,backref=true,maxcitenames=3,url=true,backend=biber,natbib=true]{bi
 
 				\begin{figure}[htbp]
 					\centering
-					\subcaptionbox{Spulenanordnung \label{fig:Spulen}}
+					\subcaptionbox{Spulenanordnung\protect\footnotemark\label{fig:Spulen}}
 						{\includegraphics[height=15em]{./img/motor_stepper_unipolar.png}}
 					\subcaptionbox{Motorgetriebe\protect\footnotemark\label{fig:Getriebe}}
 						{\includegraphics[height=15em]{./img/gear.png}}
 					\caption{ Aufbau eines unipolaren Schrittmotors.
 					\label{fig:imgMotor}}
 				\end{figure}
-				\footnotetext{\textcopyright Alexander Hinkel [Quelle:\cite{Schrittmotor_Getriebe}]}
+				\footnotetext[5]{Bildquelle: [Roboticlab\cite{Schrittmotor_Bild}]}
+				\footnotetext{Bildquelle: \textcopyright Alexander Hinkel [Arduino-Projekte\cite{Schrittmotor_Getriebe}]}
 		\newpage
 		\section{Realisierung der Schaltung}
 			\subsection{Motorsteuerung}

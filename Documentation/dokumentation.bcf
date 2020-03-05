@@ -2192,10 +2192,11 @@
     <bcf:citekey order="8">NanoImg</bcf:citekey>
     <bcf:citekey order="9">Winkelberechnung</bcf:citekey>
     <bcf:citekey order="10">Schrittmotor_Steuerung</bcf:citekey>
-    <bcf:citekey order="11">Schrittmotor_Getriebe</bcf:citekey>
-    <bcf:citekey order="12">Darlington</bcf:citekey>
-    <bcf:citekey order="13">Spule</bcf:citekey>
+    <bcf:citekey order="11">Schrittmotor_Bild</bcf:citekey>
+    <bcf:citekey order="12">Schrittmotor_Getriebe</bcf:citekey>
+    <bcf:citekey order="13">Darlington</bcf:citekey>
     <bcf:citekey order="14">Spule</bcf:citekey>
+    <bcf:citekey order="15">Spule</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
